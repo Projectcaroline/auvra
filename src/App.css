@@ -52,6 +52,10 @@ body {
   color: #c9a96e;
 }
 
+.nav-menu .btn-secondary {
+  margin-left: 1rem;
+}
+
 /* Hero Section */
 .hero {
   background-color: #e8e0d4;

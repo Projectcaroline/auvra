@@ -8,12 +8,9 @@ function App() {
       <nav className="nav">
         <div className="nav-brand">AUVRA</div>
         <div className="nav-menu">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#packages">Packages</a>
-          <a href="#blog">Blog</a>
-          <a href="#contact">Contact</a>
+          <a href="tel:+1234567890">📞 Call Now</a>
+          <a href="mailto:mskondjara@gmail.com">✉️ Email</a>
+          <button className="btn-secondary">📅 Book Consultation</button>
         </div>
       </nav>
 
