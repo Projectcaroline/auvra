@@ -339,6 +339,15 @@ body {
   letter-spacing: 6px;
   color: #2c2c2c;
   font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+}
+
+.packages-subtitle {
+  font-size: 1.1rem;
+  color: #5a5a5a;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 4rem;
 }
 
 .package-item {
