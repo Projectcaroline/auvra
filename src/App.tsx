@@ -8,9 +8,10 @@ function App() {
       <nav className="nav">
         <div className="nav-brand">AUVRA</div>
         <div className="nav-menu">
-          <a href="tel:+1234567890">📞 Call Now</a>
-          <a href="mailto:mskondjara@gmail.com">✉️ Email</a>
-          <button className="btn-secondary">📅 Book Consultation</button>
+          <a href="https://wa.me/264812568924" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="mailto:ajarlandings@gmail.com">Email</a>
+          <a href="https://instagram.com/auvra_tech" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <button className="btn-cta">Book Consultation</button>
         </div>
       </nav>
 
@@ -19,11 +20,11 @@ function App() {
         <div className="hero-content">
           <div className="hero-text">
             <h1>SMART SUPPORT FOR<br />MODERN BUSINESSES</h1>
-            <p>Executive-level assistance with a modern edge — from marketing support and content management to email systems and client coordination.</p>
-            <button className="btn-primary">📅 BOOK A CONSULTATION</button>
+            <p>Executive-level business support blending traditional assistant skills with modern digital expertise. Marketing, CRM, content management, and digital systems support.</p>
+            <button className="btn-primary">BOOK A CONSULTATION</button>
           </div>
           <div className="hero-image">
-            <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional woman working on laptop" />
+            <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional woman in black working on laptop" />
           </div>
         </div>
       </section>
@@ -49,13 +50,13 @@ function App() {
           <div className="service-content">
             <div className="service-number">1</div>
             <div className="service-text">
-              <h3>MARKETING &<br />ADMINISTRATIVE SUPPORT</h3>
-              <p>Organized scheduling, inbox management, and professional client communication that keeps your business running seamlessly. From coordinating meetings to managing correspondence, we ensure nothing falls through the cracks.</p>
+              <h3>INSTAGRAM<br />MANAGEMENT</h3>
+              <p>Strategic content creation, engagement management, and growth optimization for your Instagram presence. We craft compelling posts that resonate with your audience and drive meaningful interactions.</p>
               <button className="btn-secondary">LEARN MORE</button>
             </div>
           </div>
           <div className="service-image">
-            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional workspace" />
+            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional woman in black with laptop and coffee" />
           </div>
         </div>
 
@@ -63,13 +64,13 @@ function App() {
           <div className="service-content">
             <div className="service-number">2</div>
             <div className="service-text">
-              <h3>CONTENT & OUTREACH<br />MANAGEMENT</h3>
-              <p>Email campaigns, branded communications, and client outreach strategies designed to strengthen visibility and engagement. We craft compelling content that resonates with your audience.</p>
+              <h3>FACEBOOK<br />ADVERTISING</h3>
+              <p>Targeted ad campaigns designed to reach your ideal customers and drive conversions. From audience research to campaign optimization, we handle every aspect of your Facebook marketing strategy.</p>
               <button className="btn-secondary">LEARN MORE</button>
             </div>
           </div>
           <div className="service-image">
-            <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Content creation workspace" />
+            <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional woman in black using mobile phone" />
           </div>
         </div>
       </section>
@@ -84,18 +85,20 @@ function App() {
           <div className="package-content">
             <div className="package-number">1</div>
             <div className="package-text">
-              <h3>CRM & Data Systems</h3>
-              <div className="package-price">Starting at $800/mo</div>
+              <h3>Instagram Management</h3>
+              <div className="package-price">$400/mo</div>
               <ul>
-                <li>Efficient management of client information, pipeline tracking, and streamlined follow-up processes</li>
-                <li>Database organization and maintenance to ensure accurate client records</li>
-                <li>Automated workflow setup for consistent client communication and follow-ups</li>
+                <li>Daily content creation and posting schedule</li>
+                <li>Strategic hashtag research and implementation</li>
+                <li>Community engagement and follower interaction</li>
+                <li>Monthly analytics and performance reporting</li>
+                <li>Story highlights and IGTV content optimization</li>
               </ul>
               <button className="btn-tertiary">GET STARTED</button>
             </div>
           </div>
           <div className="package-image">
-            <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional woman with phone" />
+            <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional woman in black with phone" />
           </div>
         </div>
 
@@ -103,18 +106,20 @@ function App() {
           <div className="package-content">
             <div className="package-number">2</div>
             <div className="package-text">
-              <h3>Digital & Technical Support</h3>
-              <div className="package-price">$650/campaign</div>
+              <h3>Facebook Advertising</h3>
+              <div className="package-price">$350/campaign</div>
               <ul>
-                <li>Workflow automation, website assistance, and email tech support</li>
-                <li>System integration and optimization to ensure your tools work smarter, not harder</li>
-                <li>Technical troubleshooting and ongoing digital system maintenance</li>
+                <li>Comprehensive audience research and targeting setup</li>
+                <li>Creative ad design and compelling copy creation</li>
+                <li>Campaign launch, monitoring, and optimization</li>
+                <li>A/B testing for maximum performance and ROI</li>
+                <li>Detailed reporting and insights for future campaigns</li>
               </ul>
               <button className="btn-tertiary">GET STARTED</button>
             </div>
           </div>
           <div className="package-image">
-            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mobile phone and workspace" />
+            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional workspace with mobile phone" />
           </div>
         </div>
       </section>
@@ -123,20 +128,20 @@ function App() {
       <section className="why-work">
         <div className="why-work-content">
           <h2 className="script-heading">Your time is best spent on what you do best</h2>
-          <p>Let us take care of your business operations and support needs.</p>
+          <p>Let us take care of your business marketing and social media needs.</p>
           
           <div className="benefits">
             <div className="benefit">
               <h3>Professional Excellence</h3>
-              <p>Detail-oriented support tailored specifically for busy entrepreneurs who demand quality and precision in every interaction.</p>
+              <p>Detail-oriented marketing support tailored specifically for busy entrepreneurs who demand quality and precision in every campaign.</p>
             </div>
             <div className="benefit">
-              <h3>Unique Expertise</h3>
-              <p>A distinctive blend of administration, marketing, and digital systems knowledge that sets us apart from traditional support services.</p>
+              <h3>Strategic Approach</h3>
+              <p>Data-driven social media strategies that combine creativity with analytics to deliver measurable results for your business growth.</p>
             </div>
             <div className="benefit">
               <h3>Elegant Solutions</h3>
-              <p>Reliable, sophisticated approaches designed to save time and elevate your brand while maintaining the highest standards.</p>
+              <p>Sophisticated marketing approaches designed to elevate your brand presence while maintaining the highest standards of professionalism.</p>
             </div>
           </div>
         </div>
@@ -145,13 +150,13 @@ function App() {
       {/* Final CTA */}
       <section className="final-cta">
         <div className="cta-content">
-          <h2>Let's simplify your <span className="script">workload</span></h2>
-          <p>Partner with Auvra.tech for smart, executive-level business support.</p>
+          <h2>Let's elevate your <span className="script">digital presence</span></h2>
+          <p>Partner with Auvra.tech for smart, strategic social media marketing.</p>
           <div className="cta-buttons">
-            <button className="btn-primary">📅 BOOK A CONSULTATION</button>
-            <button className="btn-outline">✉️ CONTACT ME</button>
+            <button className="btn-primary">BOOK A CONSULTATION</button>
+            <a href="https://wa.me/264812568924" className="btn-outline" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
           </div>
-          <p className="cta-subtext">Ready to transform how your business operates? Let's discuss your needs.</p>
+          <p className="cta-subtext">Ready to transform your social media presence? Let's discuss your goals.</p>
         </div>
       </section>
 
@@ -163,18 +168,18 @@ function App() {
             <p>Smart Support for Modern Businesses</p>
           </div>
           <div className="footer-links">
-            <a href="https://www.auvra.tech" target="_blank" rel="noopener noreferrer">
-              🌐 www.auvra.tech
+            <a href="https://wa.me/264812568924" target="_blank" rel="noopener noreferrer">
+              📱 WhatsApp: +264 81 256 8924
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              💼 LinkedIn Profile
+            <a href="https://instagram.com/auvra_tech" target="_blank" rel="noopener noreferrer">
+              📸 @auvra_tech
             </a>
-            <a href="mailto:mskondjara@gmail.com">
-              ✉️ mskondjara@gmail.com
+            <a href="mailto:ajarlandings@gmail.com">
+              ✉️ ajarlandings@gmail.com
             </a>
           </div>
           <div className="footer-bottom">
-            <p>© 2025 Auvra.tech. Elevating business operations with intelligent support.</p>
+            <p>© 2025 Auvra.tech. Elevating business operations with intelligent marketing support.</p>
           </div>
         </div>
       </footer>
