@@ -124,6 +124,16 @@ body {
   text-shadow: 0 2px 4px rgba(61, 41, 20, 0.1);
 }
 
+.hero-slogan {
+  font-size: 1.4rem !important;
+  font-style: italic;
+  color: #8b6f47 !important;
+  font-family: 'Playfair Display', serif !important;
+  margin-bottom: 1.5rem !important;
+  font-weight: 400 !important;
+  text-shadow: 0 2px 4px rgba(139, 111, 71, 0.2);
+}
+
 .hero-text p {
   font-size: 1.2rem;
   margin-bottom: 3rem;

@@ -6,11 +6,11 @@ function App() {
     <div className="app">
       {/* Navigation */}
       <nav className="nav">
-        <div className="nav-brand">AUVRA</div>
+        <div className="nav-brand">TWENTYSUM</div>
         <div className="nav-menu">
           <a href="https://wa.me/264812568924" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           <a href="mailto:ajarlandings@gmail.com">Email</a>
-          <a href="https://instagram.com/auvra_tech" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://instagram.com/twentysum" target="_blank" rel="noopener noreferrer">Instagram</a>
           <button className="btn-cta">Book Consultation</button>
         </div>
       </nav>
@@ -20,7 +20,8 @@ function App() {
         <div className="hero-content">
           <div className="hero-text">
             <h1>YOUR DEDICATED<br />VIRTUAL ASSISTANT</h1>
-            <p>Professional virtual assistant services to streamline your business operations. From administrative tasks to web design and AI integrations - I handle it all so you can focus on growing your business.</p>
+            <p className="hero-slogan">"Buy back your time by Dan Martel"</p>
+            <p>High-paying virtual assistant services across tech, creative, and admin specialties. Professional support that scales with your business needs so you can focus on what matters most.</p>
             <a href="https://wa.me/264812568924?text=Hi! I'm interested in your virtual assistant services. Can we discuss my needs?" className="btn-primary" target="_blank" rel="noopener noreferrer">GET STARTED TODAY</a>
           </div>
           <div className="hero-image">
@@ -235,22 +236,22 @@ function App() {
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-brand">
-            <h3>AUVRA.TECH</h3>
-            <p>Your Dedicated Virtual Assistant</p>
+            <h3>TWENTYSUM</h3>
+            <p>"Buy back your time by Dan Martel"</p>
           </div>
           <div className="footer-links">
             <a href="https://wa.me/264812568924" target="_blank" rel="noopener noreferrer">
               📱 WhatsApp: +264 81 256 8924
             </a>
-            <a href="https://instagram.com/auvra_tech" target="_blank" rel="noopener noreferrer">
-              📸 @auvra_tech
+            <a href="https://instagram.com/twentysum" target="_blank" rel="noopener noreferrer">
+              📸 @twentysum
             </a>
             <a href="mailto:ajarlandings@gmail.com">
               ✉️ ajarlandings@gmail.com
             </a>
           </div>
           <div className="footer-bottom">
-            <p>© 2025 Auvra.tech. Professional virtual assistant services to streamline your business operations.</p>
+            <p>© 2025 TwentySum. High-paying virtual assistant services - "Buy back your time by Dan Martel"</p>
           </div>
         </div>
       </footer>
