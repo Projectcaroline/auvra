@@ -21,7 +21,7 @@ function App() {
           <div className="hero-text">
             <h1>YOUR DEDICATED<br />VIRTUAL ASSISTANT</h1>
             <p>Professional virtual assistant services to streamline your business operations. From administrative tasks to web design and AI integrations - I handle it all so you can focus on growing your business.</p>
-            <button className="btn-primary">GET STARTED TODAY</button>
+            <a href="https://wa.me/264812568924?text=Hi! I'm interested in your virtual assistant services. Can we discuss my needs?" className="btn-primary" target="_blank" rel="noopener noreferrer">GET STARTED TODAY</a>
           </div>
           <div className="hero-image">
             <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional virtual assistant working on laptop" />
@@ -52,7 +52,7 @@ function App() {
             <div className="service-text">
               <h3>VIRTUAL ASSISTANT<br />SERVICES</h3>
               <p>High-paying virtual assistant services across tech, creative, and admin specialties. Professional support that scales with your business needs.</p>
-              <button className="btn-secondary">LEARN MORE</button>
+              <a href="mailto:ajarlandings@gmail.com?subject=Tech Services Inquiry&body=Hi! I'm interested in learning more about your tech services. Please send me more details." className="btn-secondary">LEARN MORE</a>
             </div>
           </div>
           <div className="service-image">
@@ -66,7 +66,7 @@ function App() {
             <div className="service-text">
               <h3>WEB DESIGN &<br />DEVELOPMENT</h3>
               <p>Modern, responsive websites that convert visitors into customers. From landing pages to full business websites, I create professional online presences that reflect your brand perfectly.</p>
-              <button className="btn-secondary">LEARN MORE</button>
+              <a href="mailto:ajarlandings@gmail.com?subject=Creative Services Inquiry&body=Hi! I'm interested in learning more about your creative services. Please send me more details." className="btn-secondary">LEARN MORE</a>
             </div>
           </div>
           <div className="service-image">
@@ -80,7 +80,7 @@ function App() {
             <div className="service-text">
               <h3>OUTREACH &<br />LEAD GENERATION</h3>
               <p>Strategic outreach campaigns to connect with potential clients and partners. I handle cold emails, LinkedIn outreach, and follow-up sequences to generate quality leads for your business.</p>
-              <button className="btn-secondary">LEARN MORE</button>
+              <a href="mailto:ajarlandings@gmail.com?subject=Admin Services Inquiry&body=Hi! I'm interested in learning more about your admin services. Please send me more details." className="btn-secondary">LEARN MORE</a>
             </div>
           </div>
           <div className="service-image">
@@ -123,7 +123,7 @@ function App() {
                 <li>Data entry and document management</li>
                 <li>Up to 20 hours of support per month</li>
               </ul>
-              <button className="btn-tertiary">GET STARTED</button>
+              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the Virtual Assistant Essentials package ($250/mo). Can we discuss this?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
             </div>
           </div>
           <div className="package-image">
@@ -144,7 +144,7 @@ function App() {
                 <li>Basic SEO setup and Google Analytics</li>
                 <li>2 rounds of revisions included</li>
               </ul>
-              <button className="btn-tertiary">GET STARTED</button>
+              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the Web Design Package ($400/project). Can we discuss this?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
             </div>
           </div>
           <div className="package-image">
@@ -165,7 +165,7 @@ function App() {
                 <li>Follow-up sequence automation</li>
                 <li>Weekly progress reports and analytics</li>
               </ul>
-              <button className="btn-tertiary">GET STARTED</button>
+              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the Outreach Campaign ($200/campaign). Can we discuss this?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
             </div>
           </div>
           <div className="package-image">
@@ -186,7 +186,7 @@ function App() {
                 <li>Training and documentation provided</li>
                 <li>30 days of support and optimization</li>
               </ul>
-              <button className="btn-tertiary">GET STARTED</button>
+              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the AI Integration Setup ($300/setup). Can we discuss this?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
             </div>
           </div>
           <div className="package-image">
@@ -224,7 +224,7 @@ function App() {
           <h2>Ready to <span className="script">delegate and scale?</span></h2>
           <p>Let's discuss how I can support your business growth as your dedicated virtual assistant.</p>
           <div className="cta-buttons">
-            <button className="btn-primary">BOOK A CONSULTATION</button>
+            <a href="mailto:ajarlandings@gmail.com?subject=Free Consultation Request&body=Hi! I'd like to book a free consultation to discuss my virtual assistant needs. When would be a good time to connect?" className="btn-primary">BOOK A CONSULTATION</a>
             <a href="https://wa.me/264812568924" className="btn-outline" target="_blank" rel="noopener noreferrer">WhatsApp Me</a>
           </div>
           <p className="cta-subtext">Free consultation to discuss your needs and how I can help streamline your operations.</p>
