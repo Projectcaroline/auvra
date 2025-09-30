@@ -51,7 +51,7 @@ function App() {
             <div className="service-number">1</div>
             <div className="service-text">
               <h3>VIRTUAL ASSISTANT<br />SERVICES</h3>
-              <p>Complete administrative support including email management, scheduling, customer service, data entry, and project coordination. Let me handle your daily tasks so you can focus on strategic growth.</p>
+              <p>High-paying virtual assistant services across tech, creative, and admin specialties. Professional support that scales with your business needs.</p>
               <button className="btn-secondary">LEARN MORE</button>
             </div>
           </div>
