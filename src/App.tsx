@@ -21,7 +21,7 @@ function App() {
           <div className="hero-text">
             <h1>YOUR DEDICATED<br />VIRTUAL ASSISTANT</h1>
             <p className="hero-slogan">"Buy back your time by Dan Martel"</p>
-            <p>High-paying virtual assistant services across tech, creative, and admin specialties. Professional support that scales with your business needs so you can focus on what matters most.</p>
+            <p>Virtual assistant services across tech, creative, and admin specialties. Professional support that scales with your business needs so you can focus on what matters most.</p>
             <a href="https://wa.me/264812568924?text=Hi! I'm interested in your virtual assistant services. Can we discuss my needs?" className="btn-primary" target="_blank" rel="noopener noreferrer">GET STARTED TODAY</a>
           </div>
           <div className="hero-image">
@@ -52,7 +52,7 @@ function App() {
             <div className="service-number">1</div>
             <div className="service-text">
               <h3>VIRTUAL ASSISTANT<br />SERVICES</h3>
-              <p>High-paying virtual assistant services across tech, creative, and admin specialties. Professional support that scales with your business needs.</p>
+              <p>Virtual assistant services across tech, creative, and admin specialties. Professional support that scales with your business needs.</p>
               <a href="mailto:ajarlandings@gmail.com?subject=Tech Services Inquiry&body=Hi! I'm interested in learning more about your tech services. Please send me more details." className="btn-secondary">LEARN MORE</a>
             </div>
           </div>
@@ -251,7 +251,7 @@ function App() {
             </a>
           </div>
           <div className="footer-bottom">
-            <p>© 2025 TwentySum. High-paying virtual assistant services - "Buy back your time by Dan Martel"</p>
+            <p>© 2025 TwentySum. Virtual assistant services - "Buy back your time by Dan Martel"</p>
           </div>
         </div>
       </footer>
