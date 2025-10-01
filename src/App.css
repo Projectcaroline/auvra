@@ -826,7 +826,7 @@ body {
 
 .service-detail-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 1.5rem;
 }
@@ -837,13 +837,6 @@ body {
   color: #3d2914;
   font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
-}
-
-.service-price {
-  font-size: 1.2rem;
-  color: #8b6f47;
-  font-weight: 500;
-  font-family: 'Playfair Display', serif;
 }
 
 .service-description {

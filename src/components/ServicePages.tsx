@@ -15,7 +15,6 @@ const ServicePages: React.FC<ServicePageProps> = ({ onBack, serviceType }) => {
           services: [
             {
               name: 'Funnel Management',
-              price: '$40 - 60/hr',
               description: 'Complete sales funnel setup, optimization, and management. I handle landing pages, email sequences, and conversion tracking to maximize your sales.',
               includes: [
                 'Sales funnel design and setup',
@@ -28,7 +27,6 @@ const ServicePages: React.FC<ServicePageProps> = ({ onBack, serviceType }) => {
             },
             {
               name: 'Website Management',
-              price: '$35 - 50/hr',
               description: 'Keep your website running smoothly with regular updates, maintenance, and optimization for performance and security.',
               includes: [
                 'Regular website updates and maintenance',
@@ -41,7 +39,6 @@ const ServicePages: React.FC<ServicePageProps> = ({ onBack, serviceType }) => {
             },
             {
               name: 'Email Automation',
-              price: '$30 - 55/hr',
               description: 'Automated email marketing campaigns that nurture leads and convert prospects into paying customers.',
               includes: [
                 'Email campaign setup and design',
@@ -54,7 +51,6 @@ const ServicePages: React.FC<ServicePageProps> = ({ onBack, serviceType }) => {
             },
             {
               name: 'CRM Management',
-              price: '$30 - 45/hr',
               description: 'Organize and manage your customer relationships with proper CRM setup, data entry, and workflow automation.',
               includes: [
                 'CRM setup and configuration',
@@ -74,7 +70,6 @@ const ServicePages: React.FC<ServicePageProps> = ({ onBack, serviceType }) => {
           services: [
             {
               name: 'Social Media Content',
-              price: '$25 - 40/hr',
               description: 'Engaging social media content creation and management to build your brand and connect with your audience.',
               includes: [
                 'Content creation and curation',
@@ -87,7 +82,6 @@ const ServicePages: React.FC<ServicePageProps> = ({ onBack, serviceType }) => {
             },
             {
               name: 'Basic Graphic Design',
-              price: '$30 - 45/hr',
               description: 'Professional graphic design for your marketing materials, social media, and business needs.',
               includes: [
                 'Logo design and branding',
@@ -100,7 +94,6 @@ const ServicePages: React.FC<ServicePageProps> = ({ onBack, serviceType }) => {
             },
             {
               name: 'Blog Management',
-              price: '$25 - 35/hr',
               description: 'Complete blog management including content creation, SEO optimization, and publishing schedules.',
               includes: [
                 'Blog post writing and editing',
@@ -120,7 +113,6 @@ const ServicePages: React.FC<ServicePageProps> = ({ onBack, serviceType }) => {
           services: [
             {
               name: 'Executive Assistant',
-              price: '$20 - 35/hr',
               description: 'Comprehensive executive support including calendar management, email handling, and administrative tasks.',
               includes: [
                 'Calendar management and scheduling',
@@ -133,7 +125,6 @@ const ServicePages: React.FC<ServicePageProps> = ({ onBack, serviceType }) => {
             },
             {
               name: 'Project Management',
-              price: '$35 - 55/hr',
               description: 'End-to-end project management to ensure your initiatives are completed on time and within budget.',
               includes: [
                 'Project planning and timeline creation',
@@ -146,7 +137,6 @@ const ServicePages: React.FC<ServicePageProps> = ({ onBack, serviceType }) => {
             },
             {
               name: 'Customer Service',
-              price: '$15 - 25/hr',
               description: 'Professional customer service support to maintain excellent client relationships and satisfaction.',
               includes: [
                 'Live chat and email support',
@@ -159,7 +149,6 @@ const ServicePages: React.FC<ServicePageProps> = ({ onBack, serviceType }) => {
             },
             {
               name: 'Bookkeeping',
-              price: '$30 - 45/hr',
               description: 'Accurate bookkeeping and financial record management to keep your business finances organized.',
               includes: [
                 'Transaction recording and categorization',
@@ -192,7 +181,6 @@ const ServicePages: React.FC<ServicePageProps> = ({ onBack, serviceType }) => {
           <div key={index} className="service-detail-card">
             <div className="service-detail-header">
               <h3>{service.name}</h3>
-              <div className="service-price">{service.price}</div>
             </div>
             <p className="service-description">{service.description}</p>
             <div className="service-includes">
@@ -205,7 +193,7 @@ const ServicePages: React.FC<ServicePageProps> = ({ onBack, serviceType }) => {
             </div>
             <div className="service-actions">
               <a 
-                href={`https://wa.me/264812568924?text=Hi! I'm interested in ${service.name} services (${service.price}). Can we discuss my needs?`}
+                href={`https://wa.me/264812568924?text=Hi! I'm interested in ${service.name} services. Can we discuss pricing and my specific needs?`}
                 className="btn-primary"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -213,7 +201,7 @@ const ServicePages: React.FC<ServicePageProps> = ({ onBack, serviceType }) => {
                 Get Started
               </a>
               <a 
-                href={`mailto:ajarlandings@gmail.com?subject=${service.name} Service Inquiry&body=Hi! I'd like to learn more about your ${service.name} services. Please send me more details about pricing and availability.`}
+                href={`mailto:ajarlandings@gmail.com?subject=${service.name} Service Inquiry&body=Hi! I'd like to learn more about your ${service.name} services. Can we schedule a consultation to discuss pricing and availability?`}
                 className="btn-secondary"
               >
                 Email Me
