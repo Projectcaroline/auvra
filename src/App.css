@@ -930,8 +930,32 @@ body {
 }
 
 @media (max-width: 768px) {
+  .nav {
+    padding: 1rem 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .nav-brand {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+  
   .nav-menu {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .nav-menu a {
+    font-size: 0.8rem;
+  }
+  
+  .btn-cta {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.75rem;
   }
   
   .hero-content,
@@ -946,11 +970,31 @@ body {
   }
   
   .hero-text h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .hero-slogan {
+    font-size: 1.1rem !important;
+    text-align: center;
+  }
+  
+  .hero-text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .hero-text {
+    text-align: center;
   }
   
   .script-heading {
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+  
+  .about h3 {
+    font-size: 1.8rem;
+    line-height: 1.4;
   }
   
   .services-header h2 {
@@ -960,7 +1004,18 @@ body {
   
   .service-number,
   .package-number {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+  
+  .service-text h3,
+  .package-text h3 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+  
+  .service-text p,
+  .package-text p {
+    font-size: 1rem;
   }
   
   .service-details-grid {
@@ -969,6 +1024,10 @@ body {
   
   .service-detail-card {
     padding: 2rem;
+  }
+  
+  .service-detail-header h3 {
+    font-size: 1.3rem;
   }
   
   .service-actions {
@@ -997,11 +1056,124 @@ body {
     gap: 1.5rem;
   }
   
+  .final-cta h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+  
+  .final-cta p {
+    font-size: 1.1rem;
+  }
+  
+  .footer-brand h3 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+  
+  .footer-brand p {
+    font-size: 1rem;
+  }
+  
   .about,
   .services,
   .packages,
   .why-work,
   .final-cta {
     padding: 4rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 0.8rem 1rem;
+  }
+  
+  .nav-brand {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  
+  .nav-menu {
+    gap: 0.8rem;
+  }
+  
+  .nav-menu a {
+    font-size: 0.75rem;
+  }
+  
+  .btn-cta {
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+  }
+  
+  .hero {
+    padding: 5rem 1rem 2rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-slogan {
+    font-size: 1rem !important;
+  }
+  
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+  
+  .script-heading {
+    font-size: 1.8rem;
+  }
+  
+  .about h3 {
+    font-size: 1.5rem;
+  }
+  
+  .services-header h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .service-number,
+  .package-number {
+    font-size: 2.5rem;
+  }
+  
+  .service-text h3,
+  .package-text h3 {
+    font-size: 1.4rem;
+  }
+  
+  .service-detail-card {
+    padding: 1.5rem;
+  }
+  
+  .service-detail-header h3 {
+    font-size: 1.2rem;
+  }
+  
+  .btn-primary,
+  .btn-secondary,
+  .btn-tertiary,
+  .btn-outline {
+    padding: 1rem 1.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .final-cta h2 {
+    font-size: 2rem;
+  }
+  
+  .final-cta p {
+    font-size: 1rem;
+  }
+  
+  .about,
+  .services,
+  .packages,
+  .why-work,
+  .final-cta {
+    padding: 3rem 1rem;
   }
 }
