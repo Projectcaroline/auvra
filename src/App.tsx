@@ -61,7 +61,7 @@ function App() {
             <div className="service-text">
               <h3>VIRTUAL ASSISTANT<br />SERVICES</h3>
               <p>Virtual assistant services across tech, creative, and admin specialties. Professional support that scales with your business needs.</p>
-              <button onClick={() => setCurrentPage('tech')} className="btn-secondary">LEARN MORE</button>
+              <button onClick={() => setCurrentPage('admin')} className="btn-secondary">LEARN MORE</button>
             </div>
           </div>
           <div className="service-image">
@@ -75,7 +75,7 @@ function App() {
             <div className="service-text">
               <h3>WEB DESIGN &<br />DEVELOPMENT</h3>
               <p>Modern, responsive websites that convert visitors into customers. From landing pages to full business websites, I create professional online presences that reflect your brand perfectly.</p>
-              <button onClick={() => setCurrentPage('creative')} className="btn-secondary">LEARN MORE</button>
+              <button onClick={() => setCurrentPage('tech')} className="btn-secondary">LEARN MORE</button>
             </div>
           </div>
           <div className="service-image">
@@ -89,7 +89,7 @@ function App() {
             <div className="service-text">
               <h3>OUTREACH &<br />LEAD GENERATION</h3>
               <p>Strategic outreach campaigns to connect with potential clients and partners. I handle cold emails, LinkedIn outreach, and follow-up sequences to generate quality leads for your business.</p>
-              <button onClick={() => setCurrentPage('admin')} className="btn-secondary">LEARN MORE</button>
+              <button onClick={() => setCurrentPage('creative')} className="btn-secondary">LEARN MORE</button>
             </div>
           </div>
           <div className="service-image">
@@ -103,7 +103,7 @@ function App() {
             <div className="service-text">
               <h3>AI INTEGRATIONS &<br />AUTOMATION</h3>
               <p>Streamline your workflows with AI-powered solutions and automation tools. From chatbots to automated email sequences, I help you leverage technology to work smarter, not harder.</p>
-              <button className="btn-secondary">LEARN MORE</button>
+              <button onClick={() => setCurrentPage('tech')} className="btn-secondary">LEARN MORE</button>
             </div>
           </div>
           <div className="service-image">
@@ -124,7 +124,7 @@ function App() {
             <div className="package-number">1</div>
             <div className="package-text">
               <h3>Virtual Assistant Essentials</h3>
-              <div className="package-price">$250/mo</div>
+              <div className="package-price">$200/mo</div>
               <ul>
                 <li>Email management and organization</li>
                 <li>Calendar scheduling and appointment setting</li>
@@ -132,7 +132,7 @@ function App() {
                 <li>Data entry and document management</li>
                 <li>Up to 20 hours of support per month</li>
               </ul>
-              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the Virtual Assistant Essentials package ($250/mo). Can we discuss this?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
+              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the Virtual Assistant Essentials package ($200/mo). Can we discuss this?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
             </div>
           </div>
           <div className="package-image">
@@ -145,7 +145,7 @@ function App() {
             <div className="package-number">2</div>
             <div className="package-text">
               <h3>Web Design Package</h3>
-              <div className="package-price">$400/project</div>
+              <div className="package-price">$300/project</div>
               <ul>
                 <li>Custom responsive website design</li>
                 <li>Up to 5 pages with professional content</li>
@@ -153,7 +153,7 @@ function App() {
                 <li>Basic SEO setup and Google Analytics</li>
                 <li>2 rounds of revisions included</li>
               </ul>
-              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the Web Design Package ($400/project). Can we discuss this?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
+              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the Web Design Package ($300/project). Can we discuss this?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
             </div>
           </div>
           <div className="package-image">
@@ -166,7 +166,7 @@ function App() {
             <div className="package-number">3</div>
             <div className="package-text">
               <h3>Outreach Campaign</h3>
-              <div className="package-price">$200/campaign</div>
+              <div className="package-price">$150/campaign</div>
               <ul>
                 <li>Target audience research and list building</li>
                 <li>Personalized outreach message creation</li>
@@ -174,7 +174,7 @@ function App() {
                 <li>Follow-up sequence automation</li>
                 <li>Weekly progress reports and analytics</li>
               </ul>
-              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the Outreach Campaign ($200/campaign). Can we discuss this?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
+              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the Outreach Campaign ($150/campaign). Can we discuss this?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
             </div>
           </div>
           <div className="package-image">
@@ -187,7 +187,7 @@ function App() {
             <div className="package-number">4</div>
             <div className="package-text">
               <h3>AI Integration Setup</h3>
-              <div className="package-price">$300/setup</div>
+              <div className="package-price">$250/setup</div>
               <ul>
                 <li>Custom AI chatbot implementation</li>
                 <li>Workflow automation setup</li>
@@ -195,7 +195,7 @@ function App() {
                 <li>Training and documentation provided</li>
                 <li>30 days of support and optimization</li>
               </ul>
-              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the AI Integration Setup ($300/setup). Can we discuss this?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
+              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the AI Integration Setup ($250/setup). Can we discuss this?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
             </div>
           </div>
           <div className="package-image">
@@ -233,7 +233,7 @@ function App() {
           <h2>Ready to <span className="script">delegate and scale?</span></h2>
           <p>Let's discuss how I can support your business growth as your dedicated virtual assistant.</p>
           <div className="cta-buttons">
-            <a href="mailto:ajarlandings@gmail.com?subject=Free Consultation Request&body=Hi! I'd like to book a free consultation to discuss my virtual assistant needs. When would be a good time to connect?" className="btn-primary">BOOK A CONSULTATION</a>
+            <a href="https://calendly.com/mskondjara/ai-booking-demo" className="btn-primary" target="_blank" rel="noopener noreferrer">BOOK A CONSULTATION</a>
             <a href="https://wa.me/264812568924" className="btn-outline" target="_blank" rel="noopener noreferrer">WhatsApp Me</a>
           </div>
           <p className="cta-subtext">Free consultation to discuss your needs and how I can help streamline your operations.</p>
