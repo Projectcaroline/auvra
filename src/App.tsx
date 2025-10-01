@@ -1,7 +1,15 @@
 import React from 'react';
+import { useState } from 'react';
 import './App.css';
+import ServicePages from './components/ServicePages';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState<'home' | 'tech' | 'creative' | 'admin'>('home');
+
+  if (currentPage !== 'home') {
+    return <ServicePages onBack={() => setCurrentPage('home')} serviceType={currentPage} />;
+  }
+
   return (
     <div className="app">
       {/* Navigation */}
@@ -53,7 +61,7 @@ function App() {
             <div className="service-text">
               <h3>VIRTUAL ASSISTANT<br />SERVICES</h3>
               <p>Virtual assistant services across tech, creative, and admin specialties. Professional support that scales with your business needs.</p>
-              <a href="mailto:ajarlandings@gmail.com?subject=Tech Services Inquiry&body=Hi! I'm interested in learning more about your tech services. Please send me more details." className="btn-secondary">LEARN MORE</a>
+              <button onClick={() => setCurrentPage('tech')} className="btn-secondary">LEARN MORE</button>
             </div>
           </div>
           <div className="service-image">
@@ -67,7 +75,7 @@ function App() {
             <div className="service-text">
               <h3>WEB DESIGN &<br />DEVELOPMENT</h3>
               <p>Modern, responsive websites that convert visitors into customers. From landing pages to full business websites, I create professional online presences that reflect your brand perfectly.</p>
-              <a href="mailto:ajarlandings@gmail.com?subject=Creative Services Inquiry&body=Hi! I'm interested in learning more about your creative services. Please send me more details." className="btn-secondary">LEARN MORE</a>
+              <button onClick={() => setCurrentPage('creative')} className="btn-secondary">LEARN MORE</button>
             </div>
           </div>
           <div className="service-image">
@@ -81,7 +89,7 @@ function App() {
             <div className="service-text">
               <h3>OUTREACH &<br />LEAD GENERATION</h3>
               <p>Strategic outreach campaigns to connect with potential clients and partners. I handle cold emails, LinkedIn outreach, and follow-up sequences to generate quality leads for your business.</p>
-              <a href="mailto:ajarlandings@gmail.com?subject=Admin Services Inquiry&body=Hi! I'm interested in learning more about your admin services. Please send me more details." className="btn-secondary">LEARN MORE</a>
+              <button onClick={() => setCurrentPage('admin')} className="btn-secondary">LEARN MORE</button>
             </div>
           </div>
           <div className="service-image">
