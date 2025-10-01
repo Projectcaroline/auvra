@@ -116,7 +116,7 @@ function App() {
       <section className="packages">
         <div className="packages-header">
           <h2>PACKAGES</h2>
-          <p className="packages-subtitle">Competitive startup rates - Quality service without breaking the bank</p>
+          <p className="packages-subtitle">Flexible packages tailored to your business needs</p>
         </div>
 
         <div className="package-item">
@@ -124,7 +124,6 @@ function App() {
             <div className="package-number">1</div>
             <div className="package-text">
               <h3>Virtual Assistant Essentials</h3>
-              <div className="package-price">$200/mo</div>
               <ul>
                 <li>Email management and organization</li>
                 <li>Calendar scheduling and appointment setting</li>
@@ -132,7 +131,7 @@ function App() {
                 <li>Data entry and document management</li>
                 <li>Up to 20 hours of support per month</li>
               </ul>
-              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the Virtual Assistant Essentials package ($200/mo). Can we discuss this?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
+              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the Virtual Assistant Essentials package. Can we discuss pricing and details?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
             </div>
           </div>
           <div className="package-image">
@@ -145,7 +144,6 @@ function App() {
             <div className="package-number">2</div>
             <div className="package-text">
               <h3>Web Design Package</h3>
-              <div className="package-price">$300/project</div>
               <ul>
                 <li>Custom responsive website design</li>
                 <li>Up to 5 pages with professional content</li>
@@ -153,7 +151,7 @@ function App() {
                 <li>Basic SEO setup and Google Analytics</li>
                 <li>2 rounds of revisions included</li>
               </ul>
-              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the Web Design Package ($300/project). Can we discuss this?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
+              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the Web Design Package. Can we discuss pricing and details?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
             </div>
           </div>
           <div className="package-image">
@@ -166,7 +164,6 @@ function App() {
             <div className="package-number">3</div>
             <div className="package-text">
               <h3>Outreach Campaign</h3>
-              <div className="package-price">$150/campaign</div>
               <ul>
                 <li>Target audience research and list building</li>
                 <li>Personalized outreach message creation</li>
@@ -174,7 +171,7 @@ function App() {
                 <li>Follow-up sequence automation</li>
                 <li>Weekly progress reports and analytics</li>
               </ul>
-              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the Outreach Campaign ($150/campaign). Can we discuss this?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
+              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the Outreach Campaign. Can we discuss pricing and details?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
             </div>
           </div>
           <div className="package-image">
@@ -187,7 +184,6 @@ function App() {
             <div className="package-number">4</div>
             <div className="package-text">
               <h3>AI Integration Setup</h3>
-              <div className="package-price">$250/setup</div>
               <ul>
                 <li>Custom AI chatbot implementation</li>
                 <li>Workflow automation setup</li>
@@ -195,7 +191,7 @@ function App() {
                 <li>Training and documentation provided</li>
                 <li>30 days of support and optimization</li>
               </ul>
-              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the AI Integration Setup ($250/setup). Can we discuss this?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
+              <a href="https://wa.me/264812568924?text=Hi! I'm interested in the AI Integration Setup. Can we discuss pricing and details?" className="btn-tertiary" target="_blank" rel="noopener noreferrer">GET STARTED</a>
             </div>
           </div>
           <div className="package-image">
