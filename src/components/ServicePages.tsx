@@ -5,7 +5,7 @@ interface ServicePageProps {
   serviceType: 'tech' | 'creative' | 'admin';
 }
 
-const ServicePages: React.FC<ServicePageProps> = ({ onBack, serviceType }) => {
+export default function ServicePages({ onBack, serviceType }: ServicePageProps) {
   const getServiceContent = () => {
     switch (serviceType) {
       case 'tech':
@@ -212,6 +212,4 @@ const ServicePages: React.FC<ServicePageProps> = ({ onBack, serviceType }) => {
       </div>
     </div>
   );
-};
-
-export default ServicePages;
+}
