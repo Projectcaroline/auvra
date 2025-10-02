@@ -14,18 +14,6 @@ export default function ServicePages({ onBack, serviceType }: ServicePageProps) 
           subtitle: 'Advanced technical solutions to streamline your business operations',
           services: [
             {
-              name: 'Funnel Management',
-              description: 'Complete sales funnel setup, optimization, and management. I handle landing pages, email sequences, and conversion tracking to maximize your sales.',
-              includes: [
-                'Sales funnel design and setup',
-                'Landing page creation and optimization',
-                'Email sequence automation',
-                'Conversion tracking and analytics',
-                'A/B testing and optimization',
-                'Integration with CRM systems'
-              ]
-            },
-            {
               name: 'Website Management',
               description: 'Keep your website running smoothly with regular updates, maintenance, and optimization for performance and security.',
               includes: [
