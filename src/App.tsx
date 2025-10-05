@@ -41,7 +41,16 @@ function App() {
             </div>
           </div>
           <div className="hero-image">
-            <img src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional woman working as virtual assistant" />
+            <img 
+              src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=800&h=600" 
+              srcSet="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400&h=300 400w,
+                      https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=800&h=600 800w,
+                      https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900 1200w"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="Professional woman working as virtual assistant" 
+              loading="eager"
+              decoding="async"
+            />
           </div>
         </div>
       </section>
@@ -94,7 +103,16 @@ function App() {
             </div>
           </div>
           <div className="service-image">
-            <img src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional woman managing virtual assistant tasks" />
+            <img 
+              src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" 
+              srcSet="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=300&h=200 300w,
+                      https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=600&h=400 600w,
+                      https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=900&h=600 900w"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="Professional woman managing virtual assistant tasks" 
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
 
@@ -108,7 +126,16 @@ function App() {
             </div>
           </div>
           <div className="service-image">
-            <img src="https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional woman working on web design" />
+            <img 
+              src="https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" 
+              srcSet="https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=300&h=200 300w,
+                      https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=600&h=400 600w,
+                      https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=900&h=600 900w"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="Professional woman working on web design" 
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
 
@@ -122,7 +149,16 @@ function App() {
             </div>
           </div>
           <div className="service-image">
-            <img src="https://images.pexels.com/photos/4050430/pexels-photo-4050430.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional woman conducting outreach" />
+            <img 
+              src="https://images.pexels.com/photos/4050430/pexels-photo-4050430.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" 
+              srcSet="https://images.pexels.com/photos/4050430/pexels-photo-4050430.jpeg?auto=compress&cs=tinysrgb&w=300&h=200 300w,
+                      https://images.pexels.com/photos/4050430/pexels-photo-4050430.jpeg?auto=compress&cs=tinysrgb&w=600&h=400 600w,
+                      https://images.pexels.com/photos/4050430/pexels-photo-4050430.jpeg?auto=compress&cs=tinysrgb&w=900&h=600 900w"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="Professional woman conducting outreach" 
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
 
@@ -136,7 +172,16 @@ function App() {
             </div>
           </div>
           <div className="service-image">
-            <img src="https://images.pexels.com/photos/4050421/pexels-photo-4050421.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI integration and automation setup" />
+            <img 
+              src="https://images.pexels.com/photos/4050421/pexels-photo-4050421.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" 
+              srcSet="https://images.pexels.com/photos/4050421/pexels-photo-4050421.jpeg?auto=compress&cs=tinysrgb&w=300&h=200 300w,
+                      https://images.pexels.com/photos/4050421/pexels-photo-4050421.jpeg?auto=compress&cs=tinysrgb&w=600&h=400 600w,
+                      https://images.pexels.com/photos/4050421/pexels-photo-4050421.jpeg?auto=compress&cs=tinysrgb&w=900&h=600 900w"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="AI integration and automation setup" 
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
       </section>
@@ -164,7 +209,15 @@ function App() {
             </div>
           </div>
           <div className="package-image">
-            <img src="https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Virtual assistant working professionally" />
+            <img 
+              src="https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" 
+              srcSet="https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=300&h=200 300w,
+                      https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=600&h=400 600w"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="Virtual assistant working professionally" 
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
 
@@ -184,7 +237,15 @@ function App() {
             </div>
           </div>
           <div className="package-image">
-            <img src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Web design project in progress" />
+            <img 
+              src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" 
+              srcSet="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=300&h=200 300w,
+                      https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=600&h=400 600w"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="Web design project in progress" 
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
 
@@ -204,7 +265,15 @@ function App() {
             </div>
           </div>
           <div className="package-image">
-            <img src="https://images.pexels.com/photos/4050430/pexels-photo-4050430.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Outreach campaign management" />
+            <img 
+              src="https://images.pexels.com/photos/4050430/pexels-photo-4050430.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" 
+              srcSet="https://images.pexels.com/photos/4050430/pexels-photo-4050430.jpeg?auto=compress&cs=tinysrgb&w=300&h=200 300w,
+                      https://images.pexels.com/photos/4050430/pexels-photo-4050430.jpeg?auto=compress&cs=tinysrgb&w=600&h=400 600w"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="Outreach campaign management" 
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
 
@@ -224,7 +293,15 @@ function App() {
             </div>
           </div>
           <div className="package-image">
-            <img src="https://images.pexels.com/photos/4050421/pexels-photo-4050421.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI integration and automation" />
+            <img 
+              src="https://images.pexels.com/photos/4050421/pexels-photo-4050421.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" 
+              srcSet="https://images.pexels.com/photos/4050421/pexels-photo-4050421.jpeg?auto=compress&cs=tinysrgb&w=300&h=200 300w,
+                      https://images.pexels.com/photos/4050421/pexels-photo-4050421.jpeg?auto=compress&cs=tinysrgb&w=600&h=400 600w"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              alt="AI integration and automation" 
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
       </section>

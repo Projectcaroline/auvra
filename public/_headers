@@ -1,0 +1,16 @@
+# Cache static assets
+/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache HTML files for shorter time
+/*.html
+  Cache-Control: public, max-age=3600
+
+# Security headers
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src 'self'; img-src 'self' https://images.pexels.com data:; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self'; connect-src 'self' https://wa.me https://calendly.com https://www.instagram.com;

@@ -30,6 +30,8 @@ body {
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(139, 111, 71, 0.3);
   min-height: 80px;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .nav-brand {
@@ -150,6 +152,8 @@ body {
   border-radius: 15px;
   box-shadow: 0 20px 60px rgba(139, 111, 71, 0.2);
   object-fit: cover;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 /* Buttons */
@@ -595,6 +599,8 @@ body {
   border-radius: 15px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.4);
   object-fit: cover;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 /* Packages Section */
@@ -728,6 +734,8 @@ body {
   border-radius: 15px;
   box-shadow: 0 20px 60px rgba(139, 111, 71, 0.2);
   object-fit: cover;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 /* Why Work Section */
@@ -1047,6 +1055,36 @@ body {
 }
 
 /* Responsive Design */
+
+/* Performance optimizations */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reduce paint and layout thrashing */
+.btn-primary,
+.btn-secondary,
+.btn-tertiary,
+.btn-outline,
+.btn-cta {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Optimize animations */
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-tertiary:hover,
+.btn-outline:hover,
+.btn-cta:hover {
+  transform: translateY(-2px) translateZ(0);
+}
+
 @media (max-width: 1024px) {
   .nav {
     padding: 1rem 2rem;
