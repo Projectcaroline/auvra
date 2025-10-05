@@ -2,12 +2,17 @@ import React from 'react';
 import { useState } from 'react';
 import './App.css';
 import ServicePages from './components/ServicePages';
+import LegalPages from './components/LegalPages';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState<'home' | 'tech' | 'creative' | 'admin'>('home');
+  const [currentPage, setCurrentPage] = useState<'home' | 'tech' | 'creative' | 'admin' | 'privacy' | 'terms' | 'refund'>('home');
 
-  if (currentPage !== 'home') {
+  if (currentPage === 'tech' || currentPage === 'creative' || currentPage === 'admin') {
     return <ServicePages onBack={() => setCurrentPage('home')} serviceType={currentPage} />;
+  }
+  
+  if (currentPage === 'privacy' || currentPage === 'terms' || currentPage === 'refund') {
+    return <LegalPages onBack={() => setCurrentPage('home')} pageType={currentPage} />;
   }
 
   return (
@@ -19,10 +24,30 @@ function App() {
           <a href="https://wa.me/264812568924" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           <a href="mailto:ajarlandings@gmail.com">Email</a>
           <a href="https://www.instagram.com/twenty_sum?utm_source=qr&igsh=MXQyaGw4cmpuODB2eQ==" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <button className="btn-cta">Book Consultation</button>
+          <a href="https://calendly.com/mskondjara/ai-booking-demo" className="btn-cta" target="_blank" rel="noopener noreferrer">📅 Book Free Call</a>
         </div>
       </nav>
 
+      {/* Value Proposition Section */}
+      <section className="value-prop">
+        <div className="value-content">
+          <h2>Save 20+ Hours Weekly with Professional Virtual Assistant Services</h2>
+          <div className="value-grid">
+            <div className="value-item">
+              <h3>🎯 What I Do</h3>
+              <p>Handle your admin tasks, web design, outreach campaigns, and AI automation so you can focus on growing your business</p>
+            </div>
+            <div className="value-item">
+              <h3>💰 Why It Matters</h3>
+              <p>Startup-friendly rates while you get back your most valuable asset - time to work ON your business, not IN it</p>
+            </div>
+            <div className="value-item">
+              <h3>🚀 The Result</h3>
+              <p>Scale faster with professional support that grows with you, without the overhead of hiring full-time staff</p>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
@@ -30,10 +55,13 @@ function App() {
             <h1>YOUR DEDICATED<br />VIRTUAL ASSISTANT</h1>
             <p className="hero-slogan">"Buy back your time by Dan Martel"</p>
             <p>Virtual assistant services across tech, creative, and admin specialties. Professional support that scales with your business needs so you can focus on what matters most.</p>
-            <a href="https://wa.me/264812568924?text=Hi! I'm interested in your virtual assistant services. Can we discuss my needs?" className="btn-primary" target="_blank" rel="noopener noreferrer">GET STARTED TODAY</a>
+            <div className="hero-buttons">
+              <a href="https://calendly.com/mskondjara/ai-booking-demo" className="btn-primary" target="_blank" rel="noopener noreferrer">📅 BOOK FREE CONSULTATION</a>
+              <a href="https://wa.me/264812568924?text=Hi! I'm interested in your virtual assistant services. Can we discuss my needs?" className="btn-secondary" target="_blank" rel="noopener noreferrer">💬 WhatsApp Me Now</a>
+            </div>
           </div>
           <div className="hero-image">
-            <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional virtual assistant working on laptop" />
+            <img src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Professional woman working as virtual assistant" />
           </div>
         </div>
       </section>
@@ -65,7 +93,7 @@ function App() {
             </div>
           </div>
           <div className="service-image">
-            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional woman managing virtual assistant tasks" />
+            <img src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional woman managing virtual assistant tasks" />
           </div>
         </div>
 
@@ -79,7 +107,7 @@ function App() {
             </div>
           </div>
           <div className="service-image">
-            <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional woman working on web design" />
+            <img src="https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional woman working on web design" />
           </div>
         </div>
 
@@ -93,7 +121,7 @@ function App() {
             </div>
           </div>
           <div className="service-image">
-            <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional woman conducting outreach" />
+            <img src="https://images.pexels.com/photos/4050430/pexels-photo-4050430.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Professional woman conducting outreach" />
           </div>
         </div>
 
@@ -107,7 +135,7 @@ function App() {
             </div>
           </div>
           <div className="service-image">
-            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI integration and automation setup" />
+            <img src="https://images.pexels.com/photos/4050421/pexels-photo-4050421.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI integration and automation setup" />
           </div>
         </div>
       </section>
@@ -135,7 +163,7 @@ function App() {
             </div>
           </div>
           <div className="package-image">
-            <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Virtual assistant working professionally" />
+            <img src="https://images.pexels.com/photos/4050302/pexels-photo-4050302.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Virtual assistant working professionally" />
           </div>
         </div>
 
@@ -155,7 +183,7 @@ function App() {
             </div>
           </div>
           <div className="package-image">
-            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Web design project in progress" />
+            <img src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Web design project in progress" />
           </div>
         </div>
 
@@ -175,7 +203,7 @@ function App() {
             </div>
           </div>
           <div className="package-image">
-            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Outreach campaign management" />
+            <img src="https://images.pexels.com/photos/4050430/pexels-photo-4050430.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Outreach campaign management" />
           </div>
         </div>
 
@@ -195,7 +223,7 @@ function App() {
             </div>
           </div>
           <div className="package-image">
-            <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI integration and automation" />
+            <img src="https://images.pexels.com/photos/4050421/pexels-photo-4050421.jpeg?auto=compress&cs=tinysrgb&w=600" alt="AI integration and automation" />
           </div>
         </div>
       </section>
@@ -226,13 +254,13 @@ function App() {
       {/* Final CTA */}
       <section className="final-cta">
         <div className="cta-content">
-          <h2>Ready to <span className="script">delegate and scale?</span></h2>
-          <p>Let's discuss how I can support your business growth as your dedicated virtual assistant.</p>
+          <h2>Ready to <span className="script">get your time back?</span></h2>
+          <p>Book a free 15-minute consultation to discuss your needs. No commitment, just clarity on how I can help you scale.</p>
           <div className="cta-buttons">
-            <a href="https://calendly.com/mskondjara/ai-booking-demo" className="btn-primary" target="_blank" rel="noopener noreferrer">BOOK A CONSULTATION</a>
-            <a href="https://wa.me/264812568924" className="btn-outline" target="_blank" rel="noopener noreferrer">WhatsApp Me</a>
+            <a href="https://calendly.com/mskondjara/ai-booking-demo" className="btn-primary" target="_blank" rel="noopener noreferrer">📅 BOOK FREE CONSULTATION</a>
+            <a href="https://wa.me/264812568924" className="btn-outline" target="_blank" rel="noopener noreferrer">💬 WhatsApp Me</a>
           </div>
-          <p className="cta-subtext">Free consultation to discuss your needs and how I can help streamline your operations.</p>
+          <p className="cta-subtext">✅ Free consultation ✅ No commitment ✅ Get clarity on your next steps</p>
         </div>
       </section>
 
@@ -253,6 +281,11 @@ function App() {
             <a href="mailto:ajarlandings@gmail.com">
               ✉️ ajarlandings@gmail.com
             </a>
+          </div>
+          <div className="footer-legal">
+            <button onClick={() => setCurrentPage('privacy')} className="legal-link">Privacy Policy</button>
+            <button onClick={() => setCurrentPage('terms')} className="legal-link">Terms of Service</button>
+            <button onClick={() => setCurrentPage('refund')} className="legal-link">Refund Policy</button>
           </div>
           <div className="footer-bottom">
             <p>© 2025 TwentySum. Virtual assistant services - "Buy back your time by Dan Martel"</p>
