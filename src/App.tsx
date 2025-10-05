@@ -32,9 +32,9 @@ function App() {
       <section className="hero">
         <div className="hero-content">
           <div className="hero-text">
-            <h1>YOUR DEDICATED<br />VIRTUAL ASSISTANT</h1>
+            <h1>Professional Virtual Assistant Services for Busy Entrepreneurs</h1>
             <p className="hero-slogan">"Buy back your time by Dan Martel"</p>
-            <p>Virtual assistant services across tech, creative, and admin specialties. Professional support that scales with your business needs so you can focus on what matters most.</p>
+            <p>Save 20+ hours weekly with professional virtual assistant services. Get admin support, web design, outreach campaigns, and AI automation at startup-friendly rates.</p>
             <div className="hero-buttons">
               <a href="https://calendly.com/mskondjara/ai-booking-demo" className="btn-primary" target="_blank" rel="noopener noreferrer">📅 BOOK FREE CONSULTATION</a>
               <a href="https://wa.me/264812568924?text=Hi! I'm interested in your virtual assistant services. Can we discuss my needs?" className="btn-secondary" target="_blank" rel="noopener noreferrer">💬 WhatsApp Me Now</a>
@@ -58,10 +58,10 @@ function App() {
       {/* About Section */}
       <section className="about">
         <div className="about-content">
-          <h2 className="script-heading">let me guess</h2>
-          <h3>YOU'RE OVERWHELMED WITH<br />DAILY BUSINESS TASKS</h3>
-          <p>You're spending too much time on administrative work instead of focusing on what you do best...</p>
-          <p>Or you're struggling with managing emails, scheduling, social media, and keeping up with technology while trying to grow your business.</p>
+          <h2 className="script-heading">Are you drowning in daily tasks?</h2>
+          <h3>Stop Wasting Time on Admin Work That Doesn't Grow Your Business</h3>
+          <p>As an entrepreneur, you're spending 60% of your time on administrative tasks instead of focusing on revenue-generating activities...</p>
+          <p>Email management, calendar scheduling, social media posting, data entry - these essential but time-consuming tasks are keeping you from scaling your business.</p>
           <p className="bold">If you're ready to delegate and scale, I'm here to help!</p>
         </div>
       </section>
@@ -69,19 +69,19 @@ function App() {
       {/* Value Proposition Section */}
       <section className="value-prop">
         <div className="value-content">
-          <h2>Save 20+ Hours Weekly with Professional Virtual Assistant Services</h2>
+          <h2>How Virtual Assistant Services Transform Your Business</h2>
           <div className="value-grid">
             <div className="value-item">
-              <h3>🎯 What I Do</h3>
-              <p>Handle your admin tasks, web design, outreach campaigns, and AI automation so you can focus on growing your business</p>
+              <h3>🎯 What You Get</h3>
+              <p>Professional admin support, custom web design, targeted outreach campaigns, and AI automation - all handled by an experienced virtual assistant</p>
             </div>
             <div className="value-item">
-              <h3>💰 Why It Matters</h3>
-              <p>Startup-friendly rates while you get back your most valuable asset - time to work ON your business, not IN it</p>
+              <h3>💰 Why Choose Virtual Assistant Services</h3>
+              <p>Get professional support at 70% less cost than hiring full-time staff. No benefits, no office space, no management overhead - just results</p>
             </div>
             <div className="value-item">
-              <h3>🚀 The Result</h3>
-              <p>Scale faster with professional support that grows with you, without the overhead of hiring full-time staff</p>
+              <h3>🚀 Your Business Transformation</h3>
+              <p>Reclaim 20+ hours weekly to focus on strategy, sales, and growth. Scale faster with reliable virtual assistant support that adapts to your needs</p>
             </div>
           </div>
         </div>
@@ -90,15 +90,15 @@ function App() {
       {/* Services Section */}
       <section className="services">
         <div className="services-header">
-          <h2>SERVICES</h2>
+          <h2>Virtual Assistant Services</h2>
         </div>
         
         <div className="service-item">
           <div className="service-content">
             <div className="service-number">1</div>
             <div className="service-text">
-              <h3>VIRTUAL ASSISTANT<br />SERVICES</h3>
-              <p>Virtual assistant services across tech, creative, and admin specialties. Professional support that scales with your business needs.</p>
+              <h3>Administrative<br />Virtual Assistant</h3>
+              <p>Complete admin support including email management, calendar scheduling, customer service, and bookkeeping. Free up your time for high-value activities.</p>
               <button onClick={() => setCurrentPage('admin')} className="btn-secondary">LEARN MORE</button>
             </div>
           </div>
@@ -120,8 +120,8 @@ function App() {
           <div className="service-content">
             <div className="service-number">2</div>
             <div className="service-text">
-              <h3>WEB DESIGN &<br />DEVELOPMENT</h3>
-              <p>Modern, responsive websites that convert visitors into customers. From landing pages to full business websites, I create professional online presences that reflect your brand perfectly.</p>
+              <h3>Web Design &<br />Development Services</h3>
+              <p>Professional websites that convert visitors into customers. Custom responsive design, SEO optimization, and ongoing website management to grow your online presence.</p>
               <button onClick={() => setCurrentPage('tech')} className="btn-secondary">LEARN MORE</button>
             </div>
           </div>
@@ -143,8 +143,8 @@ function App() {
           <div className="service-content">
             <div className="service-number">3</div>
             <div className="service-text">
-              <h3>OUTREACH &<br />LEAD GENERATION</h3>
-              <p>Strategic outreach campaigns to connect with potential clients and partners. I handle cold emails, LinkedIn outreach, and follow-up sequences to generate quality leads for your business.</p>
+              <h3>Lead Generation &<br />Outreach Campaigns</h3>
+              <p>Targeted outreach campaigns that generate qualified leads. Cold email sequences, LinkedIn outreach, and follow-up automation to fill your sales pipeline consistently.</p>
               <button onClick={() => setCurrentPage('creative')} className="btn-secondary">LEARN MORE</button>
             </div>
           </div>
@@ -166,8 +166,8 @@ function App() {
           <div className="service-content">
             <div className="service-number">4</div>
             <div className="service-text">
-              <h3>AI INTEGRATIONS &<br />AUTOMATION</h3>
-              <p>Streamline your workflows with AI-powered solutions and automation tools. From chatbots to automated email sequences, I help you leverage technology to work smarter, not harder.</p>
+              <h3>AI Automation &<br />Integration Services</h3>
+              <p>Streamline operations with AI-powered automation. Custom chatbots, workflow automation, and AI tool integration to reduce manual work and increase efficiency.</p>
               <button onClick={() => setCurrentPage('tech')} className="btn-secondary">LEARN MORE</button>
             </div>
           </div>
@@ -189,15 +189,15 @@ function App() {
       {/* Packages Section */}
       <section className="packages">
         <div className="packages-header">
-          <h2>PACKAGES</h2>
-          <p className="packages-subtitle">Flexible packages tailored to your business needs</p>
+          <h2>Virtual Assistant Service Packages</h2>
+          <p className="packages-subtitle">Choose the perfect virtual assistant package for your business needs and budget</p>
         </div>
 
         <div className="package-item">
           <div className="package-content">
             <div className="package-number">1</div>
             <div className="package-text">
-              <h3>Virtual Assistant Essentials</h3>
+              <h3>Essential Virtual Assistant Package</h3>
               <ul>
                 <li>Email management and organization</li>
                 <li>Calendar scheduling and appointment setting</li>
@@ -225,7 +225,7 @@ function App() {
           <div className="package-content">
             <div className="package-number">2</div>
             <div className="package-text">
-              <h3>Web Design Package</h3>
+              <h3>Professional Web Design Package</h3>
               <ul>
                 <li>Custom responsive website design</li>
                 <li>Up to 5 pages with professional content</li>
@@ -253,7 +253,7 @@ function App() {
           <div className="package-content">
             <div className="package-number">3</div>
             <div className="package-text">
-              <h3>Outreach Campaign</h3>
+              <h3>Lead Generation Campaign Package</h3>
               <ul>
                 <li>Target audience research and list building</li>
                 <li>Personalized outreach message creation</li>
@@ -281,7 +281,7 @@ function App() {
           <div className="package-content">
             <div className="package-number">4</div>
             <div className="package-text">
-              <h3>AI Integration Setup</h3>
+              <h3>AI Automation Setup Package</h3>
               <ul>
                 <li>Custom AI chatbot implementation</li>
                 <li>Workflow automation setup</li>
@@ -309,21 +309,21 @@ function App() {
       {/* Why Work With Me */}
       <section className="why-work">
         <div className="why-work-content">
-          <h2 className="script-heading">Why choose me as your virtual assistant?</h2>
-          <p>Quality service at startup-friendly rates while you focus on what matters most.</p>
+          <h2 className="script-heading">Why Choose TwentySum Virtual Assistant Services?</h2>
+          <p>Professional virtual assistant support designed specifically for growing businesses and entrepreneurs.</p>
           
           <div className="benefits">
             <div className="benefit">
-              <h3>Affordable Excellence</h3>
-              <p>Professional virtual assistant services at competitive startup rates. Get premium support without the premium price tag as I build my portfolio.</p>
+              <h3>Startup-Friendly Virtual Assistant Rates</h3>
+              <p>Get professional virtual assistant services at rates 70% lower than hiring full-time staff. Premium support without the premium price tag.</p>
             </div>
             <div className="benefit">
-              <h3>Tech-Savvy Support</h3>
-              <p>Beyond traditional VA tasks, I offer modern solutions like web design, AI integrations, and automation to help your business stay ahead.</p>
+              <h3>Tech-Savvy Virtual Assistant</h3>
+              <p>Beyond traditional VA tasks, get modern solutions like web design, AI integrations, and automation to keep your business competitive.</p>
             </div>
             <div className="benefit">
-              <h3>Dedicated Partnership</h3>
-              <p>As a growing VA, I'm invested in your success. You get personalized attention and a partner who truly cares about your business growth.</p>
+              <h3>Dedicated Virtual Assistant Partnership</h3>
+              <p>Get personalized attention from a virtual assistant who's invested in your success. Reliable support that grows with your business needs.</p>
             </div>
           </div>
         </div>
@@ -332,8 +332,8 @@ function App() {
       {/* Final CTA */}
       <section className="final-cta">
         <div className="cta-content">
-          <h2>Ready to <span className="script">get your time back?</span></h2>
-          <p>Book a free 15-minute consultation to discuss your needs. No commitment, just clarity on how I can help you scale.</p>
+          <h2>Ready to <span className="script">hire your virtual assistant?</span></h2>
+          <p>Book a free 15-minute consultation to discuss your virtual assistant needs. No commitment, just clarity on how we can help you scale.</p>
           <div className="cta-buttons">
             <a href="https://calendly.com/mskondjara/ai-booking-demo" className="btn-primary" target="_blank" rel="noopener noreferrer">📅 BOOK FREE CONSULTATION</a>
             <a href="https://wa.me/264812568924" className="btn-outline" target="_blank" rel="noopener noreferrer">💬 WhatsApp Me</a>
@@ -347,7 +347,7 @@ function App() {
         <div className="footer-content">
           <div className="footer-brand">
             <h3>TWENTYSUM</h3>
-            <p>"Buy back your time by Dan Martel"</p>
+            <p>Professional Virtual Assistant Services - "Buy back your time by Dan Martel"</p>
           </div>
           <div className="footer-links">
             <a href="https://wa.me/264812568924" target="_blank" rel="noopener noreferrer">
@@ -366,7 +366,7 @@ function App() {
             <button onClick={() => setCurrentPage('refund')} className="legal-link">Refund Policy</button>
           </div>
           <div className="footer-bottom">
-            <p>© 2025 TwentySum. Virtual assistant services - "Buy back your time by Dan Martel"</p>
+            <p>© 2025 TwentySum Virtual Assistant Services. Professional support for entrepreneurs and small businesses.</p>
           </div>
         </div>
       </footer>
