@@ -28,26 +28,6 @@ function App() {
         </div>
       </nav>
 
-      {/* Value Proposition Section */}
-      <section className="value-prop">
-        <div className="value-content">
-          <h2>Save 20+ Hours Weekly with Professional Virtual Assistant Services</h2>
-          <div className="value-grid">
-            <div className="value-item">
-              <h3>🎯 What I Do</h3>
-              <p>Handle your admin tasks, web design, outreach campaigns, and AI automation so you can focus on growing your business</p>
-            </div>
-            <div className="value-item">
-              <h3>💰 Why It Matters</h3>
-              <p>Startup-friendly rates while you get back your most valuable asset - time to work ON your business, not IN it</p>
-            </div>
-            <div className="value-item">
-              <h3>🚀 The Result</h3>
-              <p>Scale faster with professional support that grows with you, without the overhead of hiring full-time staff</p>
-            </div>
-          </div>
-        </div>
-      </section>
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
@@ -74,6 +54,27 @@ function App() {
           <p>You're spending too much time on administrative work instead of focusing on what you do best...</p>
           <p>Or you're struggling with managing emails, scheduling, social media, and keeping up with technology while trying to grow your business.</p>
           <p className="bold">If you're ready to delegate and scale, I'm here to help!</p>
+        </div>
+      </section>
+
+      {/* Value Proposition Section */}
+      <section className="value-prop">
+        <div className="value-content">
+          <h2>Save 20+ Hours Weekly with Professional Virtual Assistant Services</h2>
+          <div className="value-grid">
+            <div className="value-item">
+              <h3>🎯 What I Do</h3>
+              <p>Handle your admin tasks, web design, outreach campaigns, and AI automation so you can focus on growing your business</p>
+            </div>
+            <div className="value-item">
+              <h3>💰 Why It Matters</h3>
+              <p>Startup-friendly rates while you get back your most valuable asset - time to work ON your business, not IN it</p>
+            </div>
+            <div className="value-item">
+              <h3>🚀 The Result</h3>
+              <p>Scale faster with professional support that grows with you, without the overhead of hiring full-time staff</p>
+            </div>
+          </div>
         </div>
       </section>
 

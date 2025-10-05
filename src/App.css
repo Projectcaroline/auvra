@@ -29,7 +29,7 @@ body {
   z-index: 1000;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(139, 111, 71, 0.3);
-  min-height: 70px;
+  min-height: 80px;
 }
 
 .nav-brand {
@@ -85,7 +85,7 @@ body {
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, #f7f3ed 0%, #ede4d3 50%, #e6d7c3 100%);
-  padding: 10rem 3rem 6rem;
+  padding: 12rem 3rem 8rem;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -340,7 +340,7 @@ body {
 /* Value Proposition Section */
 .value-prop {
   background: linear-gradient(135deg, #e6d7c3 0%, #d4c4a8 100%);
-  padding: 4rem 3rem;
+  padding: 6rem 3rem;
   position: relative;
 }
 
@@ -399,7 +399,7 @@ body {
 /* About Section */
 .about {
   background: linear-gradient(135deg, #f7f3ed 0%, #ede4d3 100%);
-  padding: 8rem 3rem;
+  padding: 6rem 3rem;
   text-align: center;
   position: relative;
 }
@@ -1050,6 +1050,7 @@ body {
 @media (max-width: 1024px) {
   .nav {
     padding: 1rem 2rem;
+    min-height: 70px;
   }
   
   .nav-menu {
@@ -1057,7 +1058,7 @@ body {
   }
   
   .hero {
-    padding: 8rem 2rem 4rem;
+    padding: 10rem 2rem 6rem;
   }
   
   .hero-content,
@@ -1104,7 +1105,7 @@ body {
     padding: 1rem 1.5rem;
     flex-direction: column;
     align-items: center;
-    min-height: 120px;
+    min-height: 140px;
     gap: 1rem;
   }
   
@@ -1137,7 +1138,7 @@ body {
   }
   
   .hero {
-    padding: 10rem 1.5rem 3rem;
+    padding: 12rem 1.5rem 5rem;
   }
   
   .hero-text h1 {
@@ -1275,11 +1276,11 @@ body {
   .packages,
   .why-work,
   .final-cta {
-    padding: 4rem 1.5rem;
+    padding: 5rem 1.5rem;
   }
   
   .value-prop {
-    padding: 3rem 1.5rem;
+    padding: 4rem 1.5rem;
   }
   
   .legal-page {
