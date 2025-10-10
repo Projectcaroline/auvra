@@ -348,7 +348,7 @@ function App() {
         <div className="footer-content">
           <div className="footer-brand">
             <h3>TWENTYSUM</h3>
-            <p>Professional Virtual Assistant Services - "Buy back your time by Dan Martell"</p>
+            <p>Professional Virtual Assistant Services - "Buy back your time by Dan Martel"</p>
           </div>
           <div className="footer-links">
             <a href="https://wa.me/264812568924" target="_blank" rel="noopener noreferrer">
