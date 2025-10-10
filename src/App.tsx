@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import './App.css';
+import ShareButton from './components/ShareButton';
 import ServicePages from './components/ServicePages';
 import LegalPages from './components/LegalPages';
 
