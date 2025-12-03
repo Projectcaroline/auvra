@@ -41,7 +41,7 @@ function App() {
             </div>
           </div>
           <div className="hero-image">
-            <img src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Professional workspace" />
+            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600&h=500" alt="Elite professional workspace" />
           </div>
         </div>
       </section>
@@ -58,7 +58,7 @@ function App() {
               <button className="btn-learn-more">LEARN MORE</button>
             </div>
             <div className="about-image">
-              <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=500&h=600" alt="Professional photographer" />
+              <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=500&h=600" alt="Elite creative professional" />
             </div>
           </div>
         </div>
@@ -69,7 +69,7 @@ function App() {
         <div className="container">
           <div className="vision-content">
             <div className="vision-image">
-              <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=500&h=600" alt="Creative professional" />
+              <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=500&h=600" alt="Luxury creative studio" />
             </div>
             <div className="vision-text">
               <div className="vision-badge">THE CREATIVE VISION BEHIND THE STUDIO</div>
@@ -92,7 +92,7 @@ function App() {
           <div className="services-grid">
             <div className="service-card large">
               <div className="service-image">
-                <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Photography service" />
+                <img src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Elite photography service" />
               </div>
               <div className="service-content">
                 <div className="service-number">01</div>
@@ -137,21 +137,21 @@ function App() {
           <div className="testimonials-grid">
             <div className="testimonial-card">
               <div className="testimonial-avatar">
-                <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=100&h=100" alt="Client" />
+                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100&h=100" alt="Elite client testimonial" />
               </div>
               <h4>Clara King</h4>
               <p>"Working with this team transformed our brand presence. Their attention to detail and creative vision exceeded all our expectations."</p>
             </div>
             <div className="testimonial-card">
               <div className="testimonial-avatar">
-                <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100" alt="Client" />
+                <img src="https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=100&h=100" alt="Elite client testimonial" />
               </div>
               <h4>Clara King</h4>
               <p>"The photography work was exceptional. Every shot captured exactly what we envisioned for our brand story."</p>
             </div>
             <div className="testimonial-card">
               <div className="testimonial-avatar">
-                <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=100&h=100" alt="Client" />
+                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100" alt="Elite client testimonial" />
               </div>
               <h4>Clara King</h4>
               <p>"Professional, creative, and results-driven. This team delivers quality work that makes a real difference."</p>
@@ -187,22 +187,22 @@ function App() {
           </div>
           <div className="portfolio-grid">
             <div className="portfolio-item">
-              <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Portfolio item" />
+              <img src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Elite portfolio work" />
             </div>
             <div className="portfolio-item">
-              <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Portfolio item" />
+              <img src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Elite portfolio work" />
             </div>
             <div className="portfolio-item">
-              <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Portfolio item" />
+              <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Elite portfolio work" />
             </div>
             <div className="portfolio-item">
-              <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Portfolio item" />
+              <img src="https://images.pexels.com/photos/1181719/pexels-photo-1181719.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Elite portfolio work" />
             </div>
             <div className="portfolio-item">
-              <img src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Portfolio item" />
+              <img src="https://images.pexels.com/photos/1181772/pexels-photo-1181772.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Elite portfolio work" />
             </div>
             <div className="portfolio-item">
-              <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Portfolio item" />
+              <img src="https://images.pexels.com/photos/1181775/pexels-photo-1181775.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Elite portfolio work" />
             </div>
           </div>
           <div className="portfolio-categories-bottom">
