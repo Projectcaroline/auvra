@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowRight, Check, Shield, Zap, Target, MessageCircle, X } from 'lucide-react';
 
-export default function App() {
+const App = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [chatOpen, setChatOpen] = useState(false);
   const [chatStep, setChatStep] = useState(0);
@@ -314,4 +314,3 @@ export default function App() {
       <ChatBot />
     </div>
   );
-}
