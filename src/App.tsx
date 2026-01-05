@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Camera, Play, Palette, Share2, ArrowRight, Instagram, Phone, Mail, MapPin, User, Award, Target } from 'lucide-react';
+import { Camera, Play, Palette, Share2, ArrowRight, Instagram, Phone, Mail, MapPin, User, Award, Target, Shield, Zap, Crown } from 'lucide-react';
 import './App.css';
 
 export default function App() {
@@ -20,9 +20,9 @@ export default function App() {
         <div className="nav-container">
           <div className="nav-brand">TWENTYSUM</div>
           <div className="nav-menu">
-            <a href="#services">SERVICES</a>
+            <a href="#offers">OFFERS</a>
             <a href="#about">ABOUT</a>
-            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#audit">AUDIT</a>
             <a href="#contact">CONTACT</a>
           </div>
         </div>
@@ -32,130 +32,167 @@ export default function App() {
       <section className="hero">
         <div className="hero-content">
           <div className="hero-text">
-            <div className="hero-badge">ELITE BRAND DEVELOPMENT</div>
-            <h1>CREATIVE SERVICES THAT<br />ELEVATE YOUR BRAND VISUALS<br />ONLINE AND BEYOND!</h1>
-            <p className="hero-description">Photography that captures more than just a moment - we create visuals that communicate your value, build trust, and spark connection.</p>
+            <div className="hero-badge">PRIVATE AI FOR THE POWERFUL</div>
+            <h1>QUIET POWER.<br />AUTOMATED WEALTH.</h1>
+            <p className="hero-description">The elite don't work harder — they systemise, automate, and scale quietly.</p>
+            <p className="hero-description">Welcome to Twentysum — your private partner in luxury AI automation, designed for founders, investors & high-performers who refuse to fall behind.</p>
+            <div className="hero-offer">
+              <h3>Private Intelligence Guide — $149</h3>
+              <p>The AI systems the wealthy use to scale quietly.</p>
+              <p className="hero-features">📎 Strictly limited access | Discreet automation | Premium service</p>
+            </div>
             <div className="hero-buttons">
-              <button className="btn-primary">VIEW OUR WORK</button>
-              <button className="btn-secondary">GET STARTED</button>
+              <button className="btn-primary">BUY THE PRIVATE GUIDE</button>
+              <button className="btn-secondary">REQUEST PRIVATE AUDIT</button>
             </div>
           </div>
           <div className="hero-image">
-            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600&h=500" alt="Elite professional workspace" />
+            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600&h=500" alt="Elite AI automation workspace" />
           </div>
         </div>
       </section>
 
-      {/* About Section */}
+      {/* Sub-Hero Section */}
       <section className="about-section">
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <div className="about-badge">CREATIVE BRAND DEVELOPMENT</div>
-              <h2>Photography That<br />Captures More Than<br />Just a Moment</h2>
-              <p>At NPERFECTSTUDIO, we create visuals that do more than look good; they communicate your value, build trust, and spark connection.</p>
-              <p>Our approach combines technical excellence with creative vision to deliver images that not only showcase your brand but tell your story in a way that resonates with your audience.</p>
-              <button className="btn-learn-more">LEARN MORE</button>
+              <div className="about-badge">THE REALITY CHECK</div>
+              <h2>The wealthy fear one thing<br />more than loss:<br />being left behind.</h2>
+              <p><strong>AI isn't coming — it's here.</strong></p>
+              <p>Those who hesitate lose:</p>
+              <ul className="loss-list">
+                <li>Time</li>
+                <li>Opportunity</li>
+                <li>Status</li>
+                <li>Market dominance</li>
+              </ul>
+              <p><strong>Early adopters don't compete. They own the room.</strong></p>
             </div>
             <div className="about-image">
-              <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=500&h=600" alt="Elite creative professional" />
+              <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=500&h=600" alt="Elite AI automation" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Vision Section */}
+      {/* What You Get Section */}
       <section className="vision-section">
         <div className="container">
           <div className="vision-content">
             <div className="vision-image">
-              <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=500&h=600" alt="Luxury creative studio" />
+              <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=500&h=600" alt="Private AI Intelligence" />
             </div>
             <div className="vision-text">
-              <div className="vision-badge">THE CREATIVE VISION BEHIND THE STUDIO</div>
-              <h2>THE CREATIVE VISION<br />BEHIND THE STUDIO</h2>
-              <p>We believe that every brand has a unique story to tell, and our mission is to help you tell yours through compelling visuals that capture attention and drive engagement.</p>
-              <p>Our team combines years of experience with cutting-edge techniques to deliver results that exceed expectations and help your brand stand out in today's competitive marketplace.</p>
-              <button className="btn-vision">LEARN MORE</button>
+              <div className="vision-badge">WHAT YOU GET</div>
+              <h2>PRIVATE AI INTELLIGENCE<br />+ EXECUTION SUPPORT</h2>
+              <div className="features-list">
+                <p>✔ Elite automation strategy</p>
+                <p>✔ High-touch human support</p>
+                <p>✔ Systems built privately — no noise, no exposure</p>
+                <p>✔ AI appointment setting</p>
+                <p>✔ High-end lead automation</p>
+                <p>✔ Personalised workflow design for elite lifestyles</p>
+              </div>
+              <p><strong>This is not mass-market automation.</strong></p>
+              <p>This is precision execution for people who value discretion, speed & results.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="services-section">
+      {/* Core Offers Section */}
+      <section className="services-section" id="offers">
         <div className="container">
           <div className="services-header">
-            <div className="services-badge">WE'RE ALWAYS BUILDING</div>
-            <h2>OUR SERVICES</h2>
+            <div className="services-badge">CORE OFFERS</div>
+            <h2>PRIVATE AI INTELLIGENCE + EXECUTION SUPPORT</h2>
           </div>
           <div className="services-grid">
             <div className="service-card large">
-              <div className="service-image">
-                <img src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=600&h=400" alt="Elite photography service" />
-              </div>
               <div className="service-content">
-                <div className="service-number">01</div>
-                <h3>PHOTOGRAPHY</h3>
-                <p>Professional photography services that capture your brand's essence and create lasting impressions.</p>
+                <div className="service-number">🥇</div>
+                <h3>THE PRIVATE AI WEALTH GUIDE</h3>
+                <div className="price">$149</div>
+                <p>Insider playbook for high-end client acquisition & automation.</p>
+                <div className="includes">
+                  <p>Includes:</p>
+                  <ul>
+                    <li>AI luxury positioning systems</li>
+                    <li>Quiet lead-gen automation</li>
+                    <li>High-ticket appointment systems</li>
+                    <li>Wealth-preservation automation mindset</li>
+                    <li>Execution checklist</li>
+                    <li>Discreet tools</li>
+                  </ul>
+                  <p><strong>Purchase to unlock consulting access. Only buyers may request a call.</strong></p>
+                </div>
               </div>
             </div>
             <div className="service-card">
               <div className="service-content">
-                <div className="service-number">02</div>
-                <h3>VIDEOGRAPHY</h3>
-                <p>Dynamic video content that tells your story and engages your audience across all platforms.</p>
+                <div className="service-number">💼</div>
+                <h3>AI CONCIERGE IMPLEMENTATION</h3>
+                <div className="price">$5,500</div>
+                <div className="value">Value: $12,000+</div>
+                <p>For founders & entrepreneurs who want it done for them.</p>
+                <ul>
+                  <li>Elite DM + appointment automation</li>
+                  <li>High-end CRM workflow setup</li>
+                  <li>Automated cold outreach flows</li>
+                  <li>Luxury brand messaging AI-trained to your voice</li>
+                  <li>Confidential build + aftercare support</li>
+                </ul>
+                <p><strong>Apply privately</strong></p>
               </div>
             </div>
             <div className="service-card">
               <div className="service-content">
-                <div className="service-number">03</div>
-                <h3>GRAPHIC DESIGN</h3>
-                <p>Creative design solutions that communicate your message with visual impact and professional polish.</p>
+                <div className="service-number">🤝</div>
+                <h3>PRIVATE AI AUDIT</h3>
+                <div className="price">$250</div>
+                <p>30-minute confidential strategy call</p>
+                <p>Credited toward system if accepted</p>
+                <p><strong>Not everyone is accepted — we work with clients who value privacy, long-term scale, and excellence.</strong></p>
               </div>
             </div>
-            <div className="service-card">
-              <div className="service-content">
-                <div className="service-number">04</div>
-                <h3>SOCIAL MEDIA MARKETING</h3>
-                <p>Strategic social media campaigns that build your brand presence and drive meaningful engagement.</p>
-              </div>
-            </div>
-          </div>
-          <div className="services-cta">
-            <button className="btn-services">VIEW OUR SERVICES</button>
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Why Twentysum Section */}
       <section className="testimonials-section">
         <div className="container">
           <div className="testimonials-header">
-            <h2>OUR TESTIMONIALS</h2>
+            <h2>WHY WORK WITH TWENTYSUM</h2>
+            <p>Because you don't chase trends.</p>
+            <p>You build unfair advantage quietly while the world screams for attention.</p>
           </div>
           <div className="testimonials-grid">
             <div className="testimonial-card">
-              <div className="testimonial-avatar">
-                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100&h=100" alt="Elite client testimonial" />
+              <div className="testimonial-icon">
+                <Shield size={40} />
               </div>
-              <h4>Clara King</h4>
-              <p>"Working with this team transformed our brand presence. Their attention to detail and creative vision exceeded all our expectations."</p>
+              <h4>Private</h4>
+              <p>Discreet automation systems built away from public scrutiny. Your competitive advantage stays hidden.</p>
             </div>
             <div className="testimonial-card">
-              <div className="testimonial-avatar">
-                <img src="https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=100&h=100" alt="Elite client testimonial" />
+              <div className="testimonial-icon">
+                <Zap size={40} />
               </div>
-              <h4>Clara King</h4>
-              <p>"The photography work was exceptional. Every shot captured exactly what we envisioned for our brand story."</p>
+              <h4>Intelligent</h4>
+              <p>AI systems designed for sophisticated operations. Not basic automation — strategic intelligence.</p>
             </div>
             <div className="testimonial-card">
-              <div className="testimonial-avatar">
-                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100" alt="Elite client testimonial" />
+              <div className="testimonial-icon">
+                <Crown size={40} />
               </div>
-              <h4>Clara King</h4>
-              <p>"Professional, creative, and results-driven. This team delivers quality work that makes a real difference."</p>
+              <h4>Elite</h4>
+              <p>Luxury performance engineering for those who demand excellence in every detail.</p>
             </div>
+          </div>
+          <div className="luxury-statement">
+            <h3>This is luxury performance engineering.</h3>
           </div>
         </div>
       </section>
@@ -164,56 +201,11 @@ export default function App() {
       <section className="cta-section">
         <div className="container">
           <div className="cta-content">
-            <h2>LET'S CREATE THE VISUALS<br />YOUR BRAND DESERVES</h2>
-            <p>Ready to elevate your brand with professional photography and creative services? Let's discuss your project and bring your vision to life.</p>
-            <button className="btn-cta">VIEW OUR WORK</button>
-          </div>
-        </div>
-      </section>
-
-      {/* Portfolio Section */}
-      <section className="portfolio-section">
-        <div className="container">
-          <div className="portfolio-header">
-            <h2>PORTFOLIO</h2>
-            <p>A curated selection of our finest work showcasing the breadth and depth of our creative capabilities across various industries and project types.</p>
-          </div>
-          <div className="portfolio-categories">
-            <div className="category-tabs">
-              <span className="tab active">INSTAGRAM</span>
-              <span className="tab">FACEBOOK</span>
-              <span className="tab">THIS ADS</span>
-            </div>
-          </div>
-          <div className="portfolio-grid">
-            <div className="portfolio-item">
-              <img src="https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Elite portfolio work" />
-            </div>
-            <div className="portfolio-item">
-              <img src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Elite portfolio work" />
-            </div>
-            <div className="portfolio-item">
-              <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Elite portfolio work" />
-            </div>
-            <div className="portfolio-item">
-              <img src="https://images.pexels.com/photos/1181719/pexels-photo-1181719.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Elite portfolio work" />
-            </div>
-            <div className="portfolio-item">
-              <img src="https://images.pexels.com/photos/1181772/pexels-photo-1181772.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Elite portfolio work" />
-            </div>
-            <div className="portfolio-item">
-              <img src="https://images.pexels.com/photos/1181775/pexels-photo-1181775.jpeg?auto=compress&cs=tinysrgb&w=300&h=300" alt="Elite portfolio work" />
-            </div>
-          </div>
-          <div className="portfolio-categories-bottom">
-            <div className="category-item">
-              <h4>Photography</h4>
-            </div>
-            <div className="category-item">
-              <h4>Videography</h4>
-            </div>
-            <div className="category-item">
-              <h4>Graphics and Socials</h4>
+            <h2>ELITE ONLY. QUIET ONLY.<br />RESULTS ONLY.</h2>
+            <div className="cta-buttons">
+              <button className="btn-cta">BUY THE GUIDE — $149</button>
+              <p className="cta-note">Required before consulting access</p>
+              <button className="btn-cta-secondary">REQUEST PRIVATE AUDIT — $250</button>
             </div>
           </div>
         </div>
@@ -224,9 +216,10 @@ export default function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-left">
-              <h3>LET'S CONNECT!</h3>
-              <div className="footer-badge">NPERFECTSTUDIO</div>
-              <p>Ready to elevate your brand with stunning visuals? Get in touch and let's create something amazing together.</p>
+              <h3>BUILT FOR THOSE WHO MOVE DIFFERENTLY</h3>
+              <div className="footer-badge">TWENTYSUM</div>
+              <p>Private AI for the powerful.</p>
+              <p>Quiet power. Automated wealth. Discreet automation for elite founders, investors & high-performers who refuse to fall behind.</p>
               <div className="footer-contact">
                 <div className="contact-item">
                   <Phone size={16} />
@@ -240,12 +233,12 @@ export default function App() {
             </div>
             <div className="footer-right">
               <div className="footer-services">
-                <h4>OUR SERVICES</h4>
+                <h4>PRIVATE SERVICES</h4>
                 <ul>
-                  <li>Photography</li>
-                  <li>Videography</li>
-                  <li>Graphic Design</li>
-                  <li>Social Media Marketing</li>
+                  <li>Private AI Wealth Guide — $149</li>
+                  <li>AI Concierge Implementation — $5,500</li>
+                  <li>Private AI Audit — $250</li>
+                  <li>Elite Automation Systems</li>
                 </ul>
               </div>
               <div className="footer-social">
@@ -255,7 +248,7 @@ export default function App() {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>© 2025 Twentysum. Elite creative services for discerning brands.</p>
+            <p>© 2025 Twentysum. Private AI for the powerful.</p>
           </div>
         </div>
       </footer>
