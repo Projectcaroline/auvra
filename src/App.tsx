@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Camera, Play, Palette, Share2, ArrowRight, Instagram, Phone, Mail, MapPin, User, Award, Target, Shield, Zap, Crown } from 'lucide-react';
-import './App.css';
+import { ArrowRight, Check, Shield, Zap, Target, MessageCircle, X } from 'lucide-react';
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [chatOpen, setChatOpen] = useState(false);
+  const [chatStep, setChatStep] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,6 +14,83 @@ export default function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const ChatBot = () => {
+    const chatSteps = [
+      {
+        message: "Are you here to learn or to implement?",
+        options: [
+          { text: "Learn first", next: 1 },
+          { text: "Ready to implement", next: 2 }
+        ]
+      },
+      {
+        message: "Perfect. The Elite AI Advantage guide is designed for operators who want proven systems without the fluff.",
+        options: [
+          { text: "Get the guide", action: "guide" },
+          { text: "Tell me more", next: 3 }
+        ]
+      },
+      {
+        message: "Excellent. Our private services are for serious operators ready to scale. We'll need to qualify the fit first.",
+        options: [
+          { text: "Request private setup", action: "services" },
+          { text: "See the guide first", action: "guide" }
+        ]
+      },
+      {
+        message: "The guide covers AI lead qualification, conversation automation, and operational systems. Built from real implementations, not theory.",
+        options: [
+          { text: "Get the guide", action: "guide" }
+        ]
+      }
+    ];
+
+    const handleChatAction = (action) => {
+      if (action === 'guide') {
+        document.getElementById('product')?.scrollIntoView({ behavior: 'smooth' });
+        setChatOpen(false);
+      } else if (action === 'services') {
+        document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+        setChatOpen(false);
+      }
+    };
+
+    const handleOptionClick = (option) => {
+      if (option.action) {
+        handleChatAction(option.action);
+      } else if (option.next !== undefined) {
+        setChatStep(option.next);
+      }
+    };
+
+    return (
+      <div className={`chatbot ${chatOpen ? 'open' : ''}`}>
+        <div className="chatbot-header">
+          <span>Twentysum Assistant</span>
+          <button onClick={() => setChatOpen(false)}>
+            <X size={16} />
+          </button>
+        </div>
+        <div className="chatbot-content">
+          <div className="chat-message">
+            {chatSteps[chatStep].message}
+          </div>
+          <div className="chat-options">
+            {chatSteps[chatStep].options.map((option, index) => (
+              <button
+                key={index}
+                className="chat-option"
+                onClick={() => handleOptionClick(option)}
+              >
+                {option.text}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="app">
       {/* Navigation */}
@@ -20,238 +98,220 @@ export default function App() {
         <div className="nav-container">
           <div className="nav-brand">TWENTYSUM</div>
           <div className="nav-menu">
-            <a href="#offers">OFFERS</a>
-            <a href="#about">ABOUT</a>
-            <a href="#audit">AUDIT</a>
-            <a href="#contact">CONTACT</a>
+            <a href="#product">Guide</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
       <section className="hero">
-        <div className="hero-content">
-          <div className="hero-text">
-            <div className="hero-badge">PRIVATE AI FOR THE POWERFUL</div>
-            <h1>QUIET POWER.<br />AUTOMATED WEALTH.</h1>
-            <p className="hero-description">The elite don't work harder — they systemise, automate, and scale quietly.</p>
-            <p className="hero-description">Welcome to Twentysum — your private partner in luxury AI automation, designed for founders, investors & high-performers who refuse to fall behind.</p>
-            <div className="hero-offer">
-              <h3>Private Intelligence Guide — $149</h3>
-              <p>The AI systems the wealthy use to scale quietly.</p>
-              <p className="hero-features">📎 Strictly limited access | Discreet automation | Premium service</p>
-            </div>
-            <div className="hero-buttons">
-              <button className="btn-primary">BUY THE PRIVATE GUIDE</button>
-              <button className="btn-secondary">REQUEST PRIVATE AUDIT</button>
-            </div>
-          </div>
-          <div className="hero-image">
-            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600&h=500" alt="Elite AI automation workspace" />
-          </div>
-        </div>
-      </section>
-
-      {/* Sub-Hero Section */}
-      <section className="about-section">
-        <div className="container">
-          <div className="about-content">
-            <div className="about-text">
-              <div className="about-badge">THE REALITY CHECK</div>
-              <h2>The wealthy fear one thing<br />more than loss:<br />being left behind.</h2>
-              <p><strong>AI isn't coming — it's here.</strong></p>
-              <p>Those who hesitate lose:</p>
-              <ul className="loss-list">
-                <li>Time</li>
-                <li>Opportunity</li>
-                <li>Status</li>
-                <li>Market dominance</li>
-              </ul>
-              <p><strong>Early adopters don't compete. They own the room.</strong></p>
-            </div>
-            <div className="about-image">
-              <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=500&h=600" alt="Elite AI automation" />
+        <div className="hero-container">
+          <div className="hero-content">
+            <h1>AI systems that capture, qualify, and convert — without human bottlenecks.</h1>
+            <p className="hero-subtitle">
+              We help founders and agencies automate conversations, leads, and operations using intelligent AI systems.
+            </p>
+            <div className="hero-actions">
+              <button className="btn-primary" onClick={() => document.getElementById('product')?.scrollIntoView({ behavior: 'smooth' })}>
+                Get the Elite AI Playbook
+              </button>
+              <a href="#services" className="link-secondary">View Private Services</a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What You Get Section */}
-      <section className="vision-section">
+      {/* Digital Product Section */}
+      <section className="product-section" id="product">
         <div className="container">
-          <div className="vision-content">
-            <div className="vision-image">
-              <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=500&h=600" alt="Private AI Intelligence" />
-            </div>
-            <div className="vision-text">
-              <div className="vision-badge">WHAT YOU GET</div>
-              <h2>PRIVATE AI INTELLIGENCE<br />+ EXECUTION SUPPORT</h2>
-              <div className="features-list">
-                <p>✔ Elite automation strategy</p>
-                <p>✔ High-touch human support</p>
-                <p>✔ Systems built privately — no noise, no exposure</p>
-                <p>✔ AI appointment setting</p>
-                <p>✔ High-end lead automation</p>
-                <p>✔ Personalised workflow design for elite lifestyles</p>
-              </div>
-              <p><strong>This is not mass-market automation.</strong></p>
-              <p>This is precision execution for people who value discretion, speed & results.</p>
-            </div>
+          <div className="section-header">
+            <h2>The Elite AI Advantage</h2>
+            <p>A confidential guide built for serious operators. Not beginner fluff.</p>
           </div>
-        </div>
-      </section>
-
-      {/* Core Offers Section */}
-      <section className="services-section" id="offers">
-        <div className="container">
-          <div className="services-header">
-            <div className="services-badge">CORE OFFERS</div>
-            <h2>PRIVATE AI INTELLIGENCE + EXECUTION SUPPORT</h2>
-          </div>
-          <div className="services-grid">
-            <div className="service-card large">
-              <div className="service-content">
-                <div className="service-number">🥇</div>
-                <h3>THE PRIVATE AI WEALTH GUIDE</h3>
+          
+          <div className="product-grid">
+            <div className="product-card">
+              <div className="product-header">
+                <h3>Core Guide</h3>
                 <div className="price">$149</div>
-                <p>Insider playbook for high-end client acquisition & automation.</p>
-                <div className="includes">
-                  <p>Includes:</p>
-                  <ul>
-                    <li>AI luxury positioning systems</li>
-                    <li>Quiet lead-gen automation</li>
-                    <li>High-ticket appointment systems</li>
-                    <li>Wealth-preservation automation mindset</li>
-                    <li>Execution checklist</li>
-                    <li>Discreet tools</li>
-                  </ul>
-                  <p><strong>Purchase to unlock consulting access. Only buyers may request a call.</strong></p>
-                </div>
               </div>
-            </div>
-            <div className="service-card">
-              <div className="service-content">
-                <div className="service-number">💼</div>
-                <h3>AI CONCIERGE IMPLEMENTATION</h3>
-                <div className="price">$5,500</div>
-                <div className="value">Value: $12,000+</div>
-                <p>For founders & entrepreneurs who want it done for them.</p>
+              <div className="product-content">
+                <p>Essential AI systems framework</p>
                 <ul>
-                  <li>Elite DM + appointment automation</li>
-                  <li>High-end CRM workflow setup</li>
-                  <li>Automated cold outreach flows</li>
-                  <li>Luxury brand messaging AI-trained to your voice</li>
-                  <li>Confidential build + aftercare support</li>
+                  <li>PDF guide (47 pages)</li>
+                  <li>Core automation principles</li>
+                  <li>Implementation checklist</li>
                 </ul>
-                <p><strong>Apply privately</strong></p>
+                <button className="btn-product">Get Core Guide</button>
               </div>
             </div>
+
+            <div className="product-card featured">
+              <div className="product-badge">Most Popular</div>
+              <div className="product-header">
+                <h3>Elite Bundle</h3>
+                <div className="price">$497</div>
+              </div>
+              <div className="product-content">
+                <p>Complete AI automation system</p>
+                <ul>
+                  <li>Complete PDF guide</li>
+                  <li>Ready-to-use templates</li>
+                  <li>90-day automation roadmap</li>
+                  <li>Implementation worksheets</li>
+                </ul>
+                <button className="btn-product">Get Elite Bundle</button>
+              </div>
+            </div>
+
+            <div className="product-card">
+              <div className="product-header">
+                <h3>Private Operator</h3>
+                <div className="price">$1,497</div>
+              </div>
+              <div className="product-content">
+                <p>Everything + direct access</p>
+                <ul>
+                  <li>Everything in Elite Bundle</li>
+                  <li>Private strategy call</li>
+                  <li>Direct chat access (30 days)</li>
+                  <li>Application required</li>
+                </ul>
+                <button className="btn-product">Apply Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div className="product-details">
+            <div className="detail-grid">
+              <div className="detail-item">
+                <h4>What Problem It Solves</h4>
+                <p>Eliminates manual lead qualification, reduces response time from hours to seconds, and scales conversations without hiring.</p>
+              </div>
+              <div className="detail-item">
+                <h4>Who It's For</h4>
+                <p>Founders, agency owners, and operators managing 50+ leads monthly who value systems over shortcuts.</p>
+              </div>
+              <div className="detail-item">
+                <h4>Transformation Delivered</h4>
+                <p>From reactive manual processes to proactive AI systems that work while you focus on high-value decisions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* High-Ticket Services */}
+      <section className="services-section" id="services">
+        <div className="container">
+          <div className="section-header">
+            <h2>Private Services</h2>
+            <p>For operators ready to implement at scale.</p>
+          </div>
+
+          <div className="services-grid">
             <div className="service-card">
-              <div className="service-content">
-                <div className="service-number">🤝</div>
-                <h3>PRIVATE AI AUDIT</h3>
-                <div className="price">$250</div>
-                <p>30-minute confidential strategy call</p>
-                <p>Credited toward system if accepted</p>
-                <p><strong>Not everyone is accepted — we work with clients who value privacy, long-term scale, and excellence.</strong></p>
+              <div className="service-icon">
+                <Target size={32} />
+              </div>
+              <h3>AI Automation Systems</h3>
+              <p>End-to-end automation that handles lead capture through conversion. Built specifically for your operations.</p>
+              <div className="service-outcomes">
+                <span>• 80% reduction in manual tasks</span>
+                <span>• 24/7 lead qualification</span>
+                <span>• Seamless CRM integration</span>
               </div>
             </div>
+
+            <div className="service-card">
+              <div className="service-icon">
+                <MessageCircle size={32} />
+              </div>
+              <h3>AI Agents for Lead Handling</h3>
+              <p>Intelligent agents that qualify, nurture, and schedule high-intent prospects automatically.</p>
+              <div className="service-outcomes">
+                <span>• Instant response to inquiries</span>
+                <span>• Qualified appointments only</span>
+                <span>• Natural conversation flow</span>
+              </div>
+            </div>
+
+            <div className="service-card">
+              <div className="service-icon">
+                <Zap size={32} />
+              </div>
+              <h3>AI Websites</h3>
+              <p>Conversion-optimized websites with built-in AI systems. Powered by modern technology, designed for results.</p>
+              <div className="service-outcomes">
+                <span>• Integrated lead capture</span>
+                <span>• Real-time visitor engagement</span>
+                <span>• Performance analytics</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="services-cta">
+            <button className="btn-services">Request Private Setup</button>
+            <p className="services-note">Applications reviewed within 48 hours</p>
           </div>
         </div>
       </section>
 
-      {/* Why Twentysum Section */}
-      <section className="testimonials-section">
+      {/* Social Proof */}
+      <section className="proof-section">
         <div className="container">
-          <div className="testimonials-header">
-            <h2>WHY WORK WITH TWENTYSUM</h2>
-            <p>Because you don't chase trends.</p>
-            <p>You build unfair advantage quietly while the world screams for attention.</p>
-          </div>
-          <div className="testimonials-grid">
-            <div className="testimonial-card">
-              <div className="testimonial-icon">
-                <Shield size={40} />
+          <div className="proof-content">
+            <h3>Built for operators in real estate, professional services, and agencies</h3>
+            <div className="proof-grid">
+              <div className="proof-item">
+                <h4>Proven Frameworks</h4>
+                <p>Systems tested across multiple industries and business models</p>
               </div>
-              <h4>Private</h4>
-              <p>Discreet automation systems built away from public scrutiny. Your competitive advantage stays hidden.</p>
-            </div>
-            <div className="testimonial-card">
-              <div className="testimonial-icon">
-                <Zap size={40} />
+              <div className="proof-item">
+                <h4>Real Implementations</h4>
+                <p>Not theory — actual automation systems running in live businesses</p>
               </div>
-              <h4>Intelligent</h4>
-              <p>AI systems designed for sophisticated operations. Not basic automation — strategic intelligence.</p>
-            </div>
-            <div className="testimonial-card">
-              <div className="testimonial-icon">
-                <Crown size={40} />
+              <div className="proof-item">
+                <h4>Operator-Focused</h4>
+                <p>Designed by operators who understand the reality of scaling operations</p>
               </div>
-              <h4>Elite</h4>
-              <p>Luxury performance engineering for those who demand excellence in every detail.</p>
-            </div>
-          </div>
-          <div className="luxury-statement">
-            <h3>This is luxury performance engineering.</h3>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="cta-section">
-        <div className="container">
-          <div className="cta-content">
-            <h2>ELITE ONLY. QUIET ONLY.<br />RESULTS ONLY.</h2>
-            <div className="cta-buttons">
-              <button className="btn-cta">BUY THE GUIDE — $149</button>
-              <p className="cta-note">Required before consulting access</p>
-              <button className="btn-cta-secondary">REQUEST PRIVATE AUDIT — $250</button>
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="footer">
+      <footer className="footer" id="contact">
         <div className="container">
           <div className="footer-content">
-            <div className="footer-left">
-              <h3>BUILT FOR THOSE WHO MOVE DIFFERENTLY</h3>
-              <div className="footer-badge">TWENTYSUM</div>
-              <p>Private AI for the powerful.</p>
-              <p>Quiet power. Automated wealth. Discreet automation for elite founders, investors & high-performers who refuse to fall behind.</p>
-              <div className="footer-contact">
-                <div className="contact-item">
-                  <Phone size={16} />
-                  <span>+264 81 256 8924</span>
-                </div>
-                <div className="contact-item">
-                  <Mail size={16} />
-                  <span>ajarlandings@gmail.com</span>
-                </div>
-              </div>
+            <div className="footer-brand">
+              <h3>TWENTYSUM</h3>
+              <p>AI systems for serious operators.</p>
             </div>
-            <div className="footer-right">
-              <div className="footer-services">
-                <h4>PRIVATE SERVICES</h4>
-                <ul>
-                  <li>Private AI Wealth Guide — $149</li>
-                  <li>AI Concierge Implementation — $5,500</li>
-                  <li>Private AI Audit — $250</li>
-                  <li>Elite Automation Systems</li>
-                </ul>
-              </div>
-              <div className="footer-social">
-                <a href="https://www.instagram.com/twenty_sum" aria-label="Instagram"><Instagram size={20} /></a>
-                <a href="https://wa.me/264812568924" aria-label="WhatsApp"><Phone size={20} /></a>
-              </div>
+            <div className="footer-links">
+              <a href="#privacy">Privacy</a>
+              <a href="#terms">Terms</a>
+              <a href="mailto:hello@twentysum.com">Contact</a>
             </div>
           </div>
           <div className="footer-bottom">
-            <p>© 2025 Twentysum. Private AI for the powerful.</p>
+            <p>This is not for everyone — but if you know, you know.</p>
           </div>
         </div>
       </footer>
+
+      {/* Chat Button */}
+      <button 
+        className="chat-button"
+        onClick={() => setChatOpen(!chatOpen)}
+      >
+        <MessageCircle size={20} />
+      </button>
+
+      {/* Chatbot */}
+      <ChatBot />
     </div>
   );
 }
