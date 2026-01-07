@@ -214,40 +214,40 @@ const App = () => {
           <div className="grid md:grid-cols-3 gap-12 mb-16">
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                <Zap className="w-12 h-12 text-gray-900" />
+                <Zap className="w-12 h-12 text-black" />
               </div>
-              <h3 className="text-2xl font-medium mb-4 text-gray-900">Lead Conversation Automation</h3>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                AI systems that handle initial lead conversations, qualify prospects, and book meetings automatically.
+              <h3 className="text-2xl font-medium mb-4">AI Automation Systems</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                End-to-end automation that handles lead capture, qualification, and nurturing without human intervention.
               </p>
-              <div className="text-sm font-medium text-gray-900">
-                Outcome: 24/7 lead engagement with 3-5x higher conversion rates
+              <div className="text-sm font-medium text-black">
+                Outcome: 3-5x lead conversion with 80% less manual work
               </div>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                <Users className="w-12 h-12 text-gray-900" />
+                <Users className="w-12 h-12 text-black" />
               </div>
-              <h3 className="text-2xl font-medium mb-4 text-gray-900">Automated Follow-Up Systems</h3>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Intelligent follow-up sequences that nurture leads, send reminders, and ensure no opportunity is missed.
+              <h3 className="text-2xl font-medium mb-4">AI Agents for Lead Handling</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Intelligent agents that engage prospects, answer questions, and book qualified meetings automatically.
               </p>
-              <div className="text-sm font-medium text-gray-900">
-                Outcome: Zero leads slip through cracks, consistent follow-up
+              <div className="text-sm font-medium text-black">
+                Outcome: 24/7 lead engagement with human-level conversations
               </div>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                <Shield className="w-12 h-12 text-gray-900" />
+                <Shield className="w-12 h-12 text-black" />
               </div>
-              <h3 className="text-2xl font-medium mb-4 text-gray-900">Complete Integration Setup</h3>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Full integration with your CRM, calendar, and existing tools for seamless lead management.
+              <h3 className="text-2xl font-medium mb-4">AI Websites (Bolt-powered)</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                High-converting websites with integrated AI systems that qualify visitors and drive conversions.
               </p>
-              <div className="text-sm font-medium text-gray-900">
-                Outcome: Unified system that works with your existing workflow
+              <div className="text-sm font-medium text-black">
+                Outcome: Websites that sell while you sleep
               </div>
             </div>
           </div>
@@ -255,11 +255,11 @@ const App = () => {
           <div className="text-center">
             <button 
               onClick={() => handleChatResponse('implement')}
-              className="bg-black text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors mb-4"
+              className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors mb-4 shadow-lg"
             >
-              Request Private Setup
+              Get Lead Automation Setup
             </button>
-            <p className="text-gray-600">Limited availability. Serious inquiries only.</p>
+            <p className="text-gray-700">Limited availability. Qualified businesses only.</p>
           </div>
         </div>
       </section>
