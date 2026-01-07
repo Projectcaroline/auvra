@@ -44,24 +44,24 @@ const App = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-light leading-tight mb-8 tracking-tight">
-            AI systems that capture, qualify, and convert — without human bottlenecks.
+          <h1 className="text-5xl md:text-6xl font-light leading-tight mb-8 tracking-tight text-gray-900">
+            Automate your lead conversations and follow-up — so you never miss another opportunity.
           </h1>
-          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            We help founders and agencies automate conversations, leads, and operations using intelligent AI systems.
+          <p className="text-xl text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed">
+            Twentysum builds AI systems that handle your lead conversations, qualify prospects automatically, and ensure consistent follow-up — freeing your team to close deals instead of chasing leads.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button 
               onClick={() => document.getElementById('guide')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-black text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors"
+              className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors shadow-lg"
             >
-              Get the Elite AI Playbook
+              Get Lead Automation Guide
             </button>
             <a 
               href="#services" 
-              className="text-gray-600 hover:text-black transition-colors border-b border-transparent hover:border-black pb-1"
+              className="text-gray-700 hover:text-gray-900 transition-colors border-b border-transparent hover:border-gray-900 pb-1"
             >
-              View Private Services
+              See Automation Services
             </a>
           </div>
         </div>
@@ -103,27 +103,27 @@ const App = () => {
             {/* Core Guide */}
             <div className="border border-gray-200 p-8 bg-white">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-medium mb-4">Core Guide</h3>
+                <h3 className="text-2xl font-medium mb-4 text-gray-900">Core Guide</h3>
                 <div className="text-4xl font-light mb-4">$149</div>
-                <p className="text-gray-600">PDF guide with foundational AI automation frameworks</p>
+                <p className="text-gray-700">Complete guide to automating lead conversations and follow-up</p>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 text-black mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-600">47-page implementation guide</span>
+                  <Check className="w-5 h-5 text-gray-900 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-700">47-page lead automation guide</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 text-black mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-600">Conversation flow templates</span>
+                  <Check className="w-5 h-5 text-gray-900 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-700">Conversation flow templates</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 text-black mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-600">ROI calculation framework</span>
+                  <Check className="w-5 h-5 text-gray-900 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-700">Follow-up automation systems</span>
                 </li>
               </ul>
               <button 
                 onClick={() => handleChatResponse('core')}
-                className="w-full border border-black text-black py-3 hover:bg-black hover:text-white transition-colors"
+                className="w-full border border-gray-900 text-gray-900 py-3 hover:bg-gray-900 hover:text-white transition-colors"
               >
                 Get Core Guide
               </button>
