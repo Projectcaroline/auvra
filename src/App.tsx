@@ -103,27 +103,27 @@ const App = () => {
             {/* Core Guide */}
             <div className="border border-gray-200 p-8 bg-white">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-medium mb-4 text-gray-900">Core Guide</h3>
+                <h3 className="text-2xl font-medium mb-4">Core Guide</h3>
                 <div className="text-4xl font-light mb-4">$149</div>
-                <p className="text-gray-700">Complete guide to automating lead conversations and follow-up</p>
+                <p className="text-gray-600">PDF guide with foundational AI automation frameworks</p>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 text-gray-900 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-700">47-page lead automation guide</span>
+                  <Check className="w-5 h-5 text-black mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-600">47-page implementation guide</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 text-gray-900 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-700">Conversation flow templates</span>
+                  <Check className="w-5 h-5 text-black mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-600">Conversation flow templates</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 text-gray-900 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-700">Follow-up automation systems</span>
+                  <Check className="w-5 h-5 text-black mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-600">ROI calculation framework</span>
                 </li>
               </ul>
               <button 
                 onClick={() => handleChatResponse('core')}
-                className="w-full border border-gray-900 text-gray-900 py-3 hover:bg-gray-900 hover:text-white transition-colors"
+                className="w-full border border-black text-black py-3 hover:bg-black hover:text-white transition-colors"
               >
                 Get Core Guide
               </button>
@@ -168,31 +168,31 @@ const App = () => {
             {/* Private Operator */}
             <div className="border border-gray-200 p-8 bg-white">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-medium mb-4">Private Operator</h3>
+                <h3 className="text-2xl font-medium mb-4 text-gray-900">Private Implementation</h3>
                 <div className="text-4xl font-light mb-4">$1,497</div>
-                <p className="text-gray-600">Everything above plus direct access</p>
+                <p className="text-gray-700">Everything above plus direct implementation support</p>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 text-black mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-600">Everything in Elite Bundle</span>
+                  <Check className="w-5 h-5 text-gray-900 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-700">Everything in Elite Bundle</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 text-black mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-600">Private 1:1 strategy call</span>
+                  <Check className="w-5 h-5 text-gray-900 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-700">Private 1:1 strategy call</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 text-black mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-600">Direct chatbot access</span>
+                  <Check className="w-5 h-5 text-gray-900 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-700">Direct implementation support</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 text-black mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-600">Application required</span>
+                  <Check className="w-5 h-5 text-gray-900 mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-700">Application required</span>
                 </li>
               </ul>
               <button 
                 onClick={() => handleChatResponse('apply')}
-                className="w-full border border-black text-black py-3 hover:bg-black hover:text-white transition-colors"
+                className="w-full border border-gray-900 text-gray-900 py-3 hover:bg-gray-900 hover:text-white transition-colors"
               >
                 Apply Now
               </button>
