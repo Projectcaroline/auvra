@@ -72,17 +72,17 @@ const App = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16">
             <div>
-              <h3 className="text-2xl font-medium mb-6">The Problem</h3>
-              <p className="text-gray-600 leading-relaxed text-lg">
-                Most AI automation advice is surface-level. You need systems that actually work at scale, 
-                handle edge cases, and integrate with real business operations.
+              <h3 className="text-2xl font-medium mb-6 text-gray-900">The Problem</h3>
+              <p className="text-gray-700 leading-relaxed text-lg">
+                Leads slip through the cracks. Follow-up gets forgotten. Your team spends hours on conversations 
+                that could be automated, missing opportunities while drowning in manual tasks.
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-medium mb-6">The Transformation</h3>
-              <p className="text-gray-600 leading-relaxed text-lg">
-                Deploy AI systems that handle 80% of your conversations, qualify leads automatically, 
-                and free your team to focus on high-value work.
+              <h3 className="text-2xl font-medium mb-6 text-gray-900">The Transformation</h3>
+              <p className="text-gray-700 leading-relaxed text-lg">
+                AI systems that handle lead conversations 24/7, qualify prospects automatically, 
+                and ensure no follow-up is ever missed — so your team focuses only on closing deals.
               </p>
             </div>
           </div>
@@ -168,31 +168,31 @@ const App = () => {
             {/* Private Operator */}
             <div className="border border-gray-200 p-8 bg-white">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-medium mb-4 text-gray-900">Private Implementation</h3>
+                <h3 className="text-2xl font-medium mb-4">Private Operator</h3>
                 <div className="text-4xl font-light mb-4">$1,497</div>
-                <p className="text-gray-700">Everything above plus direct implementation support</p>
+                <p className="text-gray-600">Everything above plus direct access</p>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 text-gray-900 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-700">Everything in Elite Bundle</span>
+                  <Check className="w-5 h-5 text-black mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-600">Everything in Elite Bundle</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 text-gray-900 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-700">Private 1:1 strategy call</span>
+                  <Check className="w-5 h-5 text-black mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-600">Private 1:1 strategy call</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 text-gray-900 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-700">Direct implementation support</span>
+                  <Check className="w-5 h-5 text-black mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-600">Direct chatbot access</span>
                 </li>
                 <li className="flex items-start">
-                  <Check className="w-5 h-5 text-gray-900 mt-0.5 mr-3 flex-shrink-0" />
-                  <span className="text-gray-700">Application required</span>
+                  <Check className="w-5 h-5 text-black mt-0.5 mr-3 flex-shrink-0" />
+                  <span className="text-gray-600">Application required</span>
                 </li>
               </ul>
               <button 
                 onClick={() => handleChatResponse('apply')}
-                className="w-full border border-gray-900 text-gray-900 py-3 hover:bg-gray-900 hover:text-white transition-colors"
+                className="w-full border border-black text-black py-3 hover:bg-black hover:text-white transition-colors"
               >
                 Apply Now
               </button>
@@ -214,40 +214,40 @@ const App = () => {
           <div className="grid md:grid-cols-3 gap-12 mb-16">
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                <Zap className="w-12 h-12 text-black" />
+                <Zap className="w-12 h-12 text-gray-900" />
               </div>
-              <h3 className="text-2xl font-medium mb-4">AI Automation Systems</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                End-to-end automation that handles lead capture, qualification, and nurturing without human intervention.
+              <h3 className="text-2xl font-medium mb-4 text-gray-900">Lead Conversation Automation</h3>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                AI systems that handle initial lead conversations, qualify prospects, and book meetings automatically.
               </p>
-              <div className="text-sm font-medium text-black">
-                Outcome: 3-5x lead conversion with 80% less manual work
+              <div className="text-sm font-medium text-gray-900">
+                Outcome: 24/7 lead engagement with 3-5x higher conversion rates
               </div>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                <Users className="w-12 h-12 text-black" />
+                <Users className="w-12 h-12 text-gray-900" />
               </div>
-              <h3 className="text-2xl font-medium mb-4">AI Agents for Lead Handling</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                Intelligent agents that engage prospects, answer questions, and book qualified meetings automatically.
+              <h3 className="text-2xl font-medium mb-4 text-gray-900">Automated Follow-Up Systems</h3>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                Intelligent follow-up sequences that nurture leads, send reminders, and ensure no opportunity is missed.
               </p>
-              <div className="text-sm font-medium text-black">
-                Outcome: 24/7 lead engagement with human-level conversations
+              <div className="text-sm font-medium text-gray-900">
+                Outcome: Zero leads slip through cracks, consistent follow-up
               </div>
             </div>
 
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                <Shield className="w-12 h-12 text-black" />
+                <Shield className="w-12 h-12 text-gray-900" />
               </div>
-              <h3 className="text-2xl font-medium mb-4">AI Websites (Bolt-powered)</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                High-converting websites with integrated AI systems that qualify visitors and drive conversions.
+              <h3 className="text-2xl font-medium mb-4 text-gray-900">Complete Integration Setup</h3>
+              <p className="text-gray-700 mb-6 leading-relaxed">
+                Full integration with your CRM, calendar, and existing tools for seamless lead management.
               </p>
-              <div className="text-sm font-medium text-black">
-                Outcome: Websites that sell while you sleep
+              <div className="text-sm font-medium text-gray-900">
+                Outcome: Unified system that works with your existing workflow
               </div>
             </div>
           </div>
