@@ -74,41 +74,19 @@ const App = () => {
       {/* Problem/Solution */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-light mb-8 text-gray-900">You Don't Have a Lead Problem — You Have a Follow-Up Problem</h2>
-          </div>
-          <div className="max-w-4xl mx-auto">
-            <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              Most businesses get traffic. Most businesses get inquiries.
-            </p>
-            <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              What most businesses don't get is consistent contact with every lead — instantly and reliably.
-            </p>
-            <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              Delayed replies, missed messages, and inconsistent follow-up cost you deals you'll never see on a report.
-            </p>
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-medium mb-6 text-gray-900">We make sure:</h3>
-              <ul className="space-y-4 text-lg text-gray-700">
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-gray-900 rounded-full mt-3 mr-4 flex-shrink-0"></span>
-                  Every inbound lead gets a reply immediately
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-gray-900 rounded-full mt-3 mr-4 flex-shrink-0"></span>
-                  Every promising contact is qualified
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-gray-900 rounded-full mt-3 mr-4 flex-shrink-0"></span>
-                  Every opportunity is pursued until it converts
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-gray-900 rounded-full mt-3 mr-4 flex-shrink-0"></span>
-                  Nothing gets lost in inboxes or forgotten
-                </li>
-              </ul>
-              <p className="text-xl font-medium text-gray-900 mt-8">
-                That's the difference between "interested" and "sold."
+          <div className="grid md:grid-cols-2 gap-16">
+            <div>
+              <h3 className="text-2xl font-medium mb-6 text-gray-900">The Problem</h3>
+              <p className="text-gray-700 leading-relaxed text-lg">
+                Leads slip through the cracks. Follow-up gets forgotten. Your team spends hours on conversations 
+                that could be automated, missing opportunities while drowning in manual tasks.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-medium mb-6 text-gray-900">The Transformation</h3>
+              <p className="text-gray-700 leading-relaxed text-lg">
+                AI systems that handle lead conversations 24/7, qualify prospects automatically, 
+                and ensure no follow-up is ever missed — so your team focuses only on closing deals.
               </p>
             </div>
           </div>
@@ -344,42 +322,114 @@ const App = () => {
               {chatStep === 'initial' && (
                 <>
                   <div className="mb-6">
-                    <p className="text-gray-900 mb-4">Are you here to learn or to implement?</p>
+                    <p className="text-gray-900 mb-4">Hi! I'm the Twentysum Lead Assistant — I help you figure out how we can stop missed leads and automate your follow-ups. How can I assist you today?</p>
                   </div>
                   <div className="space-y-3">
                     <button 
-                      onClick={() => handleChatResponse('learn')}
+                      onClick={() => setChatStep('leads')}
                       className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
                     >
-                      Learn
+                      I want help with leads
                     </button>
                     <button 
-                      onClick={() => handleChatResponse('implement')}
+                      onClick={() => handleChatResponse('playbook')}
                       className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
                     >
-                      Implement
+                      Get the AI Playbook
+                    </button>
+                    <button 
+                      onClick={() => handleChatResponse('review')}
+                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
+                    >
+                      Request a System Review
                     </button>
                   </div>
                 </>
               )}
               
-              {chatStep === 'guide' && (
+              {chatStep === 'leads' && (
                 <>
                   <div className="mb-6">
-                    <p className="text-gray-900 mb-4">Perfect. The Elite AI Advantage guide is designed for operators ready to understand how AI systems create competitive advantages. Would you like to start with the Core Guide or jump to the Elite Bundle?</p>
+                    <p className="text-gray-900 mb-4">Great! Are you currently using any system to respond to new inquiries instantly?</p>
                   </div>
                   <div className="space-y-3">
                     <button 
-                      onClick={() => handleChatResponse('core')}
+                      onClick={() => setChatStep('hasSystem')}
                       className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
                     >
-                      Core Guide
+                      Yes
                     </button>
                     <button 
-                      onClick={() => handleChatResponse('elite')}
+                      onClick={() => setChatStep('noSystem')}
                       className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
                     >
-                      Elite Bundle
+                      No
+                    </button>
+                  </div>
+                </>
+              )}
+              
+              {chatStep === 'noSystem' && (
+                <>
+                  <div className="mb-6">
+                    <p className="text-gray-900 mb-4">No problem — would you like:</p>
+                  </div>
+                  <div className="space-y-3">
+                    <button 
+                      onClick={() => handleChatResponse('playbook')}
+                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
+                    >
+                      Get Playbook
+                    </button>
+                    <button 
+                      onClick={() => handleChatResponse('review')}
+                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
+                    >
+                      Review
+                    </button>
+                  </div>
+                </>
+              )}
+              
+              {chatStep === 'hasSystem' && (
+                <>
+                  <div className="mb-6">
+                    <p className="text-gray-900 mb-4">Are you seeing missed leads because replies are slow or inconsistent?</p>
+                  </div>
+                  <div className="space-y-3">
+                    <button 
+                      onClick={() => setChatStep('needsHelp')}
+                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
+                    >
+                      Yes
+                    </button>
+                    <button 
+                      onClick={() => setChatStep('noHelp')}
+                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
+                    >
+                      No
+                    </button>
+                  </div>
+                </>
+              )}
+              
+              {chatStep === 'needsHelp' && (
+                <>
+                  <div className="mb-6">
+                    <p className="text-gray-900 mb-4">We can help fix that with a done-for-you system. Would you like a Free Review or a copy of the AI Playbook?</p>
+                  </div>
+                  <div className="space-y-3">
+                    <button 
+                      onClick={() => handleChatResponse('playbook')}
+                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
+                    >
+                      Get Playbook
+                    </button>
+                    <button 
+                      onClick={() => handleChatResponse('review')}
+                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
+                    >
+                      Get Review
                     </button>
                   </div>
                 </>
@@ -388,7 +438,7 @@ const App = () => {
               {chatStep === 'implement' && (
                 <>
                   <div className="mb-6">
-                    <p className="text-gray-900 mb-4">Excellent. Our private AI automation services are built for serious operators. What's your primary bottleneck: lead qualification, conversation handling, or operational workflows?</p>
+                    <p className="text-gray-900 mb-4">Excellent. Our private AI automation services are built for serious businesses. What's your primary bottleneck: lead qualification, conversation handling, or operational workflows?</p>
                   </div>
                   <div className="space-y-3">
                     <button 
