@@ -45,44 +45,70 @@ const App = () => {
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-light leading-tight mb-8 tracking-tight text-gray-900">
-            Automate your lead conversations and follow-up — so you never miss another opportunity.
+            Stop Losing Leads After They Arrive
           </h1>
           <p className="text-xl text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Twentysum builds AI systems that handle your lead conversations, qualify prospects automatically, and ensure consistent follow-up — freeing your team to close deals instead of chasing leads.
+            We build systems that automatically respond to, qualify, and follow up with your inbound leads — so nothing slips through the cracks.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button 
-              onClick={() => document.getElementById('guide')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => handleChatResponse('playbook')}
               className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors shadow-lg"
             >
               Get Lead Automation Guide
             </button>
             <a 
-              href="#services" 
+              href="#" 
+              onClick={() => handleChatResponse('review')}
               className="text-gray-700 hover:text-gray-900 transition-colors border-b border-transparent hover:border-gray-900 pb-1"
             >
-              See Automation Services
+              Request a System Review
             </a>
           </div>
+          <p className="text-gray-600 mt-6 text-lg">
+            No tools to choose. No learning. Just results.
+          </p>
         </div>
       </section>
 
       {/* Problem/Solution */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16">
-            <div>
-              <h3 className="text-2xl font-medium mb-6 text-gray-900">The Problem</h3>
-              <p className="text-gray-700 leading-relaxed text-lg">
-                Leads slip through the cracks. Follow-up gets forgotten. Your team spends hours on conversations 
-                that could be automated, missing opportunities while drowning in manual tasks.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-2xl font-medium mb-6 text-gray-900">The Transformation</h3>
-              <p className="text-gray-700 leading-relaxed text-lg">
-                AI systems that handle lead conversations 24/7, qualify prospects automatically, 
-                and ensure no follow-up is ever missed — so your team focuses only on closing deals.
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-light mb-8 text-gray-900">You Don't Have a Lead Problem — You Have a Follow-Up Problem</h2>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <p className="text-xl text-gray-700 leading-relaxed mb-6">
+              Most businesses get traffic. Most businesses get inquiries.
+            </p>
+            <p className="text-xl text-gray-700 leading-relaxed mb-6">
+              What most businesses don't get is consistent contact with every lead — instantly and reliably.
+            </p>
+            <p className="text-xl text-gray-700 leading-relaxed mb-8">
+              Delayed replies, missed messages, and inconsistent follow-up cost you deals you'll never see on a report.
+            </p>
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-2xl font-medium mb-6 text-gray-900">We make sure:</h3>
+              <ul className="space-y-4 text-lg text-gray-700">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-gray-900 rounded-full mt-3 mr-4 flex-shrink-0"></span>
+                  Every inbound lead gets a reply immediately
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-gray-900 rounded-full mt-3 mr-4 flex-shrink-0"></span>
+                  Every promising contact is qualified
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-gray-900 rounded-full mt-3 mr-4 flex-shrink-0"></span>
+                  Every opportunity is pursued until it converts
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-gray-900 rounded-full mt-3 mr-4 flex-shrink-0"></span>
+                  Nothing gets lost in inboxes or forgotten
+                </li>
+              </ul>
+              <p className="text-xl font-medium text-gray-900 mt-8">
+                That's the difference between "interested" and "sold."
               </p>
             </div>
           </div>
