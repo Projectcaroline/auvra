@@ -66,17 +66,18 @@ const App = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button 
-              onClick={() => handleChatResponse('playbook')}
+              onClick={() => window.open('https://calendly.com/twentysum/roi-audit', '_blank')}
               className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors shadow-lg"
             >
-              Get the AI Playbook
+              Book a 20-Minute ROI Call
             </button>
             <a 
-              href="#" 
-              onClick={() => handleChatResponse('review')}
+              href="https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20automation%20systems" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-700 hover:text-gray-900 transition-colors border-b border-transparent hover:border-gray-900 pb-1"
             >
-              Request a System Review
+              WhatsApp Us
             </a>
           </div>
           <p className="text-gray-600 mt-6 text-lg">
