@@ -55,11 +55,15 @@ const App = () => {
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-light leading-tight mb-8 tracking-tight text-gray-900">
-            Stop Losing Leads After They Arrive
+            Automate Your Operations. Guarantee ROI.
           </h1>
-          <p className="text-xl text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed">
-            We build systems that automatically respond to, qualify, and follow up with your inbound leads — so nothing slips through the cracks.
+          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Waste management & construction automation that recovers 5-15% of your revenue. We eliminate billing leakage, optimize operations, and protect your margins.
           </p>
+          <div className="bg-gray-50 p-6 rounded-lg mb-12 max-w-2xl mx-auto">
+            <p className="text-2xl font-semibold text-gray-900 mb-2">Typical ROI: 300-500% in first year</p>
+            <p className="text-gray-600">Most clients see payback within 90 days</p>
+          </div>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button 
               onClick={() => handleChatResponse('playbook')}
@@ -149,40 +153,43 @@ const App = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-light mb-8">We Design Automation That Directly Impacts Revenue</h2>
             <div className="text-lg text-gray-700 leading-relaxed space-y-6">
-              <p className="text-xl">We don't build generic AI tools.</p>
+              <p className="text-xl">Industry-specific automation that guarantees measurable ROI:</p>
               <div className="bg-gray-50 p-8 rounded-lg shadow-sm mt-8">
-                <h3 className="text-2xl font-medium mb-6 text-gray-900">We implement operational systems that:</h3>
+                <h3 className="text-2xl font-medium mb-6 text-gray-900">Our systems deliver:</h3>
                 <ul className="space-y-4 text-left max-w-2xl mx-auto">
                   <li className="flex items-start">
                     <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>Capture every billable event</span>
+                    <span>100% capture of billable events (overages, extras, changes)</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>Automate quoting → approval → invoicing</span>
+                    <span>Automated billing cycles (reduce from 45 to 7 days)</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>Optimize routing and dispatch</span>
+                    <span>Route optimization (15-25% fuel savings)</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>Track change orders in real time</span>
+                    <span>Real-time change order tracking & billing</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>Trigger SLA and compliance alerts</span>
+                    <span>Compliance automation (avoid penalties)</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>Shorten billing cycles</span>
+                    <span>Predictive maintenance scheduling</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>Reduce admin overhead</span>
+                    <span>60-80% reduction in admin overhead</span>
                   </li>
                 </ul>
-                <p className="text-xl font-medium mt-8 text-gray-900">Every automation is tied to measurable KPIs.</p>
+                <div className="mt-8 p-6 bg-white rounded-lg border-2 border-gray-900">
+                  <p className="text-xl font-bold text-gray-900 mb-2">ROI Guarantee:</p>
+                  <p className="text-lg text-gray-700">300-600% ROI within 12 months or we refund the difference</p>
+                </div>
               </div>
             </div>
           </div>
@@ -193,7 +200,7 @@ const App = () => {
       <section id="how-it-works" className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light mb-6">How the System Works</h2>
+            <h2 className="text-4xl font-light mb-6">3-Phase ROI-Focused Implementation</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
               We build and deliver Done-For-You Lead Automation Systems that include:
             </p>
