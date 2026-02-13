@@ -54,137 +54,176 @@ const App = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-light leading-tight mb-6 tracking-tight text-gray-900">
-            Automate Your Operations. Protect Your Margins.
+          <h1 className="text-5xl md:text-6xl font-light leading-tight mb-8 tracking-tight text-gray-900">
+            Stop Losing Leads After They Arrive
           </h1>
-          <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-            We build revenue-focused automation systems for Waste Management and Construction companies — eliminating manual workflows, billing leakage, and operational chaos.
-          </p>
-          <p className="text-lg text-gray-600 mb-12 font-medium">
-            Typical ROI: 300-500% in first year
+          <p className="text-xl text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed">
+            We build systems that automatically respond to, qualify, and follow up with your inbound leads — so nothing slips through the cracks.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button 
-              onClick={() => handleChatResponse('review')}
+              onClick={() => handleChatResponse('playbook')}
               className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors shadow-lg"
             >
-              Book a 20-Minute ROI Call
+              Get the AI Playbook
             </button>
             <a 
-              href="#how-it-works" 
+              href="#" 
+              onClick={() => handleChatResponse('review')}
               className="text-gray-700 hover:text-gray-900 transition-colors border-b border-transparent hover:border-gray-900 pb-1"
             >
-              See How It Works
+              Request a System Review
             </a>
           </div>
+          <p className="text-gray-600 mt-6 text-lg">
+            No tools to choose. No learning. Just results.
+          </p>
         </div>
       </section>
 
-      {/* What We Solve Section */}
+      {/* Problem Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-light mb-8">You Don't Have a Lead Problem — You Have a Follow-Up Problem</h2>
+            <h2 className="text-4xl font-light mb-8">Manual Work Is Quietly Killing Your Margins</h2>
             <div className="text-lg text-gray-700 leading-relaxed space-y-6">
-              <p>Most businesses get traffic. Most businesses get inquiries.</p>
-              <p>What most businesses don't get is consistent contact with every lead — instantly and reliably.</p>
-              <p>Delayed replies, missed messages, and inconsistent follow-up cost you deals you'll never see on a report.</p>
+              <p>If you operate in waste management or construction, you already know:</p>
               <div className="bg-white p-8 rounded-lg shadow-sm mt-8">
-                <h3 className="text-2xl font-medium mb-6 text-gray-900">We make sure:</h3>
-                <ul className="space-y-4 text-left max-w-2xl mx-auto">
-                  <li className="flex items-start">
-                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>Every inbound lead gets a reply immediately</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>Every promising contact is qualified</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>Every opportunity is pursued until it converts</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>Nothing gets lost in inboxes or forgotten</span>
-                  </li>
-                </ul>
-                <p className="text-xl font-medium mt-8 text-gray-900">That's the difference between "interested" and "sold."</p>
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  <div>
+                    <h3 className="text-xl font-medium mb-4 text-gray-900">Common Problems:</h3>
+                    <ul className="space-y-3 text-left">
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Missed overage billing goes unnoticed</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Change orders slip through the cracks</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Routing is reactive instead of optimized</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Progress billing is delayed</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Admin teams chase paperwork instead of managing operations</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-medium mb-4 text-gray-900">The Result:</h3>
+                    <ul className="space-y-3 text-left">
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Revenue leakage</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Cashflow pressure</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Operational stress</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="text-center space-y-4">
+                  <p className="text-xl font-medium text-gray-900">You don't need more staff.</p>
+                  <p className="text-2xl font-bold text-gray-900">You need systems.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Waste Management Section */}
-      <section className="py-20 bg-gray-50">
+      {/* What We Do Section */}
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-light mb-8">We Design Automation That Directly Impacts Revenue</h2>
+            <div className="text-lg text-gray-700 leading-relaxed space-y-6">
+              <p className="text-xl">We don't build generic AI tools.</p>
+              <div className="bg-gray-50 p-8 rounded-lg shadow-sm mt-8">
+                <h3 className="text-2xl font-medium mb-6 text-gray-900">We implement operational systems that:</h3>
+                <ul className="space-y-4 text-left max-w-2xl mx-auto">
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
+                    <span>Capture every billable event</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
+                    <span>Automate quoting → approval → invoicing</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
+                    <span>Optimize routing and dispatch</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
+                    <span>Track change orders in real time</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
+                    <span>Trigger SLA and compliance alerts</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
+                    <span>Shorten billing cycles</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
+                    <span>Reduce admin overhead</span>
+                  </li>
+                </ul>
+                <p className="text-xl font-medium mt-8 text-gray-900">Every automation is tied to measurable KPIs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section id="how-it-works" className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light mb-6">Automation for Waste Operations</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Designed for commercial & industrial waste providers.
+            <h2 className="text-4xl font-light mb-6">How the System Works</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+              We build and deliver Done-For-You Lead Automation Systems that include:
             </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-medium mb-6 text-red-600">We Solve:</h3>
-              <ul className="space-y-4 text-gray-700">
+            <div className="max-w-3xl mx-auto">
+              <ul className="space-y-4 text-left text-lg">
                 <li className="flex items-start">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span>Manual route planning</span>
+                  <Check className="w-6 h-6 text-gray-900 mt-1 mr-4 flex-shrink-0" />
+                  <span>Instant automatic response to new leads</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span>Missed pickups</span>
+                  <Check className="w-6 h-6 text-gray-900 mt-1 mr-4 flex-shrink-0" />
+                  <span>Intelligent qualification so you talk to real opportunities</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span>Unbilled overages</span>
+                  <Check className="w-6 h-6 text-gray-900 mt-1 mr-4 flex-shrink-0" />
+                  <span>Routing to the right person or inbox</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span>Contract SLA penalties</span>
+                  <Check className="w-6 h-6 text-gray-900 mt-1 mr-4 flex-shrink-0" />
+                  <span>Follow-up sequences so no lead goes cold</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span>Slow invoicing cycles</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span>Manual customer updates</span>
+                  <Check className="w-6 h-6 text-gray-900 mt-1 mr-4 flex-shrink-0" />
+                  <span>System testing + handover</span>
                 </li>
               </ul>
-            </div>
-            
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-medium mb-6 text-green-600">We Implement:</h3>
-              <ul className="space-y-4 text-gray-700">
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-green-600 mt-1 mr-3 flex-shrink-0" />
-                  <span>Route & dispatch automation</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-green-600 mt-1 mr-3 flex-shrink-0" />
-                  <span>Overweight & overage billing capture</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-green-600 mt-1 mr-3 flex-shrink-0" />
-                  <span>Automated invoice generation</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-green-600 mt-1 mr-3 flex-shrink-0" />
-                  <span>Client service confirmations</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-green-600 mt-1 mr-3 flex-shrink-0" />
-                  <span>Compliance dashboards</span>
-                </li>
-              </ul>
-              
-              <div className="mt-8 p-4 bg-green-50 rounded">
-                <p className="font-medium text-gray-900">Outcome:</p>
-                <p className="text-gray-700">More predictable revenue. Fewer penalties. Lower admin load.</p>
+              <div className="mt-12 text-center">
+                <p className="text-xl text-gray-700">No tool names.</p>
+                <p className="text-xl text-gray-700">No tech jargon.</p>
+                <p className="text-xl font-medium text-gray-900">Just fixed flow and real results.</p>
               </div>
             </div>
           </div>
@@ -355,66 +394,25 @@ const App = () => {
         </div>
       </section>
 
-      {/* Pricing Section */}
+      {/* CTA Section Repeat */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-light mb-8">Engagement Models</h2>
-          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-            Every engagement begins with a structured operational assessment.
-          </p>
-          
-          <div className="max-w-3xl mx-auto bg-white border border-gray-200 p-12 rounded-lg shadow-sm">
-            <h3 className="text-2xl font-medium mb-6">Implementation projects typically range from:</h3>
-            <div className="text-5xl font-light mb-8 text-gray-900">$3,000 – $15,000+</div>
-            <p className="text-lg text-gray-600 mb-8">Depending on workflow complexity and integration requirements.</p>
-            <p className="text-lg text-gray-700 mb-8">Ongoing optimization retainers available.</p>
-            
-            <div className="border-t border-gray-200 pt-8">
-              <p className="text-xl font-medium text-gray-900 mb-2">We do not compete on price.</p>
-              <p className="text-xl font-medium text-gray-900">We compete on measurable impact.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Final CTA Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-light mb-8">Ready to Eliminate Manual Work and Protect Your Margins?</h2>
-          <p className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
-            If your operations are growing but your systems are not keeping up, it's time to fix the foundation.
-          </p>
-          
-          <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-sm mb-8">
-            <h3 className="text-2xl font-medium mb-6">Book a 20-Minute ROI Call</h3>
-            <p className="text-lg text-gray-700 mb-6">We'll:</p>
-            <ul className="space-y-3 text-left text-gray-700 mb-8">
-              <li className="flex items-start">
-                <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                <span>Identify where you're losing revenue</span>
-              </li>
-              <li className="flex items-start">
-                <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                <span>Outline a system architecture</span>
-              </li>
-              <li className="flex items-start">
-                <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                <span>Estimate ROI potential with 90-day timeline</span>
-              </li>
-            </ul>
-            
+          <h2 className="text-4xl font-light mb-12">Ready to stop losing leads?</h2>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
+            <button 
+              onClick={() => handleChatResponse('playbook')}
+              className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors shadow-lg"
+            >
+              👉 Get the AI Playbook
+            </button>
             <button 
               onClick={() => handleChatResponse('review')}
-              className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors shadow-lg mb-4"
+              className="border border-gray-900 text-gray-900 px-8 py-4 text-lg font-medium hover:bg-gray-900 hover:text-white transition-colors"
             >
-              Book ROI Call Now
+              👉 Request a System Review
             </button>
-            
-            <div className="text-center">
-              <p className="text-gray-600">No generic demos. No fluff.</p>
-              <p className="text-gray-900 font-medium">Just operational clarity.</p>
-            </div>
           </div>
+          <p className="text-xl text-gray-700">Your business, but better.</p>
         </div>
       </section>
 
@@ -424,9 +422,17 @@ const App = () => {
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div>
               <h3 className="text-2xl font-semibold mb-2 tracking-wide">TWENTYSUM</h3>
-              <p className="text-gray-400">AI systems for serious operators</p>
+              <p className="text-gray-400">Operational Automation for Waste Management & Construction Firms</p>
+              <p className="text-gray-400 mt-2">Windhoek, Namibia</p>
+              <p className="text-gray-400">Serving clients across Southern Africa</p>
             </div>
             <div className="flex space-x-8 mt-6 md:mt-0">
+              <button 
+                onClick={() => handleChatResponse('review')}
+                className="bg-white text-black px-6 py-2 font-medium hover:bg-gray-100 transition-colors"
+              >
+                Book Call
+              </button>
               <a href="/privacy.html" className="text-gray-400 hover:text-white transition-colors">Privacy</a>
               <a href="/terms.html" className="text-gray-400 hover:text-white transition-colors">Terms</a>
               <a href="https://www.instagram.com/twenty_sum" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Instagram</a>
@@ -434,7 +440,7 @@ const App = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center">
-            <p className="text-gray-400 italic">This is not for everyone — but if you know, you know.</p>
+            <p className="text-gray-400 italic">Serious automation for serious operators.</p>
           </div>
         </div>
       </footer>
