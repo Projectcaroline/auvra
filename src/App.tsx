@@ -355,25 +355,66 @@ const App = () => {
         </div>
       </section>
 
-      {/* CTA Section Repeat */}
+      {/* Pricing Section */}
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-light mb-12">Ready to stop losing leads?</h2>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
-            <button 
-              onClick={() => handleChatResponse('playbook')}
-              className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors shadow-lg"
-            >
-              👉 Get the AI Playbook
-            </button>
+          <h2 className="text-4xl font-light mb-8">Engagement Models</h2>
+          <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+            Every engagement begins with a structured operational assessment.
+          </p>
+          
+          <div className="max-w-3xl mx-auto bg-white border border-gray-200 p-12 rounded-lg shadow-sm">
+            <h3 className="text-2xl font-medium mb-6">Implementation projects typically range from:</h3>
+            <div className="text-5xl font-light mb-8 text-gray-900">$3,000 – $15,000+</div>
+            <p className="text-lg text-gray-600 mb-8">Depending on workflow complexity and integration requirements.</p>
+            <p className="text-lg text-gray-700 mb-8">Ongoing optimization retainers available.</p>
+            
+            <div className="border-t border-gray-200 pt-8">
+              <p className="text-xl font-medium text-gray-900 mb-2">We do not compete on price.</p>
+              <p className="text-xl font-medium text-gray-900">We compete on measurable impact.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-light mb-8">Ready to Eliminate Manual Work and Protect Your Margins?</h2>
+          <p className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
+            If your operations are growing but your systems are not keeping up, it's time to fix the foundation.
+          </p>
+          
+          <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-sm mb-8">
+            <h3 className="text-2xl font-medium mb-6">Book a 20-Minute ROI Call</h3>
+            <p className="text-lg text-gray-700 mb-6">We'll:</p>
+            <ul className="space-y-3 text-left text-gray-700 mb-8">
+              <li className="flex items-start">
+                <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
+                <span>Identify where you're losing revenue</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
+                <span>Outline a system architecture</span>
+              </li>
+              <li className="flex items-start">
+                <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
+                <span>Estimate ROI potential with 90-day timeline</span>
+              </li>
+            </ul>
+            
             <button 
               onClick={() => handleChatResponse('review')}
-              className="border border-gray-900 text-gray-900 px-8 py-4 text-lg font-medium hover:bg-gray-900 hover:text-white transition-colors"
+              className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors shadow-lg mb-4"
             >
-              👉 Request a System Review
+              Book ROI Call Now
             </button>
+            
+            <div className="text-center">
+              <p className="text-gray-600">No generic demos. No fluff.</p>
+              <p className="text-gray-900 font-medium">Just operational clarity.</p>
+            </div>
           </div>
-          <p className="text-xl text-gray-700">Your business, but better.</p>
         </div>
       </section>
 
