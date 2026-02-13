@@ -515,22 +515,22 @@ const App = () => {
                   </div>
                   <div className="space-y-3">
                     <button 
-                      onClick={() => handleChatResponse('leads')}
+                      onClick={() => window.open('https://calendly.com/twentysum/roi-audit', '_blank')}
                       className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
                     >
-                      I want help with leads
+                      Book ROI Call
                     </button>
                     <button 
-                      onClick={() => handleChatResponse('playbook')}
+                      onClick={() => window.open('https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20automation%20systems', '_blank')}
                       className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
                     >
-                      Get the AI Playbook
+                      WhatsApp Us
                     </button>
                     <button 
-                      onClick={() => handleChatResponse('review')}
+                      onClick={() => window.open('mailto:ajarlandings@gmail.com?subject=ROI%20Automation%20Inquiry', '_blank')}
                       className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
                     >
-                      Request a System Review
+                      Email Us
                     </button>
                   </div>
                 </>
