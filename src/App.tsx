@@ -279,29 +279,81 @@ const App = () => {
             {/* Service 3 */}
             <div className="border border-gray-200 p-8 bg-white">
               <div className="mb-8">
-                <h3 className="text-2xl font-medium mb-4">Complete Automation System</h3>
-                <div className="text-3xl font-light mb-4">$1,200 – $2,500</div>
+                <h3 className="text-2xl font-medium mb-4">Full Lead Management System</h3>
+                <div className="text-3xl font-light mb-4">$1,200 – $2,000</div>
                 <p className="text-gray-600 mb-6">What's included:</p>
                 <ul className="space-y-3 text-gray-700">
-                  <li>• Full system implementation</li>
-                  <li>• Multi-channel response & follow-up</li>
-                  <li>• Advanced routing and lead persistence</li>
-                  <li>• System testing, monitoring, handover</li>
+                  <li>• All of the above</li>
+                  <li>• Multi-channel integration</li>
+                  <li>• Advanced qualification flows</li>
+                  <li>• CRM integration</li>
+                  <li>• Performance tracking</li>
                 </ul>
                 <div className="mt-6 p-4 bg-gray-50 rounded">
                   <p className="font-medium text-gray-900">Outcome:</p>
-                  <p className="text-gray-700">Leads move from first contact to sales-ready automatically.</p>
+                  <p className="text-gray-700">Complete lead management automation with full visibility.</p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Website Support Add-On */}
-          <div className="max-w-2xl mx-auto text-center bg-white border border-gray-200 p-8 rounded-lg">
-            <h3 className="text-2xl font-medium mb-4">Website Support (Optional Add-On)</h3>
-            <div className="text-3xl font-light mb-4">$400 – $1,000</div>
-            <p className="text-gray-600 mb-4">Use if: Your site is part of the lead problem</p>
-            <p className="text-lg font-medium text-gray-900">"We fix the system and the place where leads enter."</p>
+      {/* How It Works Section */}
+      <section id="how-it-works" className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-light mb-6">A Structured 3-Phase Approach</h2>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="space-y-12">
+              <div className="flex items-start">
+                <div className="w-16 h-16 bg-gray-900 text-white rounded-full flex items-center justify-center font-bold mr-8 flex-shrink-0 text-xl">1</div>
+                <div>
+                  <h3 className="text-2xl font-medium mb-4">Operational Audit</h3>
+                  <p className="text-gray-700 text-lg">We map your workflows and identify revenue leakage and inefficiencies.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="w-16 h-16 bg-gray-900 text-white rounded-full flex items-center justify-center font-bold mr-8 flex-shrink-0 text-xl">2</div>
+                <div>
+                  <h3 className="text-2xl font-medium mb-4">System Design & Automation Build</h3>
+                  <p className="text-gray-700 text-lg">We design and implement tailored automation integrated with your current tools.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="w-16 h-16 bg-gray-900 text-white rounded-full flex items-center justify-center font-bold mr-8 flex-shrink-0 text-xl">3</div>
+                <div>
+                  <h3 className="text-2xl font-medium mb-4">KPI Tracking & Optimization</h3>
+                  <p className="text-gray-700 text-lg mb-4">We measure improvements in:</p>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-start">
+                      <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
+                      <span>Billing accuracy</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
+                      <span>Cycle time</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
+                      <span>Operational efficiency</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
+                      <span>Margin protection</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-xl font-medium text-gray-900">You see measurable improvements — not just new software.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -422,17 +474,9 @@ const App = () => {
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div>
               <h3 className="text-2xl font-semibold mb-2 tracking-wide">TWENTYSUM</h3>
-              <p className="text-gray-400">Operational Automation for Waste Management & Construction Firms</p>
-              <p className="text-gray-400 mt-2">Windhoek, Namibia</p>
-              <p className="text-gray-400">Serving clients across Southern Africa</p>
+              <p className="text-gray-400">AI systems for serious operators</p>
             </div>
             <div className="flex space-x-8 mt-6 md:mt-0">
-              <button 
-                onClick={() => handleChatResponse('review')}
-                className="bg-white text-black px-6 py-2 font-medium hover:bg-gray-100 transition-colors"
-              >
-                Book Call
-              </button>
               <a href="/privacy.html" className="text-gray-400 hover:text-white transition-colors">Privacy</a>
               <a href="/terms.html" className="text-gray-400 hover:text-white transition-colors">Terms</a>
               <a href="https://www.instagram.com/twenty_sum" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Instagram</a>
@@ -440,7 +484,7 @@ const App = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center">
-            <p className="text-gray-400 italic">Serious automation for serious operators.</p>
+            <p className="text-gray-400 italic">This is not for everyone — but if you know, you know.</p>
           </div>
         </div>
       </footer>
