@@ -86,57 +86,13 @@ const App = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-light mb-8">Manual Work Is Quietly Killing Your Margins</h2>
+            <h2 className="text-4xl font-light mb-8">Managing Properties Is Hard. Most Owners Are Overwhelmed.</h2>
             <div className="text-lg text-gray-700 leading-relaxed space-y-6">
-              <p>If you operate in waste management or construction, you already know:</p>
               <div className="bg-white p-8 rounded-lg shadow-sm mt-8">
-                <div className="grid md:grid-cols-2 gap-6 mb-8">
-                  <div>
-                    <h3 className="text-xl font-medium mb-4 text-gray-900">Common Problems:</h3>
-                    <ul className="space-y-3 text-left">
-                      <li className="flex items-start">
-                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>Missed overage billing goes unnoticed</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>Change orders slip through the cracks</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>Routing is reactive instead of optimized</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>Progress billing is delayed</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>Admin teams chase paperwork instead of managing operations</span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-medium mb-4 text-gray-900">The Result:</h3>
-                    <ul className="space-y-3 text-left">
-                      <li className="flex items-start">
-                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>Revenue leakage</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>Cashflow pressure</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span>Operational stress</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="text-center space-y-4">
-                  <p className="text-xl font-medium text-gray-900">You don't need more staff.</p>
-                  <p className="text-2xl font-bold text-gray-900">You need systems.</p>
+                <div className="space-y-6 text-left max-w-2xl mx-auto">
+                  <p className="text-lg">Missed bookings, messy spreadsheets, and slow maintenance approvals cost time and money.</p>
+                  <p className="text-lg">Trying to manage short-term rentals manually leads to lost revenue and frustrated tenants or guests.</p>
+                  <p className="text-lg">Most property managers are stuck in outdated, manual processes that don't scale.</p>
                 </div>
               </div>
             </div>
@@ -221,25 +177,24 @@ const App = () => {
       <section id="services" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light mb-6">Services That Fix It — Not Just Explain It</h2>
+            <h2 className="text-4xl font-light mb-6">Twentysum Services - B2B Property Management Operations</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
             {/* Service 1 */}
             <div className="border border-gray-200 p-8 bg-white">
               <div className="mb-8">
-                <h3 className="text-2xl font-medium mb-4">Done-For-You Lead Response Fix</h3>
-                <div className="text-3xl font-light mb-4">$149 – $249</div>
-                <p className="text-gray-600 mb-6">What's included:</p>
+                <h3 className="text-2xl font-medium mb-4">Short-Term & Vacation Rental Operations</h3>
+                <p className="text-gray-600 mb-6">For property management companies or vacation rental portfolio owners:</p>
                 <ul className="space-y-3 text-gray-700">
-                  <li>• Instant response setup for leads</li>
-                  <li>• Basic qualification logic</li>
-                  <li>• Routing to your inbox</li>
-                  <li>• Confirmation and expectations message</li>
+                  <li>• Full operational management of short-term rental units</li>
+                  <li>• Guest communication handled professionally</li>
+                  <li>• Coordination of cleaning, maintenance, and inspections</li>
+                  <li>• Booking management and calendar optimization</li>
                 </ul>
                 <div className="mt-6 p-4 bg-gray-50 rounded">
-                  <p className="font-medium text-gray-900">Outcome:</p>
-                  <p className="text-gray-700">No more slow replies or lost messages.</p>
+                  <p className="font-medium text-gray-900">Value:</p>
+                  <p className="text-gray-700">Turn a portfolio of properties into a smoothly running, revenue-maximizing system without manual oversight.</p>
                 </div>
               </div>
             </div>
@@ -247,18 +202,17 @@ const App = () => {
             {/* Service 2 */}
             <div className="border-2 border-gray-900 p-8 bg-white relative">
               <div className="mb-8">
-                <h3 className="text-2xl font-medium mb-4">Lead Response + Follow-Up System</h3>
-                <div className="text-3xl font-light mb-4">$499 – $750</div>
-                <p className="text-gray-600 mb-6">What's included:</p>
+                <h3 className="text-2xl font-medium mb-4">Workflow Automation & Reporting</h3>
+                <p className="text-gray-600 mb-6">For PM companies or operators with multiple properties:</p>
                 <ul className="space-y-3 text-gray-700">
-                  <li>• All of the above</li>
-                  <li>• Consistent follow-up sequence</li>
-                  <li>• Routing and tracking</li>
-                  <li>• Tested, ready-to-use system</li>
+                  <li>• Automating repetitive admin and operational tasks</li>
+                  <li>• Integrated dashboards for occupancy, revenue, and maintenance KPIs</li>
+                  <li>• Alerts and reporting for operational bottlenecks</li>
+                  <li>• Maintenance requests and guest messaging automation</li>
                 </ul>
                 <div className="mt-6 p-4 bg-gray-50 rounded">
-                  <p className="font-medium text-gray-900">Outcome:</p>
-                  <p className="text-gray-700">Every lead is responded to, qualified, and followed up automatically.</p>
+                  <p className="font-medium text-gray-900">Value:</p>
+                  <p className="text-gray-700">Reduce errors, speed up response times, and give management a real-time view of all properties.</p>
                 </div>
               </div>
             </div>
@@ -266,19 +220,17 @@ const App = () => {
             {/* Service 3 */}
             <div className="border border-gray-200 p-8 bg-white">
               <div className="mb-8">
-                <h3 className="text-2xl font-medium mb-4">Full Lead Management System</h3>
-                <div className="text-3xl font-light mb-4">$1,200 – $2,000</div>
-                <p className="text-gray-600 mb-6">What's included:</p>
+                <h3 className="text-2xl font-medium mb-4">Portfolio Optimization for Luxury Rentals</h3>
+                <p className="text-gray-600 mb-6">For managers handling vacation homes, luxury villas, or corporate housing:</p>
                 <ul className="space-y-3 text-gray-700">
-                  <li>• All of the above</li>
-                  <li>• Multi-channel integration</li>
-                  <li>• Advanced qualification flows</li>
-                  <li>• CRM integration</li>
-                  <li>• Performance tracking</li>
+                  <li>• Revenue maximization strategies (dynamic pricing, occupancy optimization)</li>
+                  <li>• Operational scaling for high-value units</li>
+                  <li>• Vendor and concierge service integration</li>
+                  <li>• Premium service standards maintenance</li>
                 </ul>
                 <div className="mt-6 p-4 bg-gray-50 rounded">
-                  <p className="font-medium text-gray-900">Outcome:</p>
-                  <p className="text-gray-700">Complete lead management automation with full visibility.</p>
+                  <p className="font-medium text-gray-900">Value:</p>
+                  <p className="text-gray-700">Increase revenue per property and maintain premium service standards, without expanding headcount.</p>
                 </div>
               </div>
             </div>
@@ -315,88 +267,38 @@ const App = () => {
       </section>
 
       {/* Operation Flow Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light mb-6">What Happens After A Lead Comes In</h2>
+            <h2 className="text-4xl font-light mb-6">Trusted by Property Owners & Managers Who Demand Results</h2>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-8">
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center font-bold mr-6 flex-shrink-0">1</div>
-                <div>
-                  <h3 className="text-xl font-medium mb-2">Lead Captured</h3>
-                  <p className="text-gray-700">Someone inquires via your site, WhatsApp, Instagram, or messaging.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center font-bold mr-6 flex-shrink-0">2</div>
-                <div>
-                  <h3 className="text-xl font-medium mb-2">Instant Response</h3>
-                  <p className="text-gray-700">Our system replies immediately to acknowledge and warm the lead.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center font-bold mr-6 flex-shrink-0">3</div>
-                <div>
-                  <h3 className="text-xl font-medium mb-2">Qualification</h3>
-                  <p className="text-gray-700">Logical questions ensure intent, interest, and fit.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center font-bold mr-6 flex-shrink-0">4</div>
-                <div>
-                  <h3 className="text-xl font-medium mb-2">Routing</h3>
-                  <p className="text-gray-700">The lead is sent to the right person or location.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center font-bold mr-6 flex-shrink-0">5</div>
-                <div>
-                  <h3 className="text-xl font-medium mb-2">Follow-Up</h3>
-                  <p className="text-gray-700">If no reply from the team, automated follow-up engages the lead.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center font-bold mr-6 flex-shrink-0">6</div>
-                <div>
-                  <h3 className="text-xl font-medium mb-2">Human Handoff</h3>
-                  <p className="text-gray-700">A person steps in once intent is clear.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center mt-12">
-              <p className="text-xl font-medium text-gray-900">This stops leaks — that's the whole point.</p>
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <p className="text-xl text-gray-700 mb-6">
+                "Managed 50+ properties with 95% occupancy rates through Twentysum's automated operations system."
+              </p>
+              <p className="text-lg text-gray-700">
+                Keep it concise and results-focused - showcase client testimonials or metrics that demonstrate operational excellence.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Why This Works Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-light mb-8">Why Manual Follow-Up No Longer Works</h2>
+            <h2 className="text-4xl font-light mb-8">Optional Add-On Services</h2>
             <div className="text-lg text-gray-700 leading-relaxed space-y-6">
-              <p>Humans are inconsistent, busy, and forgetful.</p>
-              <p>Leads are time-sensitive, impatient, and fleeting.</p>
               <div className="bg-white p-8 rounded-lg shadow-sm mt-8">
-                <div className="space-y-4 text-xl">
-                  <p className="font-medium text-gray-900">Speed beats persuasion.</p>
-                  <p className="font-medium text-gray-900">Consistency beats availability.</p>
-                  <p className="font-medium text-gray-900">Automation protects intent.</p>
+                <div className="space-y-4 text-left max-w-2xl mx-auto">
+                  <p className="font-medium text-gray-900">Technology & automation consulting for PM workflows</p>
+                  <p className="font-medium text-gray-900">SOP development for maintenance, cleaning, and guest operations</p>
+                  <p className="font-medium text-gray-900">Reporting dashboards and KPI tracking for multi-property portfolios</p>
                 </div>
               </div>
-              <p className="text-xl font-medium text-gray-900 mt-8">
-                You can't afford to treat your leads like emails — you need a system that treats them like revenue.
-              </p>
             </div>
           </div>
         </div>
@@ -459,27 +361,33 @@ const App = () => {
               {chatStep === 'initial' && (
                 <>
                   <div className="mb-6">
-                    <p className="text-gray-900 mb-4">Hi! I'm the Twentysum Property Assistant — I help property owners optimize their operations and scale their portfolios. How can I assist you today?</p>
+                    <p className="text-gray-900 mb-4">Hi! I'm the Twentysum Operations Assistant. I help property management companies optimize their operations and scale their portfolios. How can I assist you today?</p>
                   </div>
                   <div className="space-y-3">
-                    <button 
-                     onClick={() => window.open('https://calendly.com/twentysum/property-consultation', '_blank')}
+                    <a 
+                     href="https://calendly.com/twentysum/property-consultation"
+                     target="_blank"
+                     rel="noopener noreferrer"
                       className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
                     >
-                     Book Property Consultation
-                    </button>
-                    <button 
-                     onClick={() => window.open('https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20property%20management%20services', '_blank')}
+                     Book Operations Consultation
+                    </a>
+                    <a 
+                     href="https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20B2B%20property%20management%20operations%20services"
+                     target="_blank"
+                     rel="noopener noreferrer"
                       className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
                     >
                       WhatsApp Us
-                    </button>
-                    <button 
-                     onClick={() => window.open('mailto:ajarlandings@gmail.com?subject=Property%20Management%20Inquiry', '_blank')}
+                    </a>
+                    <a 
+                     href="mailto:ajarlandings@gmail.com?subject=B2B%20Property%20Management%20Operations%20Inquiry"
+                     target="_blank"
+                     rel="noopener noreferrer"
                       className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
                     >
                       Email Us
-                    </button>
+                    </a>
                   </div>
                 </>
               )}
