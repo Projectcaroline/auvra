@@ -54,25 +54,21 @@ const App = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-light leading-tight mb-8 tracking-tight text-gray-900">
-            Automate Your Operations. Guarantee ROI.
+          <h1 className="text-4xl md:text-5xl font-light leading-tight mb-8 tracking-tight text-gray-900">
+            Property Management, Optimized for Maximum Revenue & Minimum Hassle
           </h1>
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Waste management & construction automation that recovers 5-15% of your revenue. We eliminate billing leakage, optimize operations, and protect your margins.
+            We help property owners and managers streamline operations, automate workflows, and scale short-term and vacation rentals into high-performing portfolios—without the headache of day-to-day management.
           </p>
-          <div className="bg-gray-50 p-6 rounded-lg mb-12 max-w-2xl mx-auto">
-            <p className="text-2xl font-semibold text-gray-900 mb-2">Typical ROI: 300-500% in first year</p>
-            <p className="text-gray-600">Most clients see payback within 90 days</p>
-          </div>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button 
-              onClick={() => window.open('https://calendly.com/twentysum/roi-audit', '_blank')}
+              onClick={() => window.open('https://calendly.com/twentysum/property-consultation', '_blank')}
               className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors shadow-lg"
             >
-              Book a 20-Minute ROI Call
+              Schedule Your Free Ops Consultation
             </button>
             <a 
-              href="https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20automation%20systems" 
+              href="https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20property%20management%20services" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-gray-900 transition-colors border-b border-transparent hover:border-gray-900 pb-1"
@@ -81,7 +77,7 @@ const App = () => {
             </a>
           </div>
           <p className="text-gray-600 mt-6 text-lg">
-            No tools to choose. No learning. Just results.
+            From single properties to full portfolios—we handle the operations so you can focus on growth.
           </p>
         </div>
       </section>
@@ -152,44 +148,35 @@ const App = () => {
       <section className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-light mb-8">We Design Automation That Directly Impacts Revenue</h2>
+            <h2 className="text-4xl font-light mb-8">Turn Your Property Portfolio Into a High-Performing Asset</h2>
             <div className="text-lg text-gray-700 leading-relaxed space-y-6">
-              <p className="text-xl">Industry-specific automation that guarantees measurable ROI:</p>
+              <p className="text-xl">We offer high-touch property management operations services tailored for short-term and vacation rentals:</p>
               <div className="bg-gray-50 p-8 rounded-lg shadow-sm mt-8">
-                <h3 className="text-2xl font-medium mb-6 text-gray-900">Our systems deliver:</h3>
                 <ul className="space-y-4 text-left max-w-2xl mx-auto">
                   <li className="flex items-start">
                     <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>100% capture of billable events (overages, extras, changes)</span>
+                    <span><strong>Short-Term Rental Management Packages:</strong> Full-service co-hosting and operations for property owners.</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>Automated billing cycles (reduce from 45 to 7 days)</span>
+                    <span><strong>Workflow Automation & Reporting:</strong> Automate maintenance, guest communications, and occupancy reporting.</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>Route optimization (15-25% fuel savings)</span>
+                    <span><strong>Luxury & Vacation Property Focus:</strong> High-ticket retention with premium properties that maximize ROI.</span>
                   </li>
                   <li className="flex items-start">
                     <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>Real-time change order tracking & billing</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>Compliance automation (avoid penalties)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>Predictive maintenance scheduling</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span>60-80% reduction in admin overhead</span>
+                    <span><strong>Scalable Long-Term Rental Integration:</strong> Expand your portfolio with fully managed long-term rental workflows.</span>
                   </li>
                 </ul>
-                <div className="mt-8 p-6 bg-white rounded-lg border-2 border-gray-900">
-                  <p className="text-xl font-bold text-gray-900 mb-2">ROI Guarantee:</p>
-                  <p className="text-lg text-gray-700">300-600% ROI within 12 months or we refund the difference</p>
+                <div className="mt-8 text-center">
+                  <button 
+                    onClick={() => window.open('https://calendly.com/twentysum/property-consultation', '_blank')}
+                    className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors shadow-lg"
+                  >
+                    Discover How We Can Automate Your Properties
+                  </button>
                 </div>
               </div>
             </div>
@@ -198,40 +185,32 @@ const App = () => {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="py-20">
+      <section id="benefits" className="py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light mb-6">3-Phase ROI-Focused Implementation</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-              We build and deliver Done-For-You Lead Automation Systems that include:
-            </p>
-            <div className="max-w-3xl mx-auto">
-              <ul className="space-y-4 text-left text-lg">
-                <li className="flex items-start">
-                  <Check className="w-6 h-6 text-gray-900 mt-1 mr-4 flex-shrink-0" />
-                  <span>Instant automatic response to new leads</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-6 h-6 text-gray-900 mt-1 mr-4 flex-shrink-0" />
-                  <span>Intelligent qualification so you talk to real opportunities</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-6 h-6 text-gray-900 mt-1 mr-4 flex-shrink-0" />
-                  <span>Routing to the right person or inbox</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-6 h-6 text-gray-900 mt-1 mr-4 flex-shrink-0" />
-                  <span>Follow-up sequences so no lead goes cold</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-6 h-6 text-gray-900 mt-1 mr-4 flex-shrink-0" />
-                  <span>System testing + handover</span>
-                </li>
-              </ul>
-              <div className="mt-12 text-center">
-                <p className="text-xl text-gray-700">No tool names.</p>
-                <p className="text-xl text-gray-700">No tech jargon.</p>
-                <p className="text-xl font-medium text-gray-900">Just fixed flow and real results.</p>
+            <h2 className="text-4xl font-light mb-6">Why Twentysum?</h2>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                <h3 className="text-2xl font-medium mb-4 text-gray-900">Save Time & Reduce Stress</h3>
+                <p className="text-gray-700 text-lg">We handle the daily operations so you don't have to.</p>
+              </div>
+              
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                <h3 className="text-2xl font-medium mb-4 text-gray-900">Increase Revenue</h3>
+                <p className="text-gray-700 text-lg">From $500–$2k per property to $3k–$10k per client with smart scaling.</p>
+              </div>
+              
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                <h3 className="text-2xl font-medium mb-4 text-gray-900">Data-Driven Decisions</h3>
+                <p className="text-gray-700 text-lg">Reporting dashboards and actionable insights for every property.</p>
+              </div>
+              
+              <div className="bg-white p-8 rounded-lg shadow-sm">
+                <h3 className="text-2xl font-medium mb-4 text-gray-900">Flexible Services</h3>
+                <p className="text-gray-700 text-lg">Packages that grow with your portfolio, from a single property to dozens.</p>
               </div>
             </div>
           </div>
@@ -308,59 +287,28 @@ const App = () => {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="py-20 bg-gray-50">
+      <section className="py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-light mb-6">A Structured 3-Phase Approach</h2>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-12">
-              <div className="flex items-start">
-                <div className="w-16 h-16 bg-gray-900 text-white rounded-full flex items-center justify-center font-bold mr-8 flex-shrink-0 text-xl">1</div>
-                <div>
-                  <h3 className="text-2xl font-medium mb-4">Operational Audit</h3>
-                  <p className="text-gray-700 text-lg">We map your workflows and identify revenue leakage and inefficiencies.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="w-16 h-16 bg-gray-900 text-white rounded-full flex items-center justify-center font-bold mr-8 flex-shrink-0 text-xl">2</div>
-                <div>
-                  <h3 className="text-2xl font-medium mb-4">System Design & Automation Build</h3>
-                  <p className="text-gray-700 text-lg">We design and implement tailored automation integrated with your current tools.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="w-16 h-16 bg-gray-900 text-white rounded-full flex items-center justify-center font-bold mr-8 flex-shrink-0 text-xl">3</div>
-                <div>
-                  <h3 className="text-2xl font-medium mb-4">KPI Tracking & Optimization</h3>
-                  <p className="text-gray-700 text-lg mb-4">We measure improvements in:</p>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-start">
-                      <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                      <span>Billing accuracy</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                      <span>Cycle time</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                      <span>Operational efficiency</span>
-                    </li>
-                    <li className="flex items-start">
-                      <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                      <span>Margin protection</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center mt-12">
-              <p className="text-xl font-medium text-gray-900">You see measurable improvements — not just new software.</p>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-light mb-8">Ready to Turn Your Properties Into High-Performing Assets?</h2>
+            <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
+              Book a free consultation today and see how Twentysum can automate operations, increase revenue, and scale your portfolio—without adding more headaches.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <button 
+                onClick={() => window.open('https://calendly.com/twentysum/property-consultation', '_blank')}
+                className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors shadow-lg"
+              >
+                Book Your Free Consultation
+              </button>
+              <a 
+                href="https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20property%20management%20services" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 hover:text-gray-900 transition-colors border-b border-transparent hover:border-gray-900 pb-1"
+              >
+                WhatsApp Us
+              </a>
             </div>
           </div>
         </div>
@@ -511,23 +459,23 @@ const App = () => {
               {chatStep === 'initial' && (
                 <>
                   <div className="mb-6">
-                    <p className="text-gray-900 mb-4">Hi! I'm the Twentysum Lead Assistant — I help you figure out how we can stop missed leads and automate your follow-ups. How can I assist you today?</p>
+                    <p className="text-gray-900 mb-4">Hi! I'm the Twentysum Property Assistant — I help property owners optimize their operations and scale their portfolios. How can I assist you today?</p>
                   </div>
                   <div className="space-y-3">
                     <button 
-                      onClick={() => window.open('https://calendly.com/twentysum/roi-audit', '_blank')}
+                     onClick={() => window.open('https://calendly.com/twentysum/property-consultation', '_blank')}
                       className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
                     >
-                      Book ROI Call
+                     Book Property Consultation
                     </button>
                     <button 
-                      onClick={() => window.open('https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20automation%20systems', '_blank')}
+                     onClick={() => window.open('https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20property%20management%20services', '_blank')}
                       className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
                     >
                       WhatsApp Us
                     </button>
                     <button 
-                      onClick={() => window.open('mailto:ajarlandings@gmail.com?subject=ROI%20Automation%20Inquiry', '_blank')}
+                     onClick={() => window.open('mailto:ajarlandings@gmail.com?subject=Property%20Management%20Inquiry', '_blank')}
                       className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
                     >
                       Email Us
@@ -536,176 +484,6 @@ const App = () => {
                 </>
               )}
               
-              {chatStep === 'leads' && (
-                <>
-                  <div className="mb-6">
-                    <p className="text-gray-900 mb-4">Great! Are you currently using any system to respond to new inquiries instantly?</p>
-                  </div>
-                  <div className="space-y-3">
-                    <button 
-                      onClick={() => handleChatResponse('yes-system')}
-                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
-                    >
-                      Yes
-                    </button>
-                    <button 
-                      onClick={() => handleChatResponse('no-system')}
-                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
-                    >
-                      No
-                    </button>
-                  </div>
-                </>
-              )}
-              
-              {chatStep === 'noSystem' && (
-                <>
-                  <div className="mb-6">
-                    <p className="text-gray-900 mb-4">No problem — would you like:</p>
-                    <p className="text-gray-700 text-sm">A copy of the AI Playbook to understand how it works, or</p>
-                    <p className="text-gray-700 text-sm">A direct Lead System Review with us?</p>
-                  </div>
-                  <div className="space-y-3">
-                    <button 
-                      onClick={() => handleChatResponse('get-playbook')}
-                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
-                    >
-                      Get Playbook
-                    </button>
-                    <button 
-                      onClick={() => handleChatResponse('get-review')}
-                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
-                    >
-                      Review
-                    </button>
-                  </div>
-                </>
-              )}
-              
-              {chatStep === 'hasSystem' && (
-                <>
-                  <div className="mb-6">
-                    <p className="text-gray-900 mb-4">Are you seeing missed leads because replies are slow or inconsistent?</p>
-                  </div>
-                  <div className="space-y-3">
-                    <button 
-                      onClick={() => handleChatResponse('yes-missed')}
-                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
-                    >
-                      Yes
-                    </button>
-                    <button 
-                      onClick={() => handleChatResponse('no-missed')}
-                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
-                    >
-                      No
-                    </button>
-                  </div>
-                </>
-              )}
-              
-              {chatStep === 'needsHelp' && (
-                <>
-                  <div className="mb-6">
-                    <p className="text-gray-900 mb-4">We can help fix that with a done-for-you system. Would you like a Free Review or a copy of the AI Playbook?</p>
-                  </div>
-                  <div className="space-y-3">
-                    <button 
-                      onClick={() => handleChatResponse('get-playbook')}
-                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
-                    >
-                      Get Playbook
-                    </button>
-                    <button 
-                      onClick={() => handleChatResponse('get-review')}
-                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
-                    >
-                      Get Review
-                    </button>
-                  </div>
-                </>
-              )}
-
-              {chatStep === 'emailCapture' && (
-                <>
-                  <div className="mb-6">
-                    <p className="text-gray-900 mb-4">Excellent! Enter your email and we'll send you the Playbook link.</p>
-                    <input 
-                      type="email" 
-                      placeholder="your@email.com"
-                      className="w-full p-3 border border-gray-200 focus:border-black focus:outline-none"
-                    />
-                  </div>
-                  <button 
-                    onClick={() => setChatStep('playbookSent')}
-                    className="w-full bg-black text-white p-3 hover:bg-gray-800 transition-colors"
-                  >
-                    Send Playbook
-                  </button>
-                </>
-              )}
-
-              {chatStep === 'playbookSent' && (
-                <div className="text-center">
-                  <p className="text-gray-900 mb-4">Check your inbox — and if you'd like a Private System Review after reading it, just let me know.</p>
-                  <button 
-                    onClick={() => setChatStep('initial')}
-                    className="text-gray-600 hover:text-gray-900 transition-colors"
-                  >
-                    ← Back to start
-                  </button>
-                </div>
-              )}
-
-              {chatStep === 'reviewCapture' && (
-                <>
-                  <div className="mb-6">
-                    <p className="text-gray-900 mb-4">Perfect — please enter your name and email, and we'll schedule a Private Lead System Review.</p>
-                    <div className="space-y-3">
-                      <input 
-                        type="text" 
-                        placeholder="Your name"
-                        className="w-full p-3 border border-gray-200 focus:border-black focus:outline-none"
-                      />
-                      <input 
-                        type="email" 
-                        placeholder="your@email.com"
-                        className="w-full p-3 border border-gray-200 focus:border-black focus:outline-none"
-                      />
-                    </div>
-                  </div>
-                  <button 
-                    onClick={() => setChatStep('reviewScheduled')}
-                    className="w-full bg-black text-white p-3 hover:bg-gray-800 transition-colors"
-                  >
-                    Schedule Review
-                  </button>
-                </>
-              )}
-
-              {chatStep === 'reviewScheduled' && (
-                <div className="text-center">
-                  <p className="text-gray-900 mb-4">Thanks! We'll contact you soon to arrange a time for your review.</p>
-                  <button 
-                    onClick={() => setChatStep('initial')}
-                    className="text-gray-600 hover:text-gray-900 transition-colors"
-                  >
-                    ← Back to start
-                  </button>
-                </div>
-              )}
-
-              {chatStep === 'noHelp' && (
-                <div className="text-center">
-                  <p className="text-gray-900 mb-4">Great! Sounds like you have a solid system. If you ever need optimization or want to see what's possible, feel free to reach out.</p>
-                  <button 
-                    onClick={() => setChatStep('initial')}
-                    className="text-gray-600 hover:text-gray-900 transition-colors"
-                  >
-                    ← Back to start
-                  </button>
-                </div>
-              )}
             </div>
           </div>
         ) : (
