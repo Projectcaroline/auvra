@@ -54,21 +54,27 @@ const App = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-light leading-tight mb-8 tracking-tight text-gray-900">
-            Property Management, Optimized for Maximum Revenue & Minimum Hassle
+          <div className="bg-gray-100 text-gray-800 px-4 py-2 rounded-full text-sm font-medium mb-6 inline-block">
+            Currently managing a few properties in Windhoek & Swakopmund
+          </div>
+          <h1 className="text-4xl md:text-5xl font-light leading-tight mb-6 tracking-tight text-gray-900">
+            Airbnb Co-Hosting for Namibia Properties
           </h1>
-          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-            We help property owners and managers streamline operations, automate workflows, and scale short-term and vacation rentals into high-performing portfolios—without the headache of day-to-day management.
+          <p className="text-xl text-gray-700 mb-4 max-w-2xl mx-auto leading-relaxed">
+            I handle pricing, guests, and calendars. You collect 20-30% more revenue.
+          </p>
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            15% of bookings. No upfront cost. Most hosts see results in 7 days.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button 
-              onClick={() => window.open('https://calendly.com/twentysum/property-consultation', '_blank')}
+              onClick={() => window.open('https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20request%20co-host%20access%20for%20my%20Airbnb%20property', '_blank')}
               className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors shadow-lg"
             >
-              Schedule Your Free Ops Consultation
+              Request Co-Host Access
             </button>
             <a 
-              href="https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20property%20management%20services" 
+              href="https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20Airbnb%20co-hosting%20services" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-gray-900 transition-colors border-b border-transparent hover:border-gray-900 pb-1"
@@ -76,9 +82,6 @@ const App = () => {
               WhatsApp Us
             </a>
           </div>
-          <p className="text-gray-600 mt-6 text-lg">
-            From single properties to full portfolios—we handle the operations so you can focus on growth.
-          </p>
         </div>
       </section>
 
