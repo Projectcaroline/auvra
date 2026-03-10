@@ -165,8 +165,7 @@ const App = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-subtle-gray p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-full h-1 bg-maroon mb-6"></div>
-              <div className="text-4xl font-playfair font-medium text-gold mb-4">15 reviews</div>
-              <div className="text-lg text-charcoal/80 mb-2">in 45 days</div>
+              <div className="text-4xl font-playfair font-medium text-gold mb-4">15 reviews in 45 days</div>
               <p className="text-charcoal/60">New listing launch</p>
               <p className="text-sm text-charcoal/50 mt-3">New hosts typically take 4-6 months to reach this</p>
             </div>
@@ -419,7 +418,7 @@ const App = () => {
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12 text-charcoal/60">
             <span className="flex items-center text-lg">
               <div className="w-2 h-2 bg-gold rounded-full mr-3"></div>
-              12 Properties Managed
+              12 Properties
             </span>
             <span className="flex items-center text-lg">
               <div className="w-2 h-2 bg-gold rounded-full mr-3"></div>
