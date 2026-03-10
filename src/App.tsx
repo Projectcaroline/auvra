@@ -124,67 +124,65 @@ const App = () => {
       </section>
 
       {/* Problem Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-subtle-gray">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-5 gap-12 items-center">
-            <div className="md:col-span-3">
-              <h2 className="text-5xl font-playfair font-light mb-8 text-charcoal leading-tight">Managing Properties Is Hard. Most Owners Are Overwhelmed.</h2>
-              <div className="space-y-6 text-lg text-charcoal/80 leading-relaxed">
-                <p>Missed bookings, messy spreadsheets, and slow maintenance approvals cost time and money.</p>
-                <p>Trying to manage short-term rentals manually leads to lost revenue and frustrated tenants or guests.</p>
-                <p>Most property managers are stuck in outdated, manual processes that don't scale.</p>
-              </div>
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-playfair font-light mb-6 text-charcoal">Most Airbnb Hosts Are Leaving Money on the Table</h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-xl font-playfair font-medium text-charcoal mb-3">Response delays = lost bookings to faster hosts</h3>
+              <p className="text-charcoal/70">Every hour you wait costs you 15-20% chance of conversion</p>
             </div>
-            <div className="md:col-span-2">
-              <div className="bg-subtle-gray p-8 rounded-lg">
-                <div className="space-y-4">
-                  <div className="flex items-center text-charcoal/60">
-                    <X className="w-5 h-5 text-red-500 mr-3" />
-                    <span>Manual booking management</span>
-                  </div>
-                  <div className="flex items-center text-charcoal/60">
-                    <X className="w-5 h-5 text-red-500 mr-3" />
-                    <span>Slow guest responses</span>
-                  </div>
-                  <div className="flex items-center text-charcoal/60">
-                    <X className="w-5 h-5 text-red-500 mr-3" />
-                    <span>Lost revenue opportunities</span>
-                  </div>
-                  <div className="flex items-center text-charcoal/60">
-                    <X className="w-5 h-5 text-red-500 mr-3" />
-                    <span>Maintenance headaches</span>
-                  </div>
-                </div>
-              </div>
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-xl font-playfair font-medium text-charcoal mb-3">Flat pricing = missed weekend revenue</h3>
+              <p className="text-charcoal/70">Same rate Friday-Sunday leaves $200-400/month on table</p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-xl font-playfair font-medium text-charcoal mb-3">Calendar gaps = 15-20% occupancy loss</h3>
+              <p className="text-charcoal/70">3-4 day openings between bookings never fill at standard rates</p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-xl font-playfair font-medium text-charcoal mb-3">Generic photos = low click-through</h3>
+              <p className="text-charcoal/70">Wrong primary image costs you 30-40% of potential views</p>
+            </div>
+          </div>
+          <div className="text-center">
+            <div className="max-w-2xl mx-auto">
+              <p className="text-xl text-charcoal mb-4">You're not lazy. You're busy.</p>
+              <p className="text-lg text-charcoal/80">But hosts who optimize daily are outearning you by 25-40%.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Results Section */}
-      <section id="results" className="py-24 bg-subtle-gray">
+      <section id="results" className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-playfair font-light mb-6 text-charcoal">Results That Speak</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+            <div className="bg-subtle-gray p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-full h-1 bg-maroon mb-6"></div>
               <div className="text-4xl font-playfair font-medium text-gold mb-4">15 reviews</div>
               <div className="text-lg text-charcoal/80 mb-2">in 45 days</div>
               <p className="text-charcoal/60">New listing launch</p>
+              <p className="text-sm text-charcoal/50 mt-3">New hosts typically take 4-6 months to reach this</p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+            <div className="bg-subtle-gray p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-full h-1 bg-maroon mb-6"></div>
               <div className="text-4xl font-playfair font-medium text-gold mb-4">35%</div>
               <div className="text-lg text-charcoal/80 mb-2">revenue increase</div>
               <p className="text-charcoal/60">Beachfront optimization</p>
+              <p className="text-sm text-charcoal/50 mt-3">From $1,200/month to $1,620/month in 60 days</p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+            <div className="bg-subtle-gray p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-full h-1 bg-maroon mb-6"></div>
               <div className="text-4xl font-playfair font-medium text-gold mb-4">70% → 98%</div>
               <div className="text-lg text-charcoal/80 mb-2">response rate</div>
               <p className="text-charcoal/60">Guesthouse turnaround</p>
+              <p className="text-sm text-charcoal/50 mt-3">Bookings doubled within 30 days</p>
             </div>
           </div>
         </div>
@@ -219,65 +217,153 @@ const App = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-24 bg-subtle-gray">
+      <section id="services" className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-playfair font-light mb-6 text-charcoal">Services</h2>
+            <h2 className="text-5xl font-playfair font-light mb-6 text-charcoal">Co-Hosting Packages</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-playfair font-medium text-charcoal mb-4">Full Co-Hosting</h3>
-              <p className="text-charcoal/70 mb-6">Complete management of your Airbnb listing</p>
+            <div className="bg-subtle-gray p-8 rounded-lg shadow-sm">
+              <h3 className="text-2xl font-playfair font-medium text-charcoal mb-4">Full Airbnb Co-Hosting</h3>
+              <p className="text-charcoal/70 mb-6">Everything handled. You approve bookings.</p>
               <ul className="space-y-3 text-charcoal/70 mb-8">
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
-                  <span>Guest communication</span>
+                  <span>24/7 guest communication (95%+ response rate)</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
-                  <span>Dynamic pricing</span>
+                  <span>Dynamic pricing (weekend rates 20-30% higher)</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
-                  <span>Calendar management</span>
+                  <span>Calendar gap optimization (fill empty dates)</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Photo sequencing & listing improvements</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Review generation strategy</span>
                 </li>
               </ul>
+              <p className="text-sm text-charcoal/60 italic">Best for: Established properties, beachfront units, busy owners</p>
+            </div>
+            <div className="bg-subtle-gray p-8 rounded-lg shadow-sm">
+              <h3 className="text-2xl font-playfair font-medium text-charcoal mb-4">New Listing Launch (First 60 Days)</h3>
+              <p className="text-charcoal/70 mb-6">Capture Airbnb's ranking boost before it expires.</p>
+              <ul className="space-y-3 text-charcoal/70 mb-8">
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Pricing structure setup (competitive positioning)</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Photo optimization (maximize clicks)</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Review velocity strategy (10+ reviews in 45 days)</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Guest communication templates</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Algorithm advantage maximization</span>
+                </li>
+              </ul>
+              <p className="text-sm text-charcoal/60 italic">Best for: Hosts launching their first property or relaunching underperformers</p>
+            </div>
+            <div className="bg-subtle-gray p-8 rounded-lg shadow-sm">
+              <h3 className="text-2xl font-playfair font-medium text-charcoal mb-4">Multi-Property Portfolio</h3>
+              <p className="text-charcoal/70 mb-6">Standardized operations across 3+ listings.</p>
+              <ul className="space-y-3 text-charcoal/70 mb-8">
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Unified pricing strategy</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Centralized guest communication</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Performance reporting & benchmarking</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Cross-property optimization</span>
+                </li>
+              </ul>
+              <p className="text-sm text-charcoal/60 italic">Best for: Hosts managing multiple Airbnb units</p>
+            </div>
+          </div>
+          <div className="text-center mt-12">
+            <p className="text-lg text-charcoal/80">All packages: 15% of completed bookings. No monthly retainer.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Trust Us Section */}
+      <section className="py-24 bg-subtle-gray">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-playfair font-light mb-6 text-charcoal">Why Hosts Choose Twentysum</h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-xl font-playfair font-medium text-charcoal mb-4">Local Market Expertise</h3>
+              <p className="text-charcoal/70">I track Windhoek and Swakopmund booking patterns daily. I know when demand spikes, what tourists search for, and how to price competitively in Namibia's unique STR market.</p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-playfair font-medium text-charcoal mb-4">New Listing Launch</h3>
-              <p className="text-charcoal/70 mb-6">Get your property online and optimized</p>
-              <ul className="space-y-3 text-charcoal/70 mb-8">
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
-                  <span>Professional photos</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
-                  <span>Listing optimization</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
-                  <span>Initial bookings</span>
-                </li>
-              </ul>
+              <h3 className="text-xl font-playfair font-medium text-charcoal mb-4">Data-Driven Optimization</h3>
+              <p className="text-charcoal/70">Your property gets daily pricing adjustments based on competitor moves, local events & holidays, seasonal demand shifts, and booking velocity trends.</p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-playfair font-medium text-charcoal mb-4">Multi-Property</h3>
-              <p className="text-charcoal/70 mb-6">Scale your portfolio with expert management</p>
-              <ul className="space-y-3 text-charcoal/70 mb-8">
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
-                  <span>Portfolio optimization</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
-                  <span>Bulk management</span>
-                </li>
-                <li className="flex items-start">
-                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
-                  <span>Revenue reporting</span>
-                </li>
-              </ul>
+              <h3 className="text-xl font-playfair font-medium text-charcoal mb-4">Instant Response Advantage</h3>
+              <p className="text-charcoal/70">Airbnb's algorithm prioritizes hosts who respond within minutes. I handle inquiries 24/7 so you never lose a booking to response delay.</p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-xl font-playfair font-medium text-charcoal mb-4">You Stay in Control</h3>
+              <p className="text-charcoal/70">You approve all bookings from your phone. I handle pricing, calendar, and guests. You collect higher revenue without extra work.</p>
+            </div>
+          </div>
+          <div className="text-center">
+            <p className="text-lg text-charcoal/80">Currently managing 12 properties with 85% average occupancy.</p>
+            <p className="text-lg text-charcoal/80">Most hosts see results within 7 days.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-playfair font-light mb-6 text-charcoal">Common Questions</h2>
+          </div>
+          <div className="space-y-8">
+            <div className="bg-subtle-gray p-8 rounded-lg">
+              <h3 className="text-xl font-playfair font-medium text-charcoal mb-4">Do I lose control of my listing?</h3>
+              <p className="text-charcoal/70">No. You stay listed as host and approve all bookings. I only access pricing, calendar, and messaging.</p>
+            </div>
+            <div className="bg-subtle-gray p-8 rounded-lg">
+              <h3 className="text-xl font-playfair font-medium text-charcoal mb-4">What if I already have bookings?</h3>
+              <p className="text-charcoal/70">Perfect. I optimize around existing reservations and fill the gaps between them.</p>
+            </div>
+            <div className="bg-subtle-gray p-8 rounded-lg">
+              <h3 className="text-xl font-playfair font-medium text-charcoal mb-4">How fast will I see results?</h3>
+              <p className="text-charcoal/70">Most hosts see booking velocity increase within 5-7 days after optimization begins.</p>
+            </div>
+            <div className="bg-subtle-gray p-8 rounded-lg">
+              <h3 className="text-xl font-playfair font-medium text-charcoal mb-4">What areas do you cover?</h3>
+              <p className="text-charcoal/70">Windhoek, Swakopmund, Langstrand, and Walvis Bay corridor.</p>
+            </div>
+            <div className="bg-subtle-gray p-8 rounded-lg">
+              <h3 className="text-xl font-playfair font-medium text-charcoal mb-4">Can I cancel anytime?</h3>
+              <p className="text-charcoal/70">Yes. No long-term contracts. Remove my co-host access whenever you want.</p>
             </div>
           </div>
         </div>
@@ -300,8 +386,12 @@ const App = () => {
       {/* Final CTA Section */}
       <section className="py-24 bg-maroon text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-5xl font-playfair font-light mb-8">Stop leaving money on the table</h2>
-          <p className="text-xl mb-12 opacity-90">Your business, but better.</p>
+          <h2 className="text-5xl font-playfair font-light mb-8">Ready to Stop Losing Peak Season Revenue?</h2>
+          <div className="mb-12">
+            <p className="text-xl mb-4 opacity-90">March is the last high-demand month before coastal tourism slows.</p>
+            <p className="text-lg mb-4 opacity-80">Every day without optimization costs you $100-200 in potential bookings.</p>
+            <p className="text-xl opacity-90">15% of bookings. No upfront cost. Results in 7 days.</p>
+          </div>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button 
               onClick={() => window.open('https://calendly.com/twentysum/property-consultation', '_blank')}
@@ -313,17 +403,19 @@ const App = () => {
               href="https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20Airbnb%20co-hosting%20services" 
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/80 hover:text-white transition-colors border-b border-transparent hover:border-white pb-1 text-lg"
+              className="bg-gold text-charcoal px-12 py-4 text-lg font-medium hover:bg-white transition-all duration-300 shadow-lg transform hover:scale-105"
             >
-              WhatsApp Us
+              WhatsApp Now
             </a>
           </div>
+          <p className="text-sm text-white/60 mt-6">No long-term contracts. Cancel anytime.</p>
         </div>
       </section>
 
       {/* Trust Elements */}
       <section className="py-16 bg-subtle-gray">
         <div className="max-w-6xl mx-auto px-6 text-center">
+          <p className="text-lg text-charcoal/80 mb-6">Currently Managing</p>
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12 text-charcoal/60">
             <span className="flex items-center text-lg">
               <div className="w-2 h-2 bg-gold rounded-full mr-3"></div>
@@ -347,7 +439,7 @@ const App = () => {
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div>
               <h3 className="text-2xl font-playfair font-semibold mb-2 tracking-wide">TWENTYSUM</h3>
-              <p className="text-white/60">AI systems for serious operators</p>
+              <p className="text-white/60">Premium Airbnb co-hosting for coastal Namibia properties.</p>
             </div>
             <div className="flex space-x-8 mt-6 md:mt-0">
               <a href="/privacy.html" className="text-white/60 hover:text-white transition-colors">Privacy</a>
@@ -357,7 +449,7 @@ const App = () => {
             </div>
           </div>
           <div className="border-t border-white/20 pt-8 text-center">
-            <p className="text-white/60 italic">This is not for everyone — but if you know, you know.</p>
+            <p className="text-white/60">AI systems for serious operators</p>
           </div>
         </div>
       </footer>
