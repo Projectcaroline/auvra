@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { MessageCircle, X, Check, Zap, Users, Shield, ArrowRight } from 'lucide-react';
+import { MessageCircle, X, Check, Zap, Users, Shield, ArrowRight, Star, Calendar, TrendingUp } from 'lucide-react';
 
 const App = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -37,22 +37,22 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="min-h-screen bg-white text-charcoal font-inter">
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm' : 'bg-transparent'
       }`}>
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="text-xl font-semibold tracking-wide">TWENTYSUM</div>
+        <div className="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+          <div className="text-2xl font-playfair font-semibold text-maroon tracking-wide">TWENTYSUM</div>
           <div className="hidden md:flex space-x-8">
-            <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors">Services</a>
-            <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors">How It Works</a>
-            <a href="#results" className="text-gray-600 hover:text-gray-900 transition-colors">Results</a>
+            <a href="#services" className="text-charcoal/70 hover:text-maroon transition-colors font-medium">Services</a>
+            <a href="#how-it-works" className="text-charcoal/70 hover:text-maroon transition-colors font-medium">How It Works</a>
+            <a href="#results" className="text-charcoal/70 hover:text-maroon transition-colors font-medium">Results</a>
             <a 
               href="https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20Airbnb%20co-hosting%20services" 
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900 transition-colors"
+              className="text-charcoal/70 hover:text-maroon transition-colors font-medium"
             >
               WhatsApp Us
             </a>
@@ -61,47 +61,99 @@ const App = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-light leading-tight mb-8 tracking-tight text-gray-900">
-            Property Management, Optimized for Maximum Revenue & Minimum Hassle
-          </h1>
-          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-            We help property owners and managers streamline operations, automate workflows, and scale short-term and vacation rentals into high-performing portfolios—without the headache of day-to-day management.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <button 
-              onClick={() => window.open('https://calendly.com/twentysum/property-consultation', '_blank')}
-              className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors shadow-lg"
-            >
-              Schedule Your Free Ops Consultation
-            </button>
-            <a 
-              href="https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20property%20management%20services" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-700 hover:text-gray-900 transition-colors border-b border-transparent hover:border-gray-900 pb-1"
-            >
-              WhatsApp Us
-            </a>
+      <section className="pt-40 pb-20 px-6 bg-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-6xl md:text-7xl font-playfair font-light leading-tight mb-8 text-charcoal">
+              Airbnb Co-Hosting for Namibia
+              <div className="w-32 h-1 bg-maroon mx-auto mt-6"></div>
+            </h1>
+            <p className="text-xl md:text-2xl text-charcoal/80 mb-12 max-w-2xl mx-auto leading-relaxed font-light">
+              Premium properties. Maximum revenue. Zero hassle.
+            </p>
+            <div className="mb-8">
+              <button 
+                onClick={() => window.open('https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20request%20co-host%20access%20for%20my%20Airbnb%20property', '_blank')}
+                className="bg-maroon text-white px-12 py-4 text-lg font-medium hover:bg-gold hover:text-charcoal transition-all duration-300 shadow-lg transform hover:scale-105"
+              >
+                Request Co-Host Access
+              </button>
+            </div>
+            <div className="inline-flex items-center space-x-4 text-charcoal/60 text-lg">
+              <span className="flex items-center">
+                <div className="w-2 h-2 bg-gold rounded-full mr-2"></div>
+                12 Properties
+              </span>
+              <span>•</span>
+              <span className="flex items-center">
+                <div className="w-2 h-2 bg-gold rounded-full mr-2"></div>
+                85% Avg Occupancy
+              </span>
+            </div>
           </div>
-          <p className="text-gray-600 mt-6 text-lg">
-            From single properties to full portfolios—we handle the operations so you can focus on growth.
-          </p>
+        </div>
+      </section>
+
+      {/* Value Props Section */}
+      <section className="py-24 bg-subtle-gray">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-3 gap-12">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-maroon/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <TrendingUp className="w-8 h-8 text-maroon" />
+              </div>
+              <h3 className="text-2xl font-playfair font-medium text-charcoal mb-4">20-30% Revenue Increase</h3>
+              <p className="text-lg text-charcoal/70 leading-relaxed">Dynamic pricing captures peak demand</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-maroon/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <MessageCircle className="w-8 h-8 text-maroon" />
+              </div>
+              <h3 className="text-2xl font-playfair font-medium text-charcoal mb-4">24/7 Guest Management</h3>
+              <p className="text-lg text-charcoal/70 leading-relaxed">Instant responses, 95%+ acceptance rate</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-maroon/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Shield className="w-8 h-8 text-maroon" />
+              </div>
+              <h3 className="text-2xl font-playfair font-medium text-charcoal mb-4">You Stay In Control</h3>
+              <p className="text-lg text-charcoal/70 leading-relaxed">Approve bookings, collect higher revenue</p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Problem Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-light mb-8">Managing Properties Is Hard. Most Owners Are Overwhelmed.</h2>
-            <div className="text-lg text-gray-700 leading-relaxed space-y-6">
-              <div className="bg-white p-8 rounded-lg shadow-sm mt-8">
-                <div className="space-y-6 text-left max-w-2xl mx-auto">
-                  <p className="text-lg">Missed bookings, messy spreadsheets, and slow maintenance approvals cost time and money.</p>
-                  <p className="text-lg">Trying to manage short-term rentals manually leads to lost revenue and frustrated tenants or guests.</p>
-                  <p className="text-lg">Most property managers are stuck in outdated, manual processes that don't scale.</p>
+          <div className="grid md:grid-cols-5 gap-12 items-center">
+            <div className="md:col-span-3">
+              <h2 className="text-5xl font-playfair font-light mb-8 text-charcoal leading-tight">Managing Properties Is Hard. Most Owners Are Overwhelmed.</h2>
+              <div className="space-y-6 text-lg text-charcoal/80 leading-relaxed">
+                <p>Missed bookings, messy spreadsheets, and slow maintenance approvals cost time and money.</p>
+                <p>Trying to manage short-term rentals manually leads to lost revenue and frustrated tenants or guests.</p>
+                <p>Most property managers are stuck in outdated, manual processes that don't scale.</p>
+              </div>
+            </div>
+            <div className="md:col-span-2">
+              <div className="bg-subtle-gray p-8 rounded-lg">
+                <div className="space-y-4">
+                  <div className="flex items-center text-charcoal/60">
+                    <X className="w-5 h-5 text-red-500 mr-3" />
+                    <span>Manual booking management</span>
+                  </div>
+                  <div className="flex items-center text-charcoal/60">
+                    <X className="w-5 h-5 text-red-500 mr-3" />
+                    <span>Slow guest responses</span>
+                  </div>
+                  <div className="flex items-center text-charcoal/60">
+                    <X className="w-5 h-5 text-red-500 mr-3" />
+                    <span>Lost revenue opportunities</span>
+                  </div>
+                  <div className="flex items-center text-charcoal/60">
+                    <X className="w-5 h-5 text-red-500 mr-3" />
+                    <span>Maintenance headaches</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -109,249 +161,203 @@ const App = () => {
         </div>
       </section>
 
-      {/* What We Do Section */}
-      <section className="py-20">
+      {/* Results Section */}
+      <section id="results" className="py-24 bg-subtle-gray">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-light mb-8">Turn Your Property Portfolio Into a High-Performing Asset</h2>
-            <div className="text-lg text-gray-700 leading-relaxed space-y-6">
-              <p className="text-xl">We offer high-touch property management operations services tailored for short-term and vacation rentals:</p>
-              <div className="bg-gray-50 p-8 rounded-lg shadow-sm mt-8">
-                <ul className="space-y-4 text-left max-w-2xl mx-auto">
-                  <li className="flex items-start">
-                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span><strong>Short-Term Rental Management Packages:</strong> Full-service co-hosting and operations for property owners.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span><strong>Workflow Automation & Reporting:</strong> Automate maintenance, guest communications, and occupancy reporting.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span><strong>Luxury & Vacation Property Focus:</strong> High-ticket retention with premium properties that maximize ROI.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <Check className="w-5 h-5 text-gray-900 mt-1 mr-3 flex-shrink-0" />
-                    <span><strong>Scalable Long-Term Rental Integration:</strong> Expand your portfolio with fully managed long-term rental workflows.</span>
-                  </li>
-                </ul>
-                <div className="mt-8 text-center">
-                  <button 
-                    onClick={() => window.open('https://calendly.com/twentysum/property-consultation', '_blank')}
-                    className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors shadow-lg"
-                  >
-                    Discover How We Can Automate Your Properties
-                  </button>
-                </div>
-              </div>
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-playfair font-light mb-6 text-charcoal">Results That Speak</h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+              <div className="w-full h-1 bg-maroon mb-6"></div>
+              <div className="text-4xl font-playfair font-medium text-gold mb-4">15 reviews</div>
+              <div className="text-lg text-charcoal/80 mb-2">in 45 days</div>
+              <p className="text-charcoal/60">New listing launch</p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+              <div className="w-full h-1 bg-maroon mb-6"></div>
+              <div className="text-4xl font-playfair font-medium text-gold mb-4">35%</div>
+              <div className="text-lg text-charcoal/80 mb-2">revenue increase</div>
+              <p className="text-charcoal/60">Beachfront optimization</p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+              <div className="w-full h-1 bg-maroon mb-6"></div>
+              <div className="text-4xl font-playfair font-medium text-gold mb-4">70% → 98%</div>
+              <div className="text-lg text-charcoal/80 mb-2">response rate</div>
+              <p className="text-charcoal/60">Guesthouse turnaround</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* How It Works Section */}
-      <section id="benefits" className="py-20">
+      <section id="how-it-works" className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light mb-6">Why Twentysum?</h2>
+            <h2 className="text-5xl font-playfair font-light mb-6 text-charcoal">How It Works</h2>
           </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white p-8 rounded-lg shadow-sm">
-                <h3 className="text-2xl font-medium mb-4 text-gray-900">Save Time & Reduce Stress</h3>
-                <p className="text-gray-700 text-lg">We handle the daily operations so you don't have to.</p>
-              </div>
-              
-              <div className="bg-white p-8 rounded-lg shadow-sm">
-                <h3 className="text-2xl font-medium mb-4 text-gray-900">Increase Revenue</h3>
-                <p className="text-gray-700 text-lg">From $500–$2k per property to $3k–$10k per client with smart scaling.</p>
-              </div>
-              
-              <div className="bg-white p-8 rounded-lg shadow-sm">
-                <h3 className="text-2xl font-medium mb-4 text-gray-900">Data-Driven Decisions</h3>
-                <p className="text-gray-700 text-lg">Reporting dashboards and actionable insights for every property.</p>
-              </div>
-              
-              <div className="bg-white p-8 rounded-lg shadow-sm">
-                <h3 className="text-2xl font-medium mb-4 text-gray-900">Flexible Services</h3>
-                <p className="text-gray-700 text-lg">Packages that grow with your portfolio, from a single property to dozens.</p>
-              </div>
+          <div className="relative">
+            <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-maroon transform -translate-y-1/2 hidden md:block"></div>
+            <div className="grid md:grid-cols-4 gap-8 relative">
+              {[
+                { step: "1", title: "Send Invite", desc: "Add me as co-host to your listing" },
+                { step: "2", title: "Optimize", desc: "48hrs to perfect pricing & photos" },
+                { step: "3", title: "Handle Guests", desc: "24/7 communication & management" },
+                { step: "4", title: "Collect Revenue", desc: "Watch bookings & income increase" }
+              ].map((item, index) => (
+                <div key={index} className="text-center relative">
+                  <div className="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-playfair font-medium text-charcoal relative z-10">
+                    {item.step}
+                  </div>
+                  <h3 className="text-xl font-playfair font-medium text-charcoal mb-3">{item.title}</h3>
+                  <p className="text-charcoal/70">{item.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services & Pricing Section */}
-      <section id="services" className="py-20 bg-gray-50">
+      {/* Services Section */}
+      <section id="services" className="py-24 bg-subtle-gray">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light mb-6">Twentysum Services - B2B Property Management Operations</h2>
+            <h2 className="text-5xl font-playfair font-light mb-6 text-charcoal">Services</h2>
           </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
-            {/* Service 1 */}
-            <div className="border border-gray-200 p-8 bg-white">
-              <div className="mb-8">
-                <h3 className="text-2xl font-medium mb-4">Short-Term & Vacation Rental Operations</h3>
-                <p className="text-gray-600 mb-6">For property management companies or vacation rental portfolio owners:</p>
-                <ul className="space-y-3 text-gray-700">
-                  <li>• Full operational management of short-term rental units</li>
-                  <li>• Guest communication handled professionally</li>
-                  <li>• Coordination of cleaning, maintenance, and inspections</li>
-                  <li>• Booking management and calendar optimization</li>
-                </ul>
-                <div className="mt-6 p-4 bg-gray-50 rounded">
-                  <p className="font-medium text-gray-900">Value:</p>
-                  <p className="text-gray-700">Turn a portfolio of properties into a smoothly running, revenue-maximizing system without manual oversight.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Service 2 */}
-            <div className="border-2 border-gray-900 p-8 bg-white relative">
-              <div className="mb-8">
-                <h3 className="text-2xl font-medium mb-4">Workflow Automation & Reporting</h3>
-                <p className="text-gray-600 mb-6">For PM companies or operators with multiple properties:</p>
-                <ul className="space-y-3 text-gray-700">
-                  <li>• Automating repetitive admin and operational tasks</li>
-                  <li>• Integrated dashboards for occupancy, revenue, and maintenance KPIs</li>
-                  <li>• Alerts and reporting for operational bottlenecks</li>
-                  <li>• Maintenance requests and guest messaging automation</li>
-                </ul>
-                <div className="mt-6 p-4 bg-gray-50 rounded">
-                  <p className="font-medium text-gray-900">Value:</p>
-                  <p className="text-gray-700">Reduce errors, speed up response times, and give management a real-time view of all properties.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Service 3 */}
-            <div className="border border-gray-200 p-8 bg-white">
-              <div className="mb-8">
-                <h3 className="text-2xl font-medium mb-4">Portfolio Optimization for Luxury Rentals</h3>
-                <p className="text-gray-600 mb-6">For managers handling vacation homes, luxury villas, or corporate housing:</p>
-                <ul className="space-y-3 text-gray-700">
-                  <li>• Revenue maximization strategies (dynamic pricing, occupancy optimization)</li>
-                  <li>• Operational scaling for high-value units</li>
-                  <li>• Vendor and concierge service integration</li>
-                  <li>• Premium service standards maintenance</li>
-                </ul>
-                <div className="mt-6 p-4 bg-gray-50 rounded">
-                  <p className="font-medium text-gray-900">Value:</p>
-                  <p className="text-gray-700">Increase revenue per property and maintain premium service standards, without expanding headcount.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works Section */}
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-light mb-8">Ready to Turn Your Properties Into High-Performing Assets?</h2>
-            <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Book a free consultation today and see how Twentysum can automate operations, increase revenue, and scale your portfolio—without adding more headaches.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <button 
-                onClick={() => window.open('https://calendly.com/twentysum/property-consultation', '_blank')}
-                className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors shadow-lg"
-              >
-                Book Your Free Consultation
-              </button>
-              <a 
-                href="https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20property%20management%20services" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-700 hover:text-gray-900 transition-colors border-b border-transparent hover:border-gray-900 pb-1"
-              >
-                WhatsApp Us
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Operation Flow Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-light mb-6">Trusted by Property Owners & Managers Who Demand Results</h2>
-          </div>
-
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <p className="text-xl text-gray-700 mb-6">
-                "Managed 50+ properties with 95% occupancy rates through Twentysum's automated operations system."
-              </p>
-              <p className="text-lg text-gray-700">
-                Keep it concise and results-focused - showcase client testimonials or metrics that demonstrate operational excellence.
-              </p>
+              <h3 className="text-2xl font-playfair font-medium text-charcoal mb-4">Full Co-Hosting</h3>
+              <p className="text-charcoal/70 mb-6">Complete management of your Airbnb listing</p>
+              <ul className="space-y-3 text-charcoal/70 mb-8">
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Guest communication</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Dynamic pricing</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Calendar management</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-2xl font-playfair font-medium text-charcoal mb-4">New Listing Launch</h3>
+              <p className="text-charcoal/70 mb-6">Get your property online and optimized</p>
+              <ul className="space-y-3 text-charcoal/70 mb-8">
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Professional photos</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Listing optimization</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Initial bookings</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-2xl font-playfair font-medium text-charcoal mb-4">Multi-Property</h3>
+              <p className="text-charcoal/70 mb-6">Scale your portfolio with expert management</p>
+              <ul className="space-y-3 text-charcoal/70 mb-8">
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Portfolio optimization</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Bulk management</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="w-5 h-5 text-maroon mt-1 mr-3 flex-shrink-0" />
+                  <span>Revenue reporting</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why This Works Section */}
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-light mb-8">Optional Add-On Services</h2>
-            <div className="text-lg text-gray-700 leading-relaxed space-y-6">
-              <div className="bg-white p-8 rounded-lg shadow-sm mt-8">
-                <div className="space-y-4 text-left max-w-2xl mx-auto">
-                  <p className="font-medium text-gray-900">Technology & automation consulting for PM workflows</p>
-                  <p className="font-medium text-gray-900">SOP development for maintenance, cleaning, and guest operations</p>
-                  <p className="font-medium text-gray-900">Reporting dashboards and KPI tracking for multi-property portfolios</p>
-                </div>
-              </div>
-            </div>
+      {/* Pricing Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-5xl font-playfair font-light mb-8 text-charcoal">Transparent Pricing</h2>
+          <div className="bg-subtle-gray p-12 rounded-lg">
+            <div className="text-6xl font-playfair font-light text-gold mb-4">15%</div>
+            <div className="text-2xl text-charcoal mb-6">of bookings. No upfront cost.</div>
+            <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
+              You only pay when you earn. Our success is directly tied to your revenue growth.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* CTA Section Repeat */}
-      <section className="py-20">
+      {/* Final CTA Section */}
+      <section className="py-24 bg-maroon text-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-5xl font-playfair font-light mb-8">Stop leaving money on the table</h2>
+          <p className="text-xl mb-12 opacity-90">Your business, but better.</p>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <button 
+              onClick={() => window.open('https://calendly.com/twentysum/property-consultation', '_blank')}
+              className="bg-gold text-charcoal px-12 py-4 text-lg font-medium hover:bg-white transition-all duration-300 shadow-lg transform hover:scale-105"
+            >
+              Schedule Consultation
+            </button>
+            <a 
+              href="https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20Airbnb%20co-hosting%20services" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/80 hover:text-white transition-colors border-b border-transparent hover:border-white pb-1 text-lg"
+            >
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Elements */}
+      <section className="py-16 bg-subtle-gray">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-light mb-12">Ready to stop losing leads?</h2>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
-            <button 
-              onClick={() => handleChatResponse('playbook')}
-              className="bg-gray-900 text-white px-8 py-4 text-lg font-medium hover:bg-gray-800 transition-colors shadow-lg"
-            >
-              👉 Get the AI Playbook
-            </button>
-            <button 
-              onClick={() => handleChatResponse('review')}
-              className="border border-gray-900 text-gray-900 px-8 py-4 text-lg font-medium hover:bg-gray-900 hover:text-white transition-colors"
-            >
-              👉 Request a System Review
-            </button>
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12 text-charcoal/60">
+            <span className="flex items-center text-lg">
+              <div className="w-2 h-2 bg-gold rounded-full mr-3"></div>
+              12 Properties Managed
+            </span>
+            <span className="flex items-center text-lg">
+              <div className="w-2 h-2 bg-gold rounded-full mr-3"></div>
+              85% Average Occupancy
+            </span>
+            <span className="flex items-center text-lg">
+              <div className="w-2 h-2 bg-gold rounded-full mr-3"></div>
+              Windhoek • Swakopmund • Langstrand
+            </span>
           </div>
-          <p className="text-xl text-gray-700">Your business, but better.</p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-16">
+      <footer className="bg-charcoal text-white py-16">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div>
-              <h3 className="text-2xl font-semibold mb-2 tracking-wide">TWENTYSUM</h3>
-              <p className="text-gray-400">AI systems for serious operators</p>
+              <h3 className="text-2xl font-playfair font-semibold mb-2 tracking-wide">TWENTYSUM</h3>
+              <p className="text-white/60">AI systems for serious operators</p>
             </div>
             <div className="flex space-x-8 mt-6 md:mt-0">
-              <a href="/privacy.html" className="text-gray-400 hover:text-white transition-colors">Privacy</a>
-              <a href="/terms.html" className="text-gray-400 hover:text-white transition-colors">Terms</a>
-              <a href="https://www.instagram.com/twenty_sum" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Instagram</a>
-              <a href="mailto:ajarlandings@gmail.com" className="text-gray-400 hover:text-white transition-colors">Contact</a>
+              <a href="/privacy.html" className="text-white/60 hover:text-white transition-colors">Privacy</a>
+              <a href="/terms.html" className="text-white/60 hover:text-white transition-colors">Terms</a>
+              <a href="https://www.instagram.com/twenty_sum" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">Instagram</a>
+              <a href="mailto:ajarlandings@gmail.com" className="text-white/60 hover:text-white transition-colors">Contact</a>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8 text-center">
-            <p className="text-gray-400 italic">This is not for everyone — but if you know, you know.</p>
+          <div className="border-t border-white/20 pt-8 text-center">
+            <p className="text-white/60 italic">This is not for everyone — but if you know, you know.</p>
           </div>
         </div>
       </footer>
@@ -359,10 +365,10 @@ const App = () => {
       {/* Chat Widget */}
       <div className="fixed bottom-6 right-6 z-50">
         {isChatOpen ? (
-          <div className="bg-white border border-gray-200 shadow-2xl w-80 max-w-[calc(100vw-3rem)]">
-            <div className="bg-black text-white p-4 flex justify-between items-center">
+          <div className="bg-white border border-gray-200 shadow-2xl w-80 max-w-[calc(100vw-3rem)] rounded-lg overflow-hidden">
+            <div className="bg-maroon text-white p-4 flex justify-between items-center">
               <span className="font-medium">Twentysum AI</span>
-              <button onClick={() => setIsChatOpen(false)} className="text-white hover:text-gray-300">
+              <button onClick={() => setIsChatOpen(false)} className="text-white hover:text-gold transition-colors">
                 <X className="w-5 h-5" />
               </button>
             </div>
@@ -370,14 +376,14 @@ const App = () => {
               {chatStep === 'initial' && (
                 <>
                   <div className="mb-6">
-                    <p className="text-gray-900 mb-4">Hi! I'm the Twentysum Co-Hosting Assistant. I help Airbnb hosts in Namibia optimize their listings and increase revenue. How can I assist you today?</p>
+                    <p className="text-charcoal mb-4">Hi! I'm the Twentysum Co-Hosting Assistant. I help Airbnb hosts in Namibia optimize their listings and increase revenue. How can I assist you today?</p>
                   </div>
                   <div className="space-y-3">
                     <a 
                      href="https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20request%20co-host%20access%20for%20my%20Airbnb%20property"
                      target="_blank"
                      rel="noopener noreferrer"
-                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
+                      className="block w-full text-left p-3 border border-gray-200 hover:border-maroon hover:bg-subtle-gray transition-colors rounded"
                     >
                      Request Co-Host Access
                     </a>
@@ -385,7 +391,7 @@ const App = () => {
                      href="https://wa.me/264812568924?text=Hi%2C%20I%27d%20like%20to%20learn%20about%20your%20Airbnb%20co-hosting%20services"
                      target="_blank"
                      rel="noopener noreferrer"
-                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
+                      className="block w-full text-left p-3 border border-gray-200 hover:border-maroon hover:bg-subtle-gray transition-colors rounded"
                     >
                       WhatsApp Us
                     </a>
@@ -393,20 +399,19 @@ const App = () => {
                      href="mailto:ajarlandings@gmail.com?subject=Airbnb%20Co-Hosting%20Inquiry"
                      target="_blank"
                      rel="noopener noreferrer"
-                      className="w-full text-left p-3 border border-gray-200 hover:border-black hover:bg-gray-50 transition-colors"
+                      className="block w-full text-left p-3 border border-gray-200 hover:border-maroon hover:bg-subtle-gray transition-colors rounded"
                     >
                       Email Us
                     </a>
                   </div>
                 </>
               )}
-              
             </div>
           </div>
         ) : (
           <button 
             onClick={() => setIsChatOpen(true)}
-            className="bg-black text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-gray-800 transition-colors"
+            className="bg-maroon text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-gold hover:text-charcoal transition-all duration-300 transform hover:scale-105"
           >
             <MessageCircle className="w-6 h-6" />
           </button>
