@@ -82,7 +82,7 @@ const App = () => {
             <div className="inline-flex items-center space-x-4 text-charcoal/60 text-lg">
               <span className="flex items-center">
                 <div className="w-2 h-2 bg-gold rounded-full mr-2"></div>
-                12 Properties
+                Few Properties
               </span>
               <span>•</span>
               <span className="flex items-center">
@@ -331,7 +331,7 @@ const App = () => {
             </div>
           </div>
           <div className="text-center">
-            <p className="text-lg text-charcoal/80">Currently managing 12 properties with 85% average occupancy.</p>
+            <p className="text-lg text-charcoal/80">Currently managing a few properties with 85% average occupancy.</p>
             <p className="text-lg text-charcoal/80">Most hosts see results within 7 days.</p>
           </div>
         </div>
@@ -376,7 +376,16 @@ const App = () => {
             <div className="text-6xl font-playfair font-light text-gold mb-4">15%</div>
             <div className="text-2xl text-charcoal mb-6">of bookings. No upfront cost.</div>
             <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-              You only pay when you earn. Our success is directly tied to your revenue growth.
+              Based in Windhoek, Namibia. Currently managing properties in:
+            </p>
+            <div className="mt-4 space-y-2 text-charcoal/70">
+              <p>→ Windhoek CBD & suburbs</p>
+              <p>→ Swakopmund beachfront</p>
+              <p>→ Langstrand coastal area</p>
+              <p>→ Walvis Bay corridor</p>
+            </div>
+            <p className="text-lg text-charcoal/80 mt-6">
+              Few properties managed with 85% average occupancy.
             </p>
           </div>
         </div>
@@ -418,7 +427,7 @@ const App = () => {
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12 text-charcoal/60">
             <span className="flex items-center text-lg">
               <div className="w-2 h-2 bg-gold rounded-full mr-3"></div>
-              12 Properties
+              Few Properties
             </span>
             <span className="flex items-center text-lg">
               <div className="w-2 h-2 bg-gold rounded-full mr-3"></div>
@@ -441,6 +450,8 @@ const App = () => {
               <p className="text-white/60">Premium Airbnb co-hosting for coastal Namibia properties.</p>
             </div>
             <div className="flex space-x-8 mt-6 md:mt-0">
+              <a href="/privacy.html" className="text-white/60 hover:text-white transition-colors">Privacy Policy</a>
+              <a href="/terms.html" className="text-white/60 hover:text-white transition-colors">Terms of Service</a>
               <a href="/privacy.html" className="text-white/60 hover:text-white transition-colors">Privacy</a>
               <a href="/terms.html" className="text-white/60 hover:text-white transition-colors">Terms</a>
               <a href="https://www.instagram.com/twenty_sum" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">Instagram</a>
